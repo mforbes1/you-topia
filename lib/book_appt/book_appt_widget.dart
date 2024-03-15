@@ -175,76 +175,55 @@ class _BookApptWidgetState extends State<BookApptWidget> {
                     ),
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 12.0),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            FFLocalizations.of(context).getText(
-                              'ww6wcuyb' /* Not feeling 
-so well? */
-                              ,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .displaySmall
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  fontSize: 33.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                          ),
-                          Align(
-                            alignment: const AlignmentDirectional(1.0, 0.0),
-                            child: Text(
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                      child: SingleChildScrollView(
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
                               FFLocalizations.of(context).getText(
-                                '0ke6ip8w' /* Need a
- routine
- visit? */
+                                'ww6wcuyb' /* Not feeling 
+so well? */
                                 ,
                               ),
-                              maxLines: 3,
                               style: FlutterFlowTheme.of(context)
                                   .displaySmall
                                   .override(
                                     fontFamily: 'Noto Serif',
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
-                                    fontSize: 34.0,
+                                    fontSize: 33.0,
                                     fontWeight: FontWeight.bold,
                                   ),
                             ),
-                          ),
-                          Align(
-                            alignment: const AlignmentDirectional(-1.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '5tlyhgcp' /* Let's get you to the 
-best car... */
-                                ,
-                              ),
-                              maxLines: 2,
-                              style: FlutterFlowTheme.of(context)
-                                  .labelMedium
-                                  .override(
-                                    fontFamily: 'Noto Serif',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    fontSize: 18.0,
-                                  ),
-                            ),
-                          ),
-                          Align(
-                            alignment: const AlignmentDirectional(1.0, 1.0),
-                            child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 10.0),
+                            Align(
+                              alignment: const AlignmentDirectional(1.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'g94lhaea' /* Let's get you to the 
+                                  '0ke6ip8w' /* Need a
+ routine
+ visit? */
+                                  ,
+                                ),
+                                maxLines: 3,
+                                style: FlutterFlowTheme.of(context)
+                                    .displaySmall
+                                    .override(
+                                      fontFamily: 'Noto Serif',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      fontSize: 34.0,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                              ),
+                            ),
+                            Align(
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  '5tlyhgcp' /* Let's get you to the 
 best car... */
                                   ,
                                 ),
@@ -259,8 +238,31 @@ best car... */
                                     ),
                               ),
                             ),
-                          ),
-                        ],
+                            Align(
+                              alignment: const AlignmentDirectional(1.0, 1.0),
+                              child: Padding(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 10.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    'g94lhaea' /* Let's get you to the 
+best car... */
+                                    ,
+                                  ),
+                                  maxLines: 2,
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontSize: 18.0,
+                                      ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -357,7 +359,7 @@ best car... */
                               }
                             },
                             width: 300.0,
-                            height: 50.0,
+                            height: 60.0,
                             textStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -436,7 +438,7 @@ best car... */
                             onChanged: (val) =>
                                 setState(() => _model.typeofVisitValue = val),
                             width: 300.0,
-                            height: 50.0,
+                            height: 60.0,
                             textStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -569,7 +571,7 @@ best car... */
                             onChanged: (val) => setState(
                                 () => _model.listofSymptomsValue = val),
                             width: 300.0,
-                            height: 50.0,
+                            height: 60.0,
                             textStyle: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
@@ -764,7 +766,7 @@ best car... */
                                 }
                               },
                               width: 300.0,
-                              height: 50.0,
+                              height: 60.0,
                               textStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(

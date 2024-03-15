@@ -80,7 +80,7 @@ class _RequestRefillWidgetState extends State<RequestRefillWidget> {
           ),
           child: Container(
             width: 870.0,
-            height: 963.0,
+            height: 1079.0,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
               boxShadow: const [

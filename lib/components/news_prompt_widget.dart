@@ -42,7 +42,7 @@ class _NewsPromptWidgetState extends State<NewsPromptWidget> {
       child: Padding(
         padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
         child: Container(
-          height: 435.0,
+          height: 500.0,
           constraints: const BoxConstraints(
             maxWidth: 530.0,
           ),

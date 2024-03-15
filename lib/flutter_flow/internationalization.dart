@@ -168,24 +168,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'e4akro55': {
       'en': 'Prescription ready for pick up!',
-      'ar': 'لديك وصفة طبية جاهزة للاستلام!',
-      'es': '¡Tiene una receta lista para recoger!',
-      'vi': 'Bạn có một toa thuốc đã sẵn sàng để nhận!',
-      'zh_Hant': '您已準備好處方，可以領取！',
+      'ar': 'وصفة طبية جاهزة للاستلام!',
+      'es': '¡Receta lista para recoger!',
+      'vi': 'Đơn thuốc đã sẵn sàng để nhận!',
+      'zh_Hant': '處方已準備好，可領取！',
     },
     'vjsrkyvg': {
       'en': 'Unread message!',
-      'ar': 'لديك رسالة غير مقروءة!',
-      'es': '¡Tienes un mensaje sin leer!',
-      'vi': 'Bạn có một tin nhắn chưa đọc!',
-      'zh_Hant': '您有一條未讀訊息！',
+      'ar': 'رسالة غير مقروءة!',
+      'es': '¡Mensaje no leído!',
+      'vi': 'Tin nhắn chưa đọc!',
+      'zh_Hant': '未讀訊息！',
     },
     'icfbzlep': {
       'en': 'Billing statement available!',
-      'ar': 'لديك كشف حساب جاهز للعرض!',
-      'es': '¡Tiene un estado de cuenta listo para ver!',
-      'vi': 'Bạn có một báo cáo thanh toán đã sẵn sàng để xem!',
-      'zh_Hant': '您已準備好查看帳單！',
+      'ar': 'بيان الفواتير متاح!',
+      'es': '¡Estado de cuenta disponible!',
+      'vi': 'Báo cáo thanh toán có sẵn!',
+      'zh_Hant': '帳單明細可用！',
     },
     'g559sz9p': {
       'en': 'What brings you in today?',
@@ -245,10 +245,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '7wvlm2us': {
       'en': 'Scheduling Receptionist',
-      'ar': 'الجبهة استقبال مكتب',
-      'es': 'Recepcionista de entrada',
-      'vi': 'Nhân viên lễ tân',
-      'zh_Hant': '前台接待員',
+      'ar': 'موظف استقبال جدولة',
+      'es': 'Recepcionista de programación',
+      'vi': 'Sắp xếp lịch lễ tân',
+      'zh_Hant': '調度接待員',
     },
     '9ia1jf06': {
       'en': 'Home',
@@ -447,24 +447,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '0ke6ip8w': {
       'en': 'Need a\n routine\n visit?',
-      'ar': 'محتاج الى\nزيارة روتينية؟',
-      'es': 'Necesitar un\nvisita de rutina?',
-      'vi': 'Cần một\nchuyến thăm thường lệ?',
-      'zh_Hant': '需要一個\n例行訪問？',
+      'ar': 'محتاج الى\n نمط\n يزور؟',
+      'es': 'Necesitar un\n rutina\n ¿visita?',
+      'vi': 'Cần một\n lịch trình\n thăm nom?',
+      'zh_Hant': '需要一個\n 常規\n 訪問？',
     },
     '5tlyhgcp': {
       'en': 'Let\'s get you to the \nbest care team...',
-      'ar': 'دعنا نوصلك إلى أفضل فريق رعاية...',
-      'es': 'Vamos a llevarte al mejor \nequipo de atención...',
-      'vi': 'Hãy đưa bạn đến đội \nngũ chăm sóc tốt nhất...',
-      'zh_Hant': '讓我們帶您加入最好的護理團隊...',
+      'ar': 'دعنا نوصلك إلى\nأفضل فريق رعاية...',
+      'es': 'Vamos a llevarte al\nel mejor equipo de atención...',
+      'vi': 'Hãy đưa bạn đến\nđội ngũ chăm sóc tốt nhất...',
+      'zh_Hant': '讓我們帶你去\n最好的護理團隊...',
     },
     'g94lhaea': {
       'en': 'Let\'s get you to the \nbest care team...',
-      'ar': 'دعنا نوصلك إلى أفضل فريق رعاية...',
-      'es': 'Vamos a llevarte al mejor \nequipo de atención...',
-      'vi': 'Hãy đưa bạn đến đội ngũ\n chăm sóc tốt nhất...',
-      'zh_Hant': '讓我們帶您加入最好的護理團隊...',
+      'ar': 'دعنا نوصلك إلى\nأفضل فريق رعاية...',
+      'es': 'Vamos a llevarte al\nel mejor equipo de atención...',
+      'vi': 'Hãy đưa bạn đến\nđội ngũ chăm sóc tốt nhất...',
+      'zh_Hant': '讓我們帶你去\n最好的護理團隊...',
     },
     'dl6la0w0': {
       'en': 'Appointment Scheduling',
@@ -821,7 +821,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ar': 'حسنًا... يبدو أنك بحاجة لرؤية طبيب عظام.',
       'es': 'Hmm... Parece que necesitas ver a un ortopedista.',
       'vi': 'Hmm... Có vẻ như bạn cần gặp bác sĩ chỉnh hình.',
-      'zh_Hant': '嗯...看來你需要去看骨科醫生了。',
+      'zh_Hant': '嗯……看來你需要去看骨科醫生了。',
     },
     'p3njxi63': {
       'en': 'View Available Appointments',
@@ -848,7 +848,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en':
           'Hmm... It looks like you need to see a Primary Care or Family Doctor.',
       'ar':
-          'حسنًا... يبدو أنك بحاجة إلى زيارة طبيب الرعاية الأولية أو طبيب الأسرة.',
+          'حسنًا... يبدو أنك بحاجة لزيارة طبيب الرعاية الأولية أو طبيب الأسرة.',
       'es':
           'Hmm... Parece que necesitas ver a un médico de atención primaria o de familia.',
       'vi':
@@ -945,10 +945,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'ks62o9nc': {
       'en': 'Appointment Scheduling',
-      'ar': 'موعد الكتاب',
-      'es': 'Reservar una cita',
-      'vi': 'Đặt lịch hẹn',
-      'zh_Hant': '預約',
+      'ar': 'جدولة المواعيد',
+      'es': 'Programación de citas',
+      'vi': 'Lên lịch hẹn',
+      'zh_Hant': '預約安排',
     },
     '35cadnte': {
       'en': 'Close',
@@ -977,13 +977,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // WelcomeScreen
   {
-    '633ebtwg': {
-      'en': 'ATTN: This is a test enviornment/design.',
-      'ar': '',
-      'es': '',
-      'vi': '',
-      'zh_Hant': '',
-    },
     'tlkuyq20': {
       'en': 'YouTopia',
       'ar': 'YouTopia',
@@ -1088,10 +1081,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '4zfve8ix': {
       'en': 'Birthdate',
-      'ar': 'عيد ميلاد',
-      'es': 'Cumpleaños',
-      'vi': 'Sinh nhật',
-      'zh_Hant': '生日',
+      'ar': 'تاريخ الميلاد',
+      'es': 'Fecha de nacimiento',
+      'vi': 'Ngày sinh',
+      'zh_Hant': '出生日期',
     },
     'w9wdzjcm': {
       'en': 'Room or Apt/Cluster #',
@@ -1272,7 +1265,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Take 2 pills with food.',
       'ar': 'تناول حبتين مع الطعام.',
       'es': 'Tome 2 pastillas con la comida.',
-      'vi': 'Uống 2 viên cùng với thức ăn.',
+      'vi': 'Uống 2 viên với thức ăn.',
       'zh_Hant': '隨餐服用 2 粒。',
     },
     'tl41fz70': {
@@ -1548,7 +1541,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es':
           'verifique para asegurarse de tener niveles adecuados de calcio en la sangre para estar saludable. Si tiene niveles altos o bajos de calcio en la sangre, puede indicar que tiene ciertas condiciones médicas.',
       'vi':
-          'kiểm tra để đảm bảo bạn có lượng canxi thích hợp trong máu để khỏe mạnh. Nếu bạn có lượng canxi trong máu cao hoặc thấp, điều đó có thể cho thấy bạn đang mắc một số bệnh lý nhất định.',
+          'kiểm tra để đảm bảo bạn có lượng canxi thích hợp trong máu để được khỏe mạnh. Nếu bạn có lượng canxi trong máu cao hoặc thấp, điều đó có thể cho thấy bạn đang mắc một số bệnh lý nhất định.',
       'zh_Hant': '檢查以確保您的血液中鈣含量適當，以保持健康。如果您的血液中鈣含量過高或過低，則可能表示您患有某些疾病。',
     },
     'lxh7azp3': {
@@ -1760,7 +1753,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Allergies',
       'ar': 'الحساسية',
       'es': 'Alergias',
-      'vi': 'Dị ứng',
+      'vi': 'dị ứng',
       'zh_Hant': '過敏',
     },
     'kvz32bia': {
@@ -2124,7 +2117,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Allergies',
       'ar': 'الحساسية',
       'es': 'Alergias',
-      'vi': 'Dị ứng',
+      'vi': 'dị ứng',
       'zh_Hant': '過敏',
     },
     '3lvareeg': {
@@ -2233,11 +2226,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '注意確定要去哪裡嗎？點擊每個房間以了解有關其詳細資訊的更多資訊。',
     },
     'zwref1fo': {
-      'en': 'Front Desk Receptionist',
-      'ar': 'الجبهة استقبال مكتب',
-      'es': 'Recepcionista de entrada',
-      'vi': 'Nhân viên lễ tân',
-      'zh_Hant': '前台接待員',
+      'en': 'Scheduling Receptionist',
+      'ar': 'موظف استقبال جدولة',
+      'es': 'Recepcionista de programación',
+      'vi': 'Sắp xếp lịch lễ tân',
+      'zh_Hant': '調度接待員',
     },
     'qcd5ryaw': {
       'en':
@@ -2252,11 +2245,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           '允許您安排新的約會。您還可以查看預約詳細信息，例如已安排、已完成和已取消/未出現的約會。對於已完成的預約，您可以查看您的就診後摘要 (AVS)，其中詳細介紹了就診資訊。',
     },
     't609a8a0': {
-      'en': 'Exam Room',
-      'ar': 'غرفة الامتحان',
-      'es': 'Cuarto de examen',
-      'vi': 'Phòng thi',
-      'zh_Hant': '考場',
+      'en': 'Provider/Patient Room',
+      'ar': 'غرفة مقدم الخدمة/المريض',
+      'es': 'Habitación de proveedor/paciente',
+      'vi': 'Phòng Nhà cung cấp/Bệnh nhân',
+      'zh_Hant': '提供者/患者室',
     },
     'qim0kdrl': {
       'en':
@@ -2284,13 +2277,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es':
           'Le permite enviar solicitudes de reabastecimiento de recetas. También puede realizar un seguimiento de los medicamentos mediante un registro diario del calendario y revisar los medicamentos que esté tomando actualmente.',
       'vi':
-          'Cho phép bạn gửi yêu cầu nạp thuốc theo toa. Bạn cũng có thể theo dõi thuốc bằng lịch ghi nhật ký hàng ngày và xem lại bất kỳ loại thuốc nào bạn đang dùng.',
+          'Cho phép bạn gửi yêu cầu nạp thuốc theo toa. Bạn cũng có thể theo dõi thuốc bằng lịch ghi hàng ngày và xem lại bất kỳ loại thuốc nào bạn đang dùng.',
       'zh_Hant': '允許您提交處方補充請求。您也可以使用日曆每日日誌追蹤藥物治療並查看您目前正在服用的任何藥物。',
     },
     'hgixdibl': {
-      'en': 'Laboratory',
-      'ar': 'معمل',
-      'es': 'Laboratorio',
+      'en': 'Labs',
+      'ar': 'مختبرات',
+      'es': 'laboratorios',
       'vi': 'Phòng thí nghiệm',
       'zh_Hant': '實驗室',
     },
@@ -2325,11 +2318,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '允許您要求並將您存檔的醫療記錄副本發送給外部醫生或醫療機構。您也可以為自己索取醫療記錄副本。',
     },
     'p9qapwyd': {
-      'en': 'Billing Office',
-      'ar': 'مكتب الفواتير',
-      'es': 'Oficina de Facturación',
-      'vi': 'Văn phòng thanh toán',
-      'zh_Hant': '計費辦公室',
+      'en': 'Billing',
+      'ar': 'الفواتير',
+      'es': 'Facturación',
+      'vi': 'Thanh toán',
+      'zh_Hant': '計費',
     },
     '0fflyq1f': {
       'en':
@@ -2340,25 +2333,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Le permite revisar estimaciones de facturación para las próximas citas programadas. También puede pagar los cargos de facturación pendientes publicados en su cuenta de garante.',
       'vi':
           'Cho phép bạn xem lại ước tính thanh toán cho các cuộc hẹn đã lên lịch sắp tới. Bạn cũng có thể thanh toán mọi khoản phí hóa đơn chưa thanh toán được đăng vào tài khoản người bảo lãnh của mình.',
-      'zh_Hant': '允許您查看即將到來的預定約會的帳單估算。您也可以支付任何記入您的保證人帳戶的未結帳費用。',
-    },
-    'ua9yezzd': {
-      'en': 'Social Lounge',
-      'ar': 'الصالة الاجتماعية',
-      'es': 'salón social',
-      'vi': 'Phòng giao lưu',
-      'zh_Hant': '社交休息室',
-    },
-    'a03nm9k4': {
-      'en':
-          'Want to unwind and have some virtual fun? The Social Lounge allows you to view a variety of social activities such as gardening, arts and crafts, gardening, and exercise activities.',
-      'ar':
-          'هل تريد الاسترخاء والحصول على بعض المتعة الافتراضية؟ تسمح لك الصالة الاجتماعية بمشاهدة مجموعة متنوعة من الأنشطة الاجتماعية مثل البستنة والفنون والحرف اليدوية والبستنة وأنشطة التمارين الرياضية.',
-      'es':
-          '¿Quieres relajarte y divertirte virtualmente? El Salón Social le permite ver una variedad de actividades sociales como jardinería, artes y manualidades, jardinería y actividades de ejercicio.',
-      'vi':
-          'Bạn muốn thư giãn và tận hưởng niềm vui ảo? Social Lounge cho phép bạn xem nhiều hoạt động xã hội khác nhau như làm vườn, nghệ thuật và thủ công, làm vườn và các hoạt động tập thể dục.',
-      'zh_Hant': '想要放鬆並享受一些虛擬的樂趣嗎？社交休息室可讓您觀賞各種社交活動，例如園藝、藝術和手工藝、園藝和健身活動。',
+      'zh_Hant': '允許您查看即將到來的預定約會的帳單估算。您也可以支付任何記入您的保證人帳戶的未結帳單費用。',
     },
     'uir806hk': {
       'en': 'News',
@@ -2538,7 +2513,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Su receta de acetaminofén (Tylenol) 325 mg está lista para recoger en Broadmead.',
       'vi':
           'Đơn thuốc Acetaminophen (Tylenol) 325mg của bạn đã sẵn sàng để nhận tại Broadmead.',
-      'zh_Hant': '您的對乙醯氨基酚（泰諾） 325 毫克處方已準備好在 Broadmead 領取。',
+      'zh_Hant': '您的對乙醯氨基酚（泰諾）325 毫克處方已準備好在 Broadmead 領取。',
     },
     'jgh1xup6': {
       'en': '1 day ago',
@@ -2807,7 +2782,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ar': 'ليس لديك حاليًا رصيد مستحق.',
       'es': 'Actualmente no tienes un saldo pendiente.',
       'vi': 'Hiện tại bạn không có số dư chưa thanh toán.',
-      'zh_Hant': '您目前沒有未結餘額。',
+      'zh_Hant': '您目前沒有未清餘額。',
     },
     '84mv8n4h': {
       'en': 'Home',
@@ -2849,7 +2824,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'el 10/05/2023.\n¿Le gustaría programar una visita de seguimiento o un mensaje?\n¿tu proveedor?',
       'vi':
           'vào ngày 10/5/2023.\nBạn có muốn lên lịch thăm khám hoặc nhắn tin tiếp theo không\nnhà cung cấp của bạn?',
-      'zh_Hant': '2023 年 5 月 10 日。\n您想安排後續造訪或留言嗎\n您的提供者？',
+      'zh_Hant': '於 2023 年 5 月 10 日。\n您想安排後續造訪或留言嗎\n您的提供者？',
     },
     'jaryzf7h': {
       'en': 'Schedule',
@@ -3286,7 +3261,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'existing appointments details?',
       'ar': 'تفاصيل المواعيد الحالية؟',
       'es': '¿Detalles de las citas existentes?',
-      'vi': 'chi tiết cuộc hẹn hiện có?',
+      'vi': 'chi tiết cuộc hẹn hiện tại?',
       'zh_Hant': '現有預約詳細資料？',
     },
     '7ct0efdd': {
@@ -3857,10 +3832,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '4ej12tsc': {
       'en': 'leave a messge ',
-      'ar': 'يتحدث',
-      'es': 'hablar',
-      'vi': 'nói chuyện',
-      'zh_Hant': '演講',
+      'ar': 'ترك رسالة',
+      'es': 'dejar un mensaje',
+      'vi': 'để lại tin nhắn',
+      'zh_Hant': '留言',
     },
     'ajmv6zg1': {
       'en': 'with a provider on your care team or ',
@@ -3885,10 +3860,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'icbvmx2j': {
       'en': 'Leave Message',
-      'ar': 'تحدث إلى الموفر',
-      'es': 'Habla con el proveedor',
-      'vi': 'Nói chuyện với nhà cung cấp',
-      'zh_Hant': '與提供者交談',
+      'ar': 'اترك رسالة',
+      'es': 'Deja un mensaje',
+      'vi': 'Để lại tin nhắn',
+      'zh_Hant': '請留言',
     },
     '06w40ouo': {
       'en': 'Join Appointment',
@@ -4395,7 +4370,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'h2lfn7uo': {
       'en': '. To confirm  this date and time, click ',
       'ar': '. لتأكيد هذا التاريخ والوقت، انقر فوق',
-      'es': '. Para confirmar esta fecha y hora, haga clic',
+      'es': '. Para confirmar esta fecha y hora, haga clic en',
       'vi': '. Để xác nhận ngày và giờ này, hãy nhấp vào',
       'zh_Hant': '。若要確認此日期和時間，請按一下',
     },
@@ -4534,7 +4509,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '8pv4aj39': {
       'en': '. To confirm  this date and time, click ',
       'ar': '. لتأكيد هذا التاريخ والوقت، انقر فوق',
-      'es': '. Para confirmar esta fecha y hora, haga clic en',
+      'es': '. Para confirmar esta fecha y hora, haga clic',
       'vi': '. Để xác nhận ngày và giờ này, hãy nhấp vào',
       'zh_Hant': '。若要確認此日期和時間，請按一下',
     },

@@ -210,15 +210,15 @@ class _BillWidgetState extends State<BillWidget> {
               Padding(
                 padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                 child: FlutterFlowPdfViewer(
-                  assetPath: 'assets/pdfs/Bill.pdf',
+                  assetPath: 'assets/pdfs/Bill_(1).pdf',
                   width: double.infinity,
-                  height: MediaQuery.sizeOf(context).height * 0.622,
+                  height: MediaQuery.sizeOf(context).height * 0.591,
                   horizontalScroll: false,
                 ),
               ),
             if (_model.choiceChipsValue == 'Billing Statements')
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 5.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 5.0),
                 child: FlutterFlowRadioButton(
                   options: [
                     FFLocalizations.of(context).getText(
@@ -253,17 +253,20 @@ class _BillWidgetState extends State<BillWidget> {
               ),
             if ((_model.radioButtonValue == 'Pay Now') &&
                 (_model.choiceChipsValue == 'Billing Statements'))
-              Text(
-                FFLocalizations.of(context).getText(
-                  '8b77zz8q' /* Please do not enter your actua... */,
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 20.0, 5.0, 0.0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    '8b77zz8q' /* Please do not enter your actua... */,
+                  ),
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Noto Serif',
+                        color: const Color(0xFFD60D19),
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
                 ),
-                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Noto Serif',
-                      color: const Color(0xFFD60D19),
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-                    ),
               ),
             if ((_model.radioButtonValue == 'Pay Now') &&
                 (_model.choiceChipsValue == 'Billing Statements'))

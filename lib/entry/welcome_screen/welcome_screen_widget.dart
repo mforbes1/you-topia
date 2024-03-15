@@ -206,22 +206,6 @@ class _WelcomeScreenWidgetState extends State<WelcomeScreenWidget>
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        '633ebtwg' /* ATTN: This is a test enviornme... */,
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Noto Sans JP',
-                            color: const Color(0xFFE6B837),
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.w600,
-                            decoration: TextDecoration.underline,
-                          ),
-                    ),
-                  ),
                   Align(
                     alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Container(

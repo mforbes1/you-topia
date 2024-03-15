@@ -1,6 +1,8 @@
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:percent_indicator/percent_indicator.dart';
 import 'med_tracker_model.dart';
 export 'med_tracker_model.dart';
@@ -12,8 +14,25 @@ class MedTrackerWidget extends StatefulWidget {
   State<MedTrackerWidget> createState() => _MedTrackerWidgetState();
 }
 
-class _MedTrackerWidgetState extends State<MedTrackerWidget> {
+class _MedTrackerWidgetState extends State<MedTrackerWidget>
+    with TickerProviderStateMixin {
   late MedTrackerModel _model;
+
+  final animationsMap = {
+    'columnOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        ShakeEffect(
+          curve: Curves.easeInOut,
+          delay: 10.ms,
+          duration: 1000.ms,
+          hz: 10,
+          offset: const Offset(0.0, 0.0),
+          rotation: 0.087,
+        ),
+      ],
+    ),
+  };
 
   @override
   void setState(VoidCallback callback) {
@@ -40,7 +59,7 @@ class _MedTrackerWidgetState extends State<MedTrackerWidget> {
       padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
       child: Container(
         width: 950.0,
-        height: 300.0,
+        height: 400.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           boxShadow: const [
@@ -129,7 +148,8 @@ class _MedTrackerWidgetState extends State<MedTrackerWidget> {
                                 ),
                           ),
                         ],
-                      ),
+                      ).animateOnPageLoad(
+                          animationsMap['columnOnPageLoadAnimation']!),
                     ),
                     Expanded(
                       child: Column(

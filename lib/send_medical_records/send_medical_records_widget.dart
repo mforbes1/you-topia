@@ -1036,40 +1036,6 @@ class _SendMedicalRecordsWidgetState extends State<SendMedicalRecordsWidget> {
                                     initialDate: getCurrentTimestamp,
                                     firstDate: DateTime(1900),
                                     lastDate: getCurrentTimestamp,
-                                    builder: (context, child) {
-                                      return wrapInMaterialDatePickerTheme(
-                                        context,
-                                        child!,
-                                        headerBackgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        headerForegroundColor:
-                                            FlutterFlowTheme.of(context).info,
-                                        headerTextStyle:
-                                            FlutterFlowTheme.of(context)
-                                                .headlineLarge
-                                                .override(
-                                                  fontFamily: 'Noto Serif',
-                                                  fontSize: 32.0,
-                                                  fontWeight: FontWeight.w600,
-                                                ),
-                                        pickerBackgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                        pickerForegroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                        selectedDateTimeBackgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        selectedDateTimeForegroundColor:
-                                            FlutterFlowTheme.of(context).info,
-                                        actionButtonForegroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                        iconSize: 24.0,
-                                      );
-                                    },
                                   );
 
                                   if (datePicked1Date != null) {
@@ -1126,40 +1092,6 @@ class _SendMedicalRecordsWidgetState extends State<SendMedicalRecordsWidget> {
                                     initialDate: getCurrentTimestamp,
                                     firstDate: DateTime(1900),
                                     lastDate: getCurrentTimestamp,
-                                    builder: (context, child) {
-                                      return wrapInMaterialDatePickerTheme(
-                                        context,
-                                        child!,
-                                        headerBackgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        headerForegroundColor:
-                                            FlutterFlowTheme.of(context).info,
-                                        headerTextStyle:
-                                            FlutterFlowTheme.of(context)
-                                                .headlineLarge
-                                                .override(
-                                                  fontFamily: 'Noto Serif',
-                                                  fontSize: 32.0,
-                                                  fontWeight: FontWeight.w600,
-                                                ),
-                                        pickerBackgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                        pickerForegroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                        selectedDateTimeBackgroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primary,
-                                        selectedDateTimeForegroundColor:
-                                            FlutterFlowTheme.of(context).info,
-                                        actionButtonForegroundColor:
-                                            FlutterFlowTheme.of(context)
-                                                .primaryText,
-                                        iconSize: 24.0,
-                                      );
-                                    },
                                   );
 
                                   if (datePicked2Date != null) {

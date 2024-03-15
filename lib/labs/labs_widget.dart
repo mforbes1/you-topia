@@ -139,525 +139,119 @@ class _LabsWidgetState extends State<LabsWidget> {
         ),
         body: SafeArea(
           top: true,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Expanded(
-                    child: Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
-                        child: FlutterFlowChoiceChips(
-                          options: [
-                            ChipData(FFLocalizations.of(context).getText(
-                              'zgxuk2lv' /* Pending Labs */,
-                            )),
-                            ChipData(FFLocalizations.of(context).getText(
-                              'jyrofe0i' /* In  Review */,
-                            )),
-                            ChipData(FFLocalizations.of(context).getText(
-                              'vluflney' /* Completed Labs */,
-                            ))
-                          ],
-                          onChanged: (val) => setState(
-                              () => _model.choiceChipsValue = val?.firstOrNull),
-                          selectedChipStyle: ChipStyle(
-                            backgroundColor:
-                                FlutterFlowTheme.of(context).primary,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color: FlutterFlowTheme.of(context).info,
-                                ),
-                            iconColor: FlutterFlowTheme.of(context).info,
-                            iconSize: 18.0,
-                            elevation: 2.0,
-                            borderColor: FlutterFlowTheme.of(context).tertiary,
-                            borderWidth: 1.0,
-                            borderRadius: BorderRadius.circular(16.0),
-                          ),
-                          unselectedChipStyle: ChipStyle(
-                            backgroundColor:
-                                FlutterFlowTheme.of(context).alternate,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Readex Pro',
-                                  color: FlutterFlowTheme.of(context)
-                                      .secondaryText,
-                                ),
-                            iconColor:
-                                FlutterFlowTheme.of(context).secondaryText,
-                            iconSize: 18.0,
-                            elevation: 0.0,
-                            borderColor:
-                                FlutterFlowTheme.of(context).primaryBackground,
-                            borderWidth: 1.0,
-                            borderRadius: BorderRadius.circular(16.0),
-                          ),
-                          chipSpacing: 8.0,
-                          rowSpacing: 12.0,
-                          multiselect: false,
-                          initialized: _model.choiceChipsValue != null,
-                          alignment: WrapAlignment.start,
-                          controller: _model.choiceChipsValueController ??=
-                              FormFieldController<List<String>>(
-                            [
-                              FFLocalizations.of(context).getText(
-                                '93w75m7l' /* Completed Labs */,
-                              )
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: Align(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              0.0, 8.0, 0.0, 8.0),
+                          child: FlutterFlowChoiceChips(
+                            options: [
+                              ChipData(FFLocalizations.of(context).getText(
+                                'zgxuk2lv' /* Pending Labs */,
+                              )),
+                              ChipData(FFLocalizations.of(context).getText(
+                                'jyrofe0i' /* In  Review */,
+                              )),
+                              ChipData(FFLocalizations.of(context).getText(
+                                'vluflney' /* Completed Labs */,
+                              ))
                             ],
-                          ),
-                          wrapped: true,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Flexible(
-                    child: Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Text(
-                        FFLocalizations.of(context).getText(
-                          'dez8kekd' /* Tap each lab name for more det... */,
-                        ),
-                        style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Noto Serif',
-                              fontSize: 25.0,
-                            ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Divider(
-                thickness: 1.0,
-                color: FlutterFlowTheme.of(context).accent4,
-              ),
-              if (_model.choiceChipsValue == 'Completed Labs')
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                      child: FlipCard(
-                        fill: Fill.fillBack,
-                        direction: FlipDirection.HORIZONTAL,
-                        speed: 400,
-                        front: Container(
-                          width: 300.0,
-                          height: 300.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: Image.asset(
-                                'assets/images/Blood_Glucose.png',
-                              ).image,
-                            ),
-                            borderRadius: const BorderRadius.only(
-                              bottomLeft: Radius.circular(12.0),
-                              bottomRight: Radius.circular(12.0),
-                              topLeft: Radius.circular(12.0),
-                              topRight: Radius.circular(12.0),
-                            ),
-                          ),
-                          child: Align(
-                            alignment: const AlignmentDirectional(0.0, 1.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '2y7fr6jw' /* Blood Glucose */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
+                            onChanged: (val) => setState(() =>
+                                _model.choiceChipsValue = val?.firstOrNull),
+                            selectedChipStyle: ChipStyle(
+                              backgroundColor:
+                                  FlutterFlowTheme.of(context).primary,
+                              textStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Noto Serif',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
+                                    fontFamily: 'Readex Pro',
+                                    color: FlutterFlowTheme.of(context).info,
                                   ),
+                              iconColor: FlutterFlowTheme.of(context).info,
+                              iconSize: 18.0,
+                              elevation: 2.0,
+                              borderColor:
+                                  FlutterFlowTheme.of(context).tertiary,
+                              borderWidth: 1.0,
+                              borderRadius: BorderRadius.circular(16.0),
                             ),
-                          ),
-                        ),
-                        back: Container(
-                          width: 300.0,
-                          height: 300.0,
-                          decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(12.0),
-                              bottomRight: Radius.circular(12.0),
-                              topLeft: Radius.circular(12.0),
-                              topRight: Radius.circular(12.0),
-                            ),
-                          ),
-                          child: RichText(
-                            textScaler: MediaQuery.of(context).textScaler,
-                            text: TextSpan(
-                              children: [
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    '4171tfl3' /* Your doctor requested you take... */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'n1hc7gwm' /* A1C:  */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'kv52wr10' /* measures your average blood su... */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'xcplgvla' /* 
-
-Your results are within the ... */
-                                    ,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: const Color(0xFF1CAC43),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                )
-                              ],
-                              style: FlutterFlowTheme.of(context).bodyMedium,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                      child: FlipCard(
-                        fill: Fill.fillBack,
-                        direction: FlipDirection.HORIZONTAL,
-                        speed: 400,
-                        front: Container(
-                          width: 300.0,
-                          height: 300.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: Image.asset(
-                                'assets/images/Lipids.png',
-                              ).image,
-                            ),
-                            borderRadius: const BorderRadius.only(
-                              bottomLeft: Radius.circular(12.0),
-                              bottomRight: Radius.circular(12.0),
-                              topLeft: Radius.circular(12.0),
-                              topRight: Radius.circular(12.0),
-                            ),
-                          ),
-                          child: Align(
-                            alignment: const AlignmentDirectional(0.0, 1.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'dq3gez24' /* Lipid Panel */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
+                            unselectedChipStyle: ChipStyle(
+                              backgroundColor:
+                                  FlutterFlowTheme.of(context).alternate,
+                              textStyle: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Noto Serif',
+                                    fontFamily: 'Readex Pro',
                                     color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
+                                        .secondaryText,
                                   ),
+                              iconColor:
+                                  FlutterFlowTheme.of(context).secondaryText,
+                              iconSize: 18.0,
+                              elevation: 0.0,
+                              borderColor: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
+                              borderWidth: 1.0,
+                              borderRadius: BorderRadius.circular(16.0),
                             ),
-                          ),
-                        ),
-                        back: Container(
-                          width: 300.0,
-                          height: 300.0,
-                          decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(12.0),
-                              bottomRight: Radius.circular(12.0),
-                              topLeft: Radius.circular(12.0),
-                              topRight: Radius.circular(12.0),
-                            ),
-                          ),
-                          child: RichText(
-                            textScaler: MediaQuery.of(context).textScaler,
-                            text: TextSpan(
-                              children: [
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'tcsl8pcg' /* Your doctor requested you take... */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'i7lavma9' /* Total cholesterol:  */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'nsa9ppng' /* measures the amount of cholest... */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'wbb4hvey' /* 
-
-Your results are borderline ... */
-                                    ,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: const Color(0xFFF4C238),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                    fontStyle: FontStyle.normal,
-                                  ),
+                            chipSpacing: 8.0,
+                            rowSpacing: 12.0,
+                            multiselect: false,
+                            initialized: _model.choiceChipsValue != null,
+                            alignment: WrapAlignment.start,
+                            controller: _model.choiceChipsValueController ??=
+                                FormFieldController<List<String>>(
+                              [
+                                FFLocalizations.of(context).getText(
+                                  '93w75m7l' /* Completed Labs */,
                                 )
                               ],
-                              style: FlutterFlowTheme.of(context).bodyMedium,
                             ),
+                            wrapped: true,
                           ),
                         ),
                       ),
                     ),
                   ],
                 ),
-              if (_model.choiceChipsValue == 'Completed Labs')
                 Row(
                   mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                      child: FlipCard(
-                        fill: Fill.fillBack,
-                        direction: FlipDirection.HORIZONTAL,
-                        speed: 400,
-                        front: Container(
-                          width: 300.0,
-                          height: 300.0,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              fit: BoxFit.cover,
-                              image: Image.asset(
-                                'assets/images/CBC.png',
-                              ).image,
-                            ),
-                            borderRadius: const BorderRadius.only(
-                              bottomLeft: Radius.circular(12.0),
-                              bottomRight: Radius.circular(12.0),
-                              topLeft: Radius.circular(12.0),
-                              topRight: Radius.circular(12.0),
-                            ),
+                    Flexible(
+                      child: Align(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'dez8kekd' /* Tap each lab name for more det... */,
                           ),
-                          child: Align(
-                            alignment: const AlignmentDirectional(0.0, 1.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'twf8pavr' /* Complete Blood Count (CBC) */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Noto Serif',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    fontSize: 20.0,
-                                    fontWeight: FontWeight.w600,
+                                    fontSize: 25.0,
                                   ),
-                            ),
-                          ),
-                        ),
-                        back: Container(
-                          width: 300.0,
-                          height: 520.0,
-                          decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              bottomLeft: Radius.circular(12.0),
-                              bottomRight: Radius.circular(12.0),
-                              topLeft: Radius.circular(12.0),
-                              topRight: Radius.circular(12.0),
-                            ),
-                          ),
-                          child: RichText(
-                            textScaler: MediaQuery.of(context).textScaler,
-                            text: TextSpan(
-                              children: [
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    's2x258o4' /* Your doctor requested you take... */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'ouwlbdnt' /* CBC:  */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: FlutterFlowTheme.of(context).primary,
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'p71l5ybt' /* mesaures overall health and fi... */,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    fontSize: 16.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'gm00pgdj' /* 
-
-Your results are following:  */
-                                    ,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    fontWeight: FontWeight.normal,
-                                    fontSize: 16.0,
-                                    fontStyle: FontStyle.normal,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'tzaqr6t3' /* 
-Red blood cell count: Normal ... */
-                                    ,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: const Color(0xFF1CAC43),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    '5xyvlwdy' /* 
-Hemoglobin: Normal range 12.3... */
-                                    ,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: const Color(0xFF1CAC43),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'gg1hpklg' /* 
-Hematocrit: Low range 25%
- */
-                                    ,
-                                  ),
-                                  style: const TextStyle(
-                                    color: Color(0xFFDC333D),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    'x0ej18w8' /* 
-White blood cell count: Low r... */
-                                    ,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: const Color(0xFFDC333D),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                ),
-                                TextSpan(
-                                  text: FFLocalizations.of(context).getText(
-                                    '5hdjx3vp' /* 
-Platelet count: Borderline 41... */
-                                    ,
-                                  ),
-                                  style: GoogleFonts.getFont(
-                                    'Noto Serif',
-                                    color: const Color(0xFFF4C238),
-                                    fontWeight: FontWeight.w600,
-                                    fontSize: 18.0,
-                                  ),
-                                )
-                              ],
-                              style: FlutterFlowTheme.of(context).bodyMedium,
-                            ),
-                          ),
                         ),
                       ),
                     ),
                   ],
                 ),
-              Divider(
-                thickness: 1.0,
-                color: FlutterFlowTheme.of(context).accent4,
-              ),
-              if (_model.choiceChipsValue == 'Completed Labs')
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
+                Divider(
+                  thickness: 1.0,
+                  color: FlutterFlowTheme.of(context).accent4,
+                ),
+                if (_model.choiceChipsValue == 'Completed Labs')
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Padding(
                         padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 10.0, 0.0),
                         child: FlipCard(
@@ -671,7 +265,7 @@ Platelet count: Borderline 41... */
                               image: DecorationImage(
                                 fit: BoxFit.cover,
                                 image: Image.asset(
-                                  'assets/images/Calcium.png',
+                                  'assets/images/Blood_Glucose.png',
                                 ).image,
                               ),
                               borderRadius: const BorderRadius.only(
@@ -685,7 +279,7 @@ Platelet count: Borderline 41... */
                               alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  '2bo6ftzt' /* Calcium */,
+                                  '2y7fr6jw' /* Blood Glucose */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -701,7 +295,7 @@ Platelet count: Borderline 41... */
                           ),
                           back: Container(
                             width: 300.0,
-                            height: 320.0,
+                            height: 300.0,
                             decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(12.0),
@@ -716,7 +310,7 @@ Platelet count: Borderline 41... */
                                 children: [
                                   TextSpan(
                                     text: FFLocalizations.of(context).getText(
-                                      'op7mbj8l' /* Your doctor requested you take... */,
+                                      '4171tfl3' /* Your doctor requested you take... */,
                                     ),
                                     style: GoogleFonts.getFont(
                                       'Noto Serif',
@@ -725,7 +319,7 @@ Platelet count: Borderline 41... */
                                   ),
                                   TextSpan(
                                     text: FFLocalizations.of(context).getText(
-                                      'hchru7ib' /* Total calcium:  */,
+                                      'n1hc7gwm' /* A1C:  */,
                                     ),
                                     style: GoogleFonts.getFont(
                                       'Noto Serif',
@@ -737,7 +331,7 @@ Platelet count: Borderline 41... */
                                   ),
                                   TextSpan(
                                     text: FFLocalizations.of(context).getText(
-                                      'z3hgomb7' /* check to make sure you have ap... */,
+                                      'kv52wr10' /* measures your average blood su... */,
                                     ),
                                     style: GoogleFonts.getFont(
                                       'Noto Serif',
@@ -746,7 +340,7 @@ Platelet count: Borderline 41... */
                                   ),
                                   TextSpan(
                                     text: FFLocalizations.of(context).getText(
-                                      'lxh7azp3' /* 
+                                      'xcplgvla' /* 
 
 Your results are within the ... */
                                       ,
@@ -765,26 +359,139 @@ Your results are within the ... */
                           ),
                         ),
                       ),
-                    ),
-                    Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
+                      Padding(
                         padding: const EdgeInsetsDirectional.fromSTEB(
                             10.0, 0.0, 10.0, 0.0),
                         child: FlipCard(
                           fill: Fill.fillBack,
                           direction: FlipDirection.HORIZONTAL,
                           speed: 400,
-                          front: Align(
-                            alignment: const AlignmentDirectional(0.0, 0.0),
-                            child: Container(
+                          front: Container(
+                            width: 300.0,
+                            height: 300.0,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: Image.asset(
+                                  'assets/images/Lipids.png',
+                                ).image,
+                              ),
+                              borderRadius: const BorderRadius.only(
+                                bottomLeft: Radius.circular(12.0),
+                                bottomRight: Radius.circular(12.0),
+                                topLeft: Radius.circular(12.0),
+                                topRight: Radius.circular(12.0),
+                              ),
+                            ),
+                            child: Align(
+                              alignment: const AlignmentDirectional(0.0, 1.0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  'dq3gez24' /* Lipid Panel */,
+                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Noto Serif',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      fontSize: 20.0,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                              ),
+                            ),
+                          ),
+                          back: Container(
+                            width: 300.0,
+                            height: 300.0,
+                            decoration: const BoxDecoration(
+                              borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(12.0),
+                                bottomRight: Radius.circular(12.0),
+                                topLeft: Radius.circular(12.0),
+                                topRight: Radius.circular(12.0),
+                              ),
+                            ),
+                            child: RichText(
+                              textScaler: MediaQuery.of(context).textScaler,
+                              text: TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: FFLocalizations.of(context).getText(
+                                      'tcsl8pcg' /* Your doctor requested you take... */,
+                                    ),
+                                    style: GoogleFonts.getFont(
+                                      'Noto Serif',
+                                      fontSize: 16.0,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: FFLocalizations.of(context).getText(
+                                      'i7lavma9' /* Total cholesterol:  */,
+                                    ),
+                                    style: GoogleFonts.getFont(
+                                      'Noto Serif',
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 18.0,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: FFLocalizations.of(context).getText(
+                                      'nsa9ppng' /* measures the amount of cholest... */,
+                                    ),
+                                    style: GoogleFonts.getFont(
+                                      'Noto Serif',
+                                      fontSize: 16.0,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: FFLocalizations.of(context).getText(
+                                      'wbb4hvey' /* 
+
+Your results are borderline ... */
+                                      ,
+                                    ),
+                                    style: GoogleFonts.getFont(
+                                      'Noto Serif',
+                                      color: const Color(0xFFF4C238),
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 18.0,
+                                      fontStyle: FontStyle.normal,
+                                    ),
+                                  )
+                                ],
+                                style: FlutterFlowTheme.of(context).bodyMedium,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                if (_model.choiceChipsValue == 'Completed Labs')
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Flexible(
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 10.0, 0.0),
+                          child: FlipCard(
+                            fill: Fill.fillBack,
+                            direction: FlipDirection.HORIZONTAL,
+                            speed: 400,
+                            front: Container(
                               width: 300.0,
-                              height: 300.0,
+                              height: 267.0,
                               decoration: BoxDecoration(
                                 image: DecorationImage(
                                   fit: BoxFit.cover,
+                                  alignment: const AlignmentDirectional(0.0, 1.0),
                                   image: Image.asset(
-                                    'assets/images/Urinalysis.png',
+                                    'assets/images/CBC.png',
                                   ).image,
                                 ),
                                 borderRadius: const BorderRadius.only(
@@ -794,12 +501,12 @@ Your results are within the ... */
                                   topRight: Radius.circular(12.0),
                                 ),
                               ),
-                              alignment: const AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: Align(
                                 alignment: const AlignmentDirectional(0.0, 1.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    '4ogfxgnb' /* Urinalysis */,
+                                    'twf8pavr' /* Complete Blood Count (CBC) */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
@@ -813,339 +520,649 @@ Your results are within the ... */
                                 ),
                               ),
                             ),
-                          ),
-                          back: Container(
-                            width: 300.0,
-                            height: 300.0,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(12.0),
-                                bottomRight: Radius.circular(12.0),
-                                topLeft: Radius.circular(12.0),
-                                topRight: Radius.circular(12.0),
+                            back: Container(
+                              width: 300.0,
+                              height: 520.0,
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(12.0),
+                                  bottomRight: Radius.circular(12.0),
+                                  topLeft: Radius.circular(12.0),
+                                  topRight: Radius.circular(12.0),
+                                ),
+                              ),
+                              child: RichText(
+                                textScaler: MediaQuery.of(context).textScaler,
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        's2x258o4' /* Your doctor requested you take... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'ouwlbdnt' /* CBC:  */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'p71l5ybt' /* mesaures overall health and fi... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'gm00pgdj' /* 
+
+Your results are following:  */
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontWeight: FontWeight.normal,
+                                        fontSize: 16.0,
+                                        fontStyle: FontStyle.normal,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'tzaqr6t3' /* 
+Red blood cell count: Normal ... */
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: const Color(0xFF1CAC43),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        '5xyvlwdy' /* 
+Hemoglobin: Normal range 12.3... */
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: const Color(0xFF1CAC43),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'gg1hpklg' /* 
+Hematocrit: Low range 25%
+ */
+                                        ,
+                                      ),
+                                      style: const TextStyle(
+                                        color: Color(0xFFDC333D),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'x0ej18w8' /* 
+White blood cell count: Low r... */
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: const Color(0xFFDC333D),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        '5hdjx3vp' /* 
+Platelet count: Borderline 41... */
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: const Color(0xFFF4C238),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    )
+                                  ],
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                ),
                               ),
                             ),
-                            child: RichText(
-                              textScaler: MediaQuery.of(context).textScaler,
-                              text: TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'j0xykspv' /* Your doctor requested you take... */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      fontSize: 16.0,
-                                    ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                Divider(
+                  thickness: 1.0,
+                  color: FlutterFlowTheme.of(context).accent4,
+                ),
+                if (_model.choiceChipsValue == 'Completed Labs')
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Align(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 10.0, 0.0),
+                          child: FlipCard(
+                            fill: Fill.fillBack,
+                            direction: FlipDirection.HORIZONTAL,
+                            speed: 400,
+                            front: Container(
+                              width: 300.0,
+                              height: 300.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: Image.asset(
+                                    'assets/images/Calcium.png',
+                                  ).image,
+                                ),
+                                borderRadius: const BorderRadius.only(
+                                  bottomLeft: Radius.circular(12.0),
+                                  bottomRight: Radius.circular(12.0),
+                                  topLeft: Radius.circular(12.0),
+                                  topRight: Radius.circular(12.0),
+                                ),
+                              ),
+                              child: Align(
+                                alignment: const AlignmentDirectional(0.0, 1.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    '2bo6ftzt' /* Calcium */,
                                   ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'v1byaelq' /* Urinalysis:  */,
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                ),
+                              ),
+                            ),
+                            back: Container(
+                              width: 300.0,
+                              height: 320.0,
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(12.0),
+                                  bottomRight: Radius.circular(12.0),
+                                  topLeft: Radius.circular(12.0),
+                                  topRight: Radius.circular(12.0),
+                                ),
+                              ),
+                              child: RichText(
+                                textScaler: MediaQuery.of(context).textScaler,
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'op7mbj8l' /* Your doctor requested you take... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
                                     ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18.0,
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'hchru7ib' /* Total calcium:  */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
                                     ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'h1o01v39' /* involves checking the appearan... */,
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'z3hgomb7' /* check to make sure you have ap... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
                                     ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      fontSize: 16.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'rqfoq4dd' /* 
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'lxh7azp3' /* 
 
 Your results are within the ... */
-                                      ,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color: const Color(0xFF1CAC43),
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18.0,
-                                    ),
-                                  )
-                                ],
-                                style: FlutterFlowTheme.of(context).bodyMedium,
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: const Color(0xFF1CAC43),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    )
+                                  ],
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                ),
                               ),
                             ),
                           ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  if (_model.choiceChipsValue == 'In  Review')
-                    Flexible(
-                      child: Align(
+                      Align(
                         alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            't8gwom86' /* You currently do not have any ... */,
-                          ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Noto Serif',
-                                    fontSize: 40.0,
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 10.0, 0.0),
+                          child: FlipCard(
+                            fill: Fill.fillBack,
+                            direction: FlipDirection.HORIZONTAL,
+                            speed: 400,
+                            front: Align(
+                              alignment: const AlignmentDirectional(0.0, 0.0),
+                              child: Container(
+                                width: 300.0,
+                                height: 300.0,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: Image.asset(
+                                      'assets/images/Urinalysis.png',
+                                    ).image,
                                   ),
+                                  borderRadius: const BorderRadius.only(
+                                    bottomLeft: Radius.circular(12.0),
+                                    bottomRight: Radius.circular(12.0),
+                                    topLeft: Radius.circular(12.0),
+                                    topRight: Radius.circular(12.0),
+                                  ),
+                                ),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
+                                child: Align(
+                                  alignment: const AlignmentDirectional(0.0, 1.0),
+                                  child: Text(
+                                    FFLocalizations.of(context).getText(
+                                      '4ogfxgnb' /* Urinalysis */,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Noto Serif',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          fontSize: 20.0,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                            back: Container(
+                              width: 300.0,
+                              height: 300.0,
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(12.0),
+                                  bottomRight: Radius.circular(12.0),
+                                  topLeft: Radius.circular(12.0),
+                                  topRight: Radius.circular(12.0),
+                                ),
+                              ),
+                              child: RichText(
+                                textScaler: MediaQuery.of(context).textScaler,
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'j0xykspv' /* Your doctor requested you take... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'v1byaelq' /* Urinalysis:  */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'h1o01v39' /* involves checking the appearan... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'rqfoq4dd' /* 
+
+Your results are within the ... */
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: const Color(0xFF1CAC43),
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    )
+                                  ],
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                ],
-              ),
-              if (_model.choiceChipsValue == 'In  Review')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/In_review.png',
-                    width: 700.0,
-                    height: 700.0,
-                    fit: BoxFit.cover,
+                    ],
                   ),
-                ),
-              if (_model.choiceChipsValue == 'Pending Labs')
                 Row(
                   mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 10.0, 0.0),
-                        child: FlipCard(
-                          fill: Fill.fillBack,
-                          direction: FlipDirection.HORIZONTAL,
-                          speed: 400,
-                          front: Container(
-                            width: 300.0,
-                            height: 300.0,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: Image.asset(
-                                  'assets/images/Tumor_Markers.png',
-                                ).image,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                bottomLeft: Radius.circular(12.0),
-                                bottomRight: Radius.circular(12.0),
-                                topLeft: Radius.circular(12.0),
-                                topRight: Radius.circular(12.0),
-                              ),
+                    if (_model.choiceChipsValue == 'In  Review')
+                      Flexible(
+                        child: Align(
+                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              't8gwom86' /* You currently do not have any ... */,
                             ),
-                            child: Align(
-                              alignment: const AlignmentDirectional(0.0, 1.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'isobhdui' /* CA 125 */,
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 40.0,
                                 ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                              ),
-                            ),
-                          ),
-                          back: Container(
-                            width: 300.0,
-                            height: 320.0,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(12.0),
-                                bottomRight: Radius.circular(12.0),
-                                topLeft: Radius.circular(12.0),
-                                topRight: Radius.circular(12.0),
-                              ),
-                            ),
-                            child: RichText(
-                              textScaler: MediaQuery.of(context).textScaler,
-                              text: TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'vlidiupb' /* Your doctor requested you take... */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      fontSize: 16.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'nuetkxfo' /* CA 125:  */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      '3mzv3w5c' /* CA 125 is mainly used to monit... */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      fontSize: 16.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'wubjcwv8' /* 
-
-Your results are pending. */
-                                      ,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18.0,
-                                    ),
-                                  )
-                                ],
-                                style: FlutterFlowTheme.of(context).bodyMedium,
-                              ),
-                            ),
                           ),
                         ),
                       ),
-                    ),
-                    Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 10.0, 0.0),
-                        child: FlipCard(
-                          fill: Fill.fillBack,
-                          direction: FlipDirection.HORIZONTAL,
-                          speed: 400,
-                          front: Container(
-                            width: 300.0,
-                            height: 300.0,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: Image.asset(
-                                  'assets/images/Creatinine.png',
-                                ).image,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                bottomLeft: Radius.circular(12.0),
-                                bottomRight: Radius.circular(12.0),
-                                topLeft: Radius.circular(12.0),
-                                topRight: Radius.circular(12.0),
-                              ),
-                            ),
-                            child: Align(
-                              alignment: const AlignmentDirectional(0.0, 1.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'ahorcrzj' /* Creatinine */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                              ),
-                            ),
-                          ),
-                          back: Container(
-                            width: 300.0,
-                            height: 320.0,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(12.0),
-                                bottomRight: Radius.circular(12.0),
-                                topLeft: Radius.circular(12.0),
-                                topRight: Radius.circular(12.0),
-                              ),
-                            ),
-                            child: RichText(
-                              textScaler: MediaQuery.of(context).textScaler,
-                              text: TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      't97y48k2' /* Your doctor requested you take... */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      fontSize: 16.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'ux4v68ty' /* Creatinine:  */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      '3vz9wy85' /* is a blood test to evaluate fo... */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      fontSize: 16.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'vlkecc5v' /* 
-
-Your results are pending. */
-                                      ,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 18.0,
-                                    ),
-                                  )
-                                ],
-                                style: FlutterFlowTheme.of(context).bodyMedium,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
                   ],
                 ),
-            ],
+                if (_model.choiceChipsValue == 'In  Review')
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.asset(
+                      'assets/images/In_review.png',
+                      width: 700.0,
+                      height: 700.0,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                if (_model.choiceChipsValue == 'Pending Labs')
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Align(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 10.0, 0.0),
+                          child: FlipCard(
+                            fill: Fill.fillBack,
+                            direction: FlipDirection.HORIZONTAL,
+                            speed: 400,
+                            front: Container(
+                              width: 300.0,
+                              height: 300.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: Image.asset(
+                                    'assets/images/Tumor_Markers.png',
+                                  ).image,
+                                ),
+                                borderRadius: const BorderRadius.only(
+                                  bottomLeft: Radius.circular(12.0),
+                                  bottomRight: Radius.circular(12.0),
+                                  topLeft: Radius.circular(12.0),
+                                  topRight: Radius.circular(12.0),
+                                ),
+                              ),
+                              child: Align(
+                                alignment: const AlignmentDirectional(0.0, 1.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    'isobhdui' /* CA 125 */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                ),
+                              ),
+                            ),
+                            back: Container(
+                              width: 300.0,
+                              height: 320.0,
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(12.0),
+                                  bottomRight: Radius.circular(12.0),
+                                  topLeft: Radius.circular(12.0),
+                                  topRight: Radius.circular(12.0),
+                                ),
+                              ),
+                              child: RichText(
+                                textScaler: MediaQuery.of(context).textScaler,
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'vlidiupb' /* Your doctor requested you take... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'nuetkxfo' /* CA 125:  */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        '3mzv3w5c' /* CA 125 is mainly used to monit... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'wubjcwv8' /* 
+
+Your results are pending. */
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    )
+                                  ],
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Align(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 10.0, 0.0),
+                          child: FlipCard(
+                            fill: Fill.fillBack,
+                            direction: FlipDirection.HORIZONTAL,
+                            speed: 400,
+                            front: Container(
+                              width: 300.0,
+                              height: 300.0,
+                              decoration: BoxDecoration(
+                                image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: Image.asset(
+                                    'assets/images/Creatinine.png',
+                                  ).image,
+                                ),
+                                borderRadius: const BorderRadius.only(
+                                  bottomLeft: Radius.circular(12.0),
+                                  bottomRight: Radius.circular(12.0),
+                                  topLeft: Radius.circular(12.0),
+                                  topRight: Radius.circular(12.0),
+                                ),
+                              ),
+                              child: Align(
+                                alignment: const AlignmentDirectional(0.0, 1.0),
+                                child: Text(
+                                  FFLocalizations.of(context).getText(
+                                    'ahorcrzj' /* Creatinine */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontSize: 20.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                ),
+                              ),
+                            ),
+                            back: Container(
+                              width: 300.0,
+                              height: 320.0,
+                              decoration: const BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(12.0),
+                                  bottomRight: Radius.circular(12.0),
+                                  topLeft: Radius.circular(12.0),
+                                  topRight: Radius.circular(12.0),
+                                ),
+                              ),
+                              child: RichText(
+                                textScaler: MediaQuery.of(context).textScaler,
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        't97y48k2' /* Your doctor requested you take... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'ux4v68ty' /* Creatinine:  */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primary,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        '3vz9wy85' /* is a blood test to evaluate fo... */,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        fontSize: 16.0,
+                                      ),
+                                    ),
+                                    TextSpan(
+                                      text: FFLocalizations.of(context).getText(
+                                        'vlkecc5v' /* 
+
+Your results are pending. */
+                                        ,
+                                      ),
+                                      style: GoogleFonts.getFont(
+                                        'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 18.0,
+                                      ),
+                                    )
+                                  ],
+                                  style:
+                                      FlutterFlowTheme.of(context).bodyMedium,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),

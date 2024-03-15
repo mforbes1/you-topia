@@ -198,7 +198,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                               alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'zwref1fo' /* Front Desk Receptionist */,
+                                  'zwref1fo' /* Scheduling Receptionist */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -270,7 +270,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                               alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  't609a8a0' /* Exam Room */,
+                                  't609a8a0' /* Provider/Patient Room */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -418,7 +418,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                               alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'hgixdibl' /* Laboratory */,
+                                  'hgixdibl' /* Labs */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -552,7 +552,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                               image: DecorationImage(
                                 fit: BoxFit.contain,
                                 image: Image.asset(
-                                  'assets/images/Billing_Office.png',
+                                  'assets/images/Billing.png',
                                 ).image,
                               ),
                               borderRadius: const BorderRadius.only(
@@ -566,7 +566,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                               alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'p9qapwyd' /* Billing Office */,
+                                  'p9qapwyd' /* Billing */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -613,77 +613,6 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            10.0, 0.0, 10.0, 0.0),
-                        child: FlipCard(
-                          fill: Fill.fillBack,
-                          direction: FlipDirection.HORIZONTAL,
-                          speed: 400,
-                          front: Container(
-                            width: 300.0,
-                            height: 300.0,
-                            decoration: BoxDecoration(
-                              image: DecorationImage(
-                                fit: BoxFit.contain,
-                                image: Image.asset(
-                                  'assets/images/Social_Lounge.png',
-                                ).image,
-                              ),
-                              borderRadius: const BorderRadius.only(
-                                bottomLeft: Radius.circular(12.0),
-                                bottomRight: Radius.circular(12.0),
-                                topLeft: Radius.circular(12.0),
-                                topRight: Radius.circular(12.0),
-                              ),
-                            ),
-                            child: Align(
-                              alignment: const AlignmentDirectional(0.0, 1.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'ua9yezzd' /* Social Lounge */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 20.0,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                              ),
-                            ),
-                          ),
-                          back: Container(
-                            width: 300.0,
-                            height: 320.0,
-                            decoration: const BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(12.0),
-                                bottomRight: Radius.circular(12.0),
-                                topLeft: Radius.circular(12.0),
-                                topRight: Radius.circular(12.0),
-                              ),
-                            ),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'a03nm9k4' /* Want to unwind and have some v... */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Noto Serif',
-                                    fontSize: 20.0,
-                                    letterSpacing: 1.0,
-                                  ),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
                     Align(
                       alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(

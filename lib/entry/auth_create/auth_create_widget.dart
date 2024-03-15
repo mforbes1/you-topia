@@ -77,6 +77,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
             alignment: const AlignmentDirectional(0.0, 0.0),
             child: Container(
               width: double.infinity,
+              height: double.infinity,
               constraints: const BoxConstraints(
                 maxWidth: 670.0,
               ),
@@ -476,37 +477,43 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                       ].addToEnd(const SizedBox(height: 44.0)),
                     ),
                   ),
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 24.0),
-                    child: FFButtonWidget(
-                      onPressed: () async {
-                        context.pushNamed('auth_home');
-                      },
-                      text: FFLocalizations.of(context).getText(
-                        'z3i7xce9' /* Create Account */,
-                      ),
-                      options: FFButtonOptions(
-                        width: double.infinity,
-                        height: 60.0,
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primary,
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleMedium.override(
+                  Flexible(
+                    child: Align(
+                      alignment: const AlignmentDirectional(0.0, -1.0),
+                      child: Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            16.0, 12.0, 16.0, 24.0),
+                        child: FFButtonWidget(
+                          onPressed: () async {
+                            context.pushNamed('auth_home');
+                          },
+                          text: FFLocalizations.of(context).getText(
+                            'z3i7xce9' /* Create Account */,
+                          ),
+                          options: FFButtonOptions(
+                            width: double.infinity,
+                            height: 60.0,
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                0.0, 0.0, 0.0, 0.0),
+                            color: FlutterFlowTheme.of(context).primary,
+                            textStyle: FlutterFlowTheme.of(context)
+                                .titleMedium
+                                .override(
                                   fontFamily: 'Noto Serif',
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   fontSize: 25.0,
                                 ),
-                        elevation: 4.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
+                            elevation: 4.0,
+                            borderSide: const BorderSide(
+                              color: Colors.transparent,
+                              width: 1.0,
+                            ),
+                            borderRadius: BorderRadius.circular(50.0),
+                          ),
                         ),
-                        borderRadius: BorderRadius.circular(50.0),
                       ),
                     ),
                   ),
