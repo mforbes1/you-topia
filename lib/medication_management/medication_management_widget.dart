@@ -7,27 +7,27 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:just_audio/just_audio.dart';
-import 'medication_management_copy_model.dart';
-export 'medication_management_copy_model.dart';
+import 'medication_management_model.dart';
+export 'medication_management_model.dart';
 
-class MedicationManagementCopyWidget extends StatefulWidget {
-  const MedicationManagementCopyWidget({super.key});
+class MedicationManagementWidget extends StatefulWidget {
+  const MedicationManagementWidget({super.key});
 
   @override
-  State<MedicationManagementCopyWidget> createState() =>
-      _MedicationManagementCopyWidgetState();
+  State<MedicationManagementWidget> createState() =>
+      _MedicationManagementWidgetState();
 }
 
-class _MedicationManagementCopyWidgetState
-    extends State<MedicationManagementCopyWidget> {
-  late MedicationManagementCopyModel _model;
+class _MedicationManagementWidgetState
+    extends State<MedicationManagementWidget> {
+  late MedicationManagementModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => MedicationManagementCopyModel());
+    _model = createModel(context, () => MedicationManagementModel());
   }
 
   @override
@@ -80,7 +80,7 @@ class _MedicationManagementCopyWidgetState
             alignment: const AlignmentDirectional(0.0, 0.0),
             child: Text(
               FFLocalizations.of(context).getText(
-                'hf6dmpzz' /* Medication Management */,
+                'dngz16bp' /* Medication Management */,
               ),
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Noto Serif',
@@ -105,7 +105,7 @@ class _MedicationManagementCopyWidgetState
                   },
                   child: Text(
                     FFLocalizations.of(context).getText(
-                      'jhnq6ewk' /* Close */,
+                      'q990n8yk' /* Close */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
                           fontFamily: 'Noto Serif',
@@ -191,7 +191,7 @@ class _MedicationManagementCopyWidgetState
                             const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'm8rj3yqo' /* AM Medication List */,
+                            '6kdrhi7f' /* AM Medication List */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -225,7 +225,7 @@ class _MedicationManagementCopyWidgetState
                               10.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'im3o4imf' /* Have you taken your medication... */,
+                              'hi2iarhg' /* Have you taken your medication... */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -279,7 +279,7 @@ class _MedicationManagementCopyWidgetState
                             },
                             title: Text(
                               FFLocalizations.of(context).getText(
-                                'btjcwglq' /* Omeprazole (Prilosec) 20 mg */,
+                                '01d7modd' /* Omeprazole (Prilosec) 20 mg */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
@@ -289,7 +289,7 @@ class _MedicationManagementCopyWidgetState
                             ),
                             subtitle: Text(
                               FFLocalizations.of(context).getText(
-                                'ahpa4rm8' /* Take 1 pill with breakfast */,
+                                'ebu79wfg' /* Take 1 pill with breakfast */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
@@ -348,7 +348,7 @@ class _MedicationManagementCopyWidgetState
                             },
                             title: Text(
                               FFLocalizations.of(context).getText(
-                                'kz60ip2z' /* Acetaminophen (Tylenol) 325 mg */,
+                                'e1za2xqt' /* Acetaminophen (Tylenol) 325 mg */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
@@ -358,7 +358,7 @@ class _MedicationManagementCopyWidgetState
                             ),
                             subtitle: Text(
                               FFLocalizations.of(context).getText(
-                                'yxm3fqoo' /* Take 2 pills with breakfast */,
+                                'b9w5ypde' /* Take 2 pills with breakfast */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
@@ -394,7 +394,7 @@ class _MedicationManagementCopyWidgetState
                             const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'vkk4yz8a' /* PM Medication List */,
+                            'klybmn1k' /* PM Medication List */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -424,7 +424,7 @@ class _MedicationManagementCopyWidgetState
                               10.0, 0.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'u855a1qu' /* Have you taken your medication... */,
+                              '4alxsupp' /* Have you taken your medication... */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -478,7 +478,7 @@ class _MedicationManagementCopyWidgetState
                             },
                             title: Text(
                               FFLocalizations.of(context).getText(
-                                'dm8xe86k' /* Lisinopril (Zestril) 40 mg */,
+                                'ev7v9ovf' /* Lisinopril (Zestril) 40 mg */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
@@ -488,7 +488,7 @@ class _MedicationManagementCopyWidgetState
                             ),
                             subtitle: Text(
                               FFLocalizations.of(context).getText(
-                                '2i2ajaff' /* Take 1/2 pill 30 mins before b... */,
+                                'kb1tlvq3' /* Take 1/2 pill 30 mins before b... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
@@ -547,7 +547,7 @@ class _MedicationManagementCopyWidgetState
                             },
                             title: Text(
                               FFLocalizations.of(context).getText(
-                                'f2inu5gl' /* Ibuprofen (Motrin) 800 mg */,
+                                'q0x8ifb9' /* Ibuprofen (Motrin) 800 mg */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
@@ -557,7 +557,7 @@ class _MedicationManagementCopyWidgetState
                             ),
                             subtitle: Text(
                               FFLocalizations.of(context).getText(
-                                'f51e1c3v' /* Take 1 pill 45 mins before bed... */,
+                                'cmp7jc4p' /* Take 1 pill 45 mins before bed... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
@@ -616,7 +616,7 @@ class _MedicationManagementCopyWidgetState
                             },
                             title: Text(
                               FFLocalizations.of(context).getText(
-                                '3o7ftp7r' /* Amlodipine (Norvasc) 5 mg */,
+                                '0gyyastu' /* Amlodipine (Norvasc) 5 mg */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleLarge
@@ -626,7 +626,7 @@ class _MedicationManagementCopyWidgetState
                             ),
                             subtitle: Text(
                               FFLocalizations.of(context).getText(
-                                '089zfnq3' /* Take 2 pills with food. */,
+                                '1siqm4ya' /* Take 2 pills with food. */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .labelMedium
@@ -675,7 +675,7 @@ class _MedicationManagementCopyWidgetState
                         ).then((value) => setState(() {}));
                       },
                       text: FFLocalizations.of(context).getText(
-                        '509l8v96' /* View Medication Tracker */,
+                        'tl41fz70' /* View Medication Tracker */,
                       ),
                       icon: const FaIcon(
                         FontAwesomeIcons.infoCircle,

@@ -74,6 +74,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const AuthLoginWidget(),
         ),
         FFRoute(
+          name: 'MedicationManagement',
+          path: '/medicationManagement',
+          builder: (context, params) => const MedicationManagementWidget(),
+        ),
+        FFRoute(
           name: 'Labs',
           path: '/labs',
           builder: (context, params) => const LabsWidget(),
@@ -132,11 +137,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => BillWidget(
             scheduledAppt: params.getParam('scheduledAppt', ParamType.bool),
           ),
-        ),
-        FFRoute(
-          name: 'MedicationManagementCopy',
-          path: '/medicationManagementCopy',
-          builder: (context, params) => const MedicationManagementCopyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
       observers: [routeObserver],
