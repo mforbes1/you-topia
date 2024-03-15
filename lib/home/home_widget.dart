@@ -754,9 +754,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                       if ((_model.choiceChipsValue ==
                               'Scheduling Receptionist') ||
                           (_model.choiceChipsValue ==
-                              'Recepcionista de entrada') ||
-                          (_model.choiceChipsValue == '前台接待員') ||
-                          (_model.choiceChipsValue == 'Nhân viên lễ tân') ||
+                              'Recepcionista de programación') ||
+                          (_model.choiceChipsValue == '調度接待員') ||
+                          (_model.choiceChipsValue == 'Sắp xếp lịch lễ tân') ||
                           (_model.choiceChipsValue == 'موظف استقبال جدولة'))
                         Align(
                           alignment: const AlignmentDirectional(0.0, -0.95),
@@ -905,7 +905,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           ),
                         ),
                       if ((_model.choiceChipsValue == 'Labs') ||
-                          (_model.choiceChipsValue == 'Laboratorios') ||
+                          (_model.choiceChipsValue == 'laboratorios') ||
                           (_model.choiceChipsValue == '實驗室') ||
                           (_model.choiceChipsValue == 'Phòng thí nghiệm') ||
                           (_model.choiceChipsValue == 'مختبرات'))
@@ -954,7 +954,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           ),
                         ),
                       if ((_model.choiceChipsValue == 'Medical Records') ||
-                          (_model.choiceChipsValue == 'Registros medicos') ||
+                          (_model.choiceChipsValue == 'Registros médicos') ||
                           (_model.choiceChipsValue == '病歷') ||
                           (_model.choiceChipsValue == 'Hồ sơ bệnh án') ||
                           (_model.choiceChipsValue == 'سجلات طبية'))

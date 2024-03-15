@@ -129,7 +129,7 @@ class _NewsPromptWidgetState extends State<NewsPromptWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
-                              await launchURL('https://www.nih.gov/');
+                              await launchURL('https://www.cnn.com/');
                             },
                             child: Row(
                               mainAxisSize: MainAxisSize.max,

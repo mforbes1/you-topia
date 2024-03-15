@@ -145,126 +145,143 @@ class _ConfirmedApptNeuroWidgetState extends State<ConfirmedApptNeuroWidget> {
                       ],
                     ),
                   ),
-                  Flexible(
-                    child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 10.0, 0.0, 0.0),
-                            child: RichText(
-                              textScaler: MediaQuery.of(context).textScaler,
-                              text: TextSpan(
-                                children: [
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'm9c0p7e5' /* You are scheduling an appointm... */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodyMedium
-                                        .override(
-                                          fontFamily: 'Noto Serif',
-                                          color: FlutterFlowTheme.of(context)
-                                              .primaryText,
-                                          fontSize: 25.0,
-                                          fontWeight: FontWeight.normal,
+                  Expanded(
+                    child: Align(
+                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      child: Padding(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
+                            16.0, 0.0, 16.0, 8.0),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Expanded(
+                              child: Align(
+                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                child: Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 10.0, 0.0, 0.0),
+                                  child: RichText(
+                                    textScaler:
+                                        MediaQuery.of(context).textScaler,
+                                    text: TextSpan(
+                                      children: [
+                                        TextSpan(
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'm9c0p7e5' /* You are scheduling an appointm... */,
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily: 'Noto Serif',
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .primaryText,
+                                                fontSize: 25.0,
+                                                fontWeight: FontWeight.normal,
+                                              ),
                                         ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'prpk8vpv' /*  Lauren Roberts, MD */,
-                                    ),
-                                    style: TextStyle(
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 25.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'dbalumg9' /*  on 
+                                        TextSpan(
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'prpk8vpv' /*  Lauren Roberts, MD */,
+                                          ),
+                                          style: TextStyle(
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 25.0,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'dbalumg9' /*  on 
  */
-                                      ,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontWeight: FontWeight.normal,
-                                      fontSize: 25.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: valueOrDefault<String>(
-                                      widget.apptdate,
-                                      '1',
-                                    ),
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 25.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'ksuojkzt' /* . To confirm  this date and ti... */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      fontSize: 25.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      '59nkvj7o' /* Schedule.  */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 25.0,
-                                    ),
-                                  ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      '8iard22m' /* 
+                                            ,
+                                          ),
+                                          style: GoogleFonts.getFont(
+                                            'Noto Serif',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 25.0,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: valueOrDefault<String>(
+                                            widget.apptdate,
+                                            '1',
+                                          ),
+                                          style: const TextStyle(
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 25.0,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'ksuojkzt' /* . To confirm  this date and ti... */,
+                                          ),
+                                          style: GoogleFonts.getFont(
+                                            'Noto Serif',
+                                            fontSize: 25.0,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            '59nkvj7o' /* Schedule.  */,
+                                          ),
+                                          style: GoogleFonts.getFont(
+                                            'Noto Serif',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 25.0,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            '8iard22m' /* 
 To cancel and view other avai... */
-                                      ,
-                                    ),
-                                    style: const TextStyle(
-                                      fontSize: 25.0,
+                                            ,
+                                          ),
+                                          style: const TextStyle(
+                                            fontSize: 25.0,
+                                          ),
+                                        ),
+                                        TextSpan(
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'ivwhvf2k' /* Cancel. */,
+                                          ),
+                                          style: GoogleFonts.getFont(
+                                            'Noto Serif',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primary,
+                                            fontWeight: FontWeight.w600,
+                                            fontSize: 25.0,
+                                          ),
+                                        )
+                                      ],
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily: 'Noto Serif',
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            fontSize: 22.0,
+                                          ),
                                     ),
                                   ),
-                                  TextSpan(
-                                    text: FFLocalizations.of(context).getText(
-                                      'ivwhvf2k' /* Cancel. */,
-                                    ),
-                                    style: GoogleFonts.getFont(
-                                      'Noto Serif',
-                                      color:
-                                          FlutterFlowTheme.of(context).primary,
-                                      fontWeight: FontWeight.w600,
-                                      fontSize: 25.0,
-                                    ),
-                                  )
-                                ],
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 22.0,
-                                    ),
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),

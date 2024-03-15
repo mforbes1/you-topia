@@ -488,8 +488,8 @@ Your results are borderline ... */
                               height: 267.0,
                               decoration: BoxDecoration(
                                 image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  alignment: const AlignmentDirectional(0.0, 1.0),
+                                  fit: BoxFit.contain,
+                                  alignment: const AlignmentDirectional(0.0, -1.0),
                                   image: Image.asset(
                                     'assets/images/CBC.png',
                                   ).image,
