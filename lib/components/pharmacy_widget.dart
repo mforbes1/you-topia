@@ -238,7 +238,7 @@ W... */
                             const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
-                            context.pushNamed('MedicationManagement');
+                            context.pushNamed('MedicationManagementCopy');
                           },
                           text: FFLocalizations.of(context).getText(
                             'o8kfrl4s' /* Medication Management */,

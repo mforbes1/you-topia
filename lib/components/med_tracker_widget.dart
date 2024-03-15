@@ -20,12 +20,13 @@ class _MedTrackerWidgetState extends State<MedTrackerWidget>
 
   final animationsMap = {
     'columnOnPageLoadAnimation': AnimationInfo(
+      loop: true,
       trigger: AnimationTrigger.onPageLoad,
       effects: [
         ShakeEffect(
           curve: Curves.easeInOut,
-          delay: 10.ms,
-          duration: 1000.ms,
+          delay: 0.ms,
+          duration: 1300.ms,
           hz: 10,
           offset: const Offset(0.0, 0.0),
           rotation: 0.087,

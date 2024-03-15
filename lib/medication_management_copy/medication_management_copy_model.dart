@@ -1,11 +1,12 @@
 import '/flutter_flow/flutter_flow_calendar.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'medication_management_widget.dart' show MedicationManagementWidget;
+import 'medication_management_copy_widget.dart'
+    show MedicationManagementCopyWidget;
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
-class MedicationManagementModel
-    extends FlutterFlowModel<MedicationManagementWidget> {
+class MedicationManagementCopyModel
+    extends FlutterFlowModel<MedicationManagementCopyWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

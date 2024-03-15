@@ -8,8 +8,6 @@ export '/entry/welcome_screen/welcome_screen_widget.dart'
     show WelcomeScreenWidget;
 export '/entry/auth_create/auth_create_widget.dart' show AuthCreateWidget;
 export '/entry/auth_login/auth_login_widget.dart' show AuthLoginWidget;
-export '/medication_management/medication_management_widget.dart'
-    show MedicationManagementWidget;
 export '/labs/labs_widget.dart' show LabsWidget;
 export '/copy_medical_records/copy_medical_records_widget.dart'
     show CopyMedicalRecordsWidget;
@@ -25,3 +23,5 @@ export '/activity_notifications/activity_notifications_widget.dart'
     show ActivityNotificationsWidget;
 export '/account/account_widget.dart' show AccountWidget;
 export '/bill/bill_widget.dart' show BillWidget;
+export '/medication_management_copy/medication_management_copy_widget.dart'
+    show MedicationManagementCopyWidget;

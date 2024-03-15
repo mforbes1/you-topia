@@ -1160,143 +1160,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '家',
     },
   },
-  // MedicationManagement
-  {
-    '6kdrhi7f': {
-      'en': 'AM Medication List',
-      'ar': 'قائمة الأدوية AM',
-      'es': 'Lista de medicamentos por la mañana',
-      'vi': 'Danh sách thuốc AM',
-      'zh_Hant': '上午藥物清單',
-    },
-    'hi2iarhg': {
-      'en':
-          'Have you taken your medication this morning? Toggle the switch for medications you\'ve taken.',
-      'ar':
-          'هل تناولت أدويتك هذا الصباح؟ قم بتبديل مفتاح الأدوية التي تناولتها.',
-      'es':
-          '¿Has tomado tu medicación esta mañana? Active el interruptor de los medicamentos que haya tomado.',
-      'vi':
-          'Sáng nay bạn đã uống thuốc chưa? Chuyển đổi công tắc cho các loại thuốc bạn đã dùng.',
-      'zh_Hant': '今天早上你吃藥了嗎？切換您已服用藥物的開關。',
-    },
-    '01d7modd': {
-      'en': 'Omeprazole (Prilosec) 20 mg',
-      'ar': 'Omeprazole (Prilosec) 20 mg',
-      'es': 'Omeprazole (Prilosec) 20 mg',
-      'vi': 'Omeprazole (Prilosec) 20 mg',
-      'zh_Hant': 'Omeprazole (Prilosec) 20 mg',
-    },
-    'ebu79wfg': {
-      'en': 'Take 1 pill with breakfast',
-      'ar': 'تناول حبة واحدة مع وجبة الإفطار',
-      'es': 'Tomar 1 pastilla con el desayuno',
-      'vi': 'Uống 1 viên vào bữa sáng',
-      'zh_Hant': '早餐時服用 1 粒',
-    },
-    'e1za2xqt': {
-      'en': 'Acetaminophen (Tylenol) 325 mg',
-      'ar': 'Acetaminophen (Tylenol) 325 mg',
-      'es': 'Acetaminophen (Tylenol) 325 mg',
-      'vi': 'Acetaminophen (Tylenol) 325 mg',
-      'zh_Hant': 'Acetaminophen (Tylenol) 325 mg',
-    },
-    'b9w5ypde': {
-      'en': 'Take 2 pills with breakfast',
-      'ar': 'تناول حبتين مع وجبة الإفطار',
-      'es': 'Tomar 2 pastillas con el desayuno.',
-      'vi': 'Uống 2 viên vào bữa sáng',
-      'zh_Hant': '早餐時服用 2 粒',
-    },
-    'klybmn1k': {
-      'en': 'PM Medication List',
-      'ar': 'قائمة الأدوية PM',
-      'es': 'Lista de medicamentos PM',
-      'vi': 'Danh sách thuốc PM',
-      'zh_Hant': '下午藥物清單',
-    },
-    '4alxsupp': {
-      'en':
-          'Have you taken your medication this evening? Toggle the switch for medications you\'ve taken.',
-      'ar':
-          'هل تناولت دوائك هذا المساء؟ قم بتبديل مفتاح الأدوية التي تناولتها.',
-      'es':
-          '¿Has tomado tu medicación esta noche? Active el interruptor de los medicamentos que haya tomado.',
-      'vi':
-          'Chiều nay bạn đã uống thuốc chưa? Chuyển đổi công tắc cho các loại thuốc bạn đã dùng.',
-      'zh_Hant': '今晚你吃藥了嗎？切換您已服用藥物的開關。',
-    },
-    'ev7v9ovf': {
-      'en': 'Lisinopril (Zestril) 40 mg',
-      'ar': 'Lisinopril (Zestril) 40 mg',
-      'es': 'Lisinopril (Zestril) 40 mg',
-      'vi': 'Lisinopril (Zestril) 40 mg',
-      'zh_Hant': 'Lisinopril (Zestril) 40 mg',
-    },
-    'kb1tlvq3': {
-      'en': 'Take 1/2 pill 30 mins before bed.',
-      'ar': 'تناول نصف حبة قبل النوم بـ 30 دقيقة.',
-      'es': 'Tomar 1/2 pastilla 30 minutos antes de acostarse.',
-      'vi': 'Uống 1/2 viên trước khi đi ngủ 30 phút.',
-      'zh_Hant': '睡前 30 分鐘服用 1/2 粒。',
-    },
-    'q0x8ifb9': {
-      'en': 'Ibuprofen (Motrin) 800 mg',
-      'ar': 'Ibuprofen (Motrin) 800 mg',
-      'es': 'Ibuprofen (Motrin) 800 mg',
-      'vi': 'Ibuprofen (Motrin) 800 mg',
-      'zh_Hant': 'Ibuprofen (Motrin) 800 mg',
-    },
-    'cmp7jc4p': {
-      'en': 'Take 1 pill 45 mins before bed.',
-      'ar': 'تناول حبة واحدة قبل النوم بـ 45 دقيقة.',
-      'es': 'Tomar 1 pastilla 45 minutos antes de acostarse.',
-      'vi': 'Uống 1 viên trước khi đi ngủ 45 phút.',
-      'zh_Hant': '睡前 45 分鐘服用 1 片。',
-    },
-    '0gyyastu': {
-      'en': 'Amlodipine (Norvasc) 5 mg',
-      'ar': 'Amlodipine (Norvasc) 5 mg',
-      'es': 'Amlodipine (Norvasc) 5 mg',
-      'vi': 'Amlodipine (Norvasc) 5 mg',
-      'zh_Hant': 'Amlodipine (Norvasc) 5 mg',
-    },
-    '1siqm4ya': {
-      'en': 'Take 2 pills with food.',
-      'ar': 'تناول حبتين مع الطعام.',
-      'es': 'Tome 2 pastillas con la comida.',
-      'vi': 'Uống 2 viên với thức ăn.',
-      'zh_Hant': '隨餐服用 2 粒。',
-    },
-    'tl41fz70': {
-      'en': 'View Medication Tracker',
-      'ar': 'عرض تعقب الدواء',
-      'es': 'Ver rastreador de medicamentos',
-      'vi': 'Xem theo dõi thuốc',
-      'zh_Hant': '查看藥物追蹤器',
-    },
-    'dngz16bp': {
-      'en': 'Medication Management',
-      'ar': 'إدارة الأدوية',
-      'es': 'Manejo de medicamentos',
-      'vi': 'Quản lý dược phẩm',
-      'zh_Hant': '藥物管理',
-    },
-    'q990n8yk': {
-      'en': 'Close',
-      'ar': 'يغلق',
-      'es': 'Cerca',
-      'vi': 'Đóng',
-      'zh_Hant': '關閉',
-    },
-    '0nrt4pda': {
-      'en': 'Home',
-      'ar': 'بيت',
-      'es': 'Hogar',
-      'vi': 'Trang chủ',
-      'zh_Hant': '家',
-    },
-  },
   // Labs
   {
     'civ8xtuc': {
@@ -2785,6 +2648,143 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '您目前沒有未清餘額。',
     },
     '84mv8n4h': {
+      'en': 'Home',
+      'ar': 'بيت',
+      'es': 'Hogar',
+      'vi': 'Trang chủ',
+      'zh_Hant': '家',
+    },
+  },
+  // MedicationManagementCopy
+  {
+    'm8rj3yqo': {
+      'en': 'AM Medication List',
+      'ar': 'قائمة الأدوية AM',
+      'es': 'Lista de medicamentos por la mañana',
+      'vi': 'Danh sách thuốc AM',
+      'zh_Hant': '上午藥物清單',
+    },
+    'im3o4imf': {
+      'en':
+          'Have you taken your medication this morning? Toggle the switch for medications you\'ve taken.',
+      'ar':
+          'هل تناولت أدويتك هذا الصباح؟ قم بتبديل مفتاح الأدوية التي تناولتها.',
+      'es':
+          '¿Has tomado tu medicación esta mañana? Active el interruptor de los medicamentos que haya tomado.',
+      'vi':
+          'Sáng nay bạn đã uống thuốc chưa? Chuyển đổi công tắc cho các loại thuốc bạn đã dùng.',
+      'zh_Hant': '今天早上你吃藥了嗎？切換您已服用藥物的開關。',
+    },
+    'btjcwglq': {
+      'en': 'Omeprazole (Prilosec) 20 mg',
+      'ar': 'Omeprazole (Prilosec) 20 mg',
+      'es': 'Omeprazole (Prilosec) 20 mg',
+      'vi': 'Omeprazole (Prilosec) 20 mg',
+      'zh_Hant': 'Omeprazole (Prilosec) 20 mg',
+    },
+    'ahpa4rm8': {
+      'en': 'Take 1 pill with breakfast',
+      'ar': 'تناول حبة واحدة مع وجبة الإفطار',
+      'es': 'Tomar 1 pastilla con el desayuno',
+      'vi': 'Uống 1 viên vào bữa sáng',
+      'zh_Hant': '早餐時服用 1 粒',
+    },
+    'kz60ip2z': {
+      'en': 'Acetaminophen (Tylenol) 325 mg',
+      'ar': 'Acetaminophen (Tylenol) 325 mg',
+      'es': 'Acetaminophen (Tylenol) 325 mg',
+      'vi': 'Acetaminophen (Tylenol) 325 mg',
+      'zh_Hant': 'Acetaminophen (Tylenol) 325 mg',
+    },
+    'yxm3fqoo': {
+      'en': 'Take 2 pills with breakfast',
+      'ar': 'تناول حبتين مع وجبة الإفطار',
+      'es': 'Tomar 2 pastillas con el desayuno.',
+      'vi': 'Uống 2 viên vào bữa sáng',
+      'zh_Hant': '早餐時服用 2 粒',
+    },
+    'vkk4yz8a': {
+      'en': 'PM Medication List',
+      'ar': 'قائمة الأدوية PM',
+      'es': 'Lista de medicamentos PM',
+      'vi': 'Danh sách thuốc PM',
+      'zh_Hant': '下午藥物清單',
+    },
+    'u855a1qu': {
+      'en':
+          'Have you taken your medication this evening? Toggle the switch for medications you\'ve taken.',
+      'ar':
+          'هل تناولت دوائك هذا المساء؟ قم بتبديل مفتاح الأدوية التي تناولتها.',
+      'es':
+          '¿Has tomado tu medicación esta noche? Active el interruptor de los medicamentos que haya tomado.',
+      'vi':
+          'Chiều nay bạn đã uống thuốc chưa? Chuyển đổi công tắc cho các loại thuốc bạn đã dùng.',
+      'zh_Hant': '今晚你吃藥了嗎？切換您已服用藥物的開關。',
+    },
+    'dm8xe86k': {
+      'en': 'Lisinopril (Zestril) 40 mg',
+      'ar': 'Lisinopril (Zestril) 40 mg',
+      'es': 'Lisinopril (Zestril) 40 mg',
+      'vi': 'Lisinopril (Zestril) 40 mg',
+      'zh_Hant': 'Lisinopril (Zestril) 40 mg',
+    },
+    '2i2ajaff': {
+      'en': 'Take 1/2 pill 30 mins before bed.',
+      'ar': 'تناول نصف حبة قبل النوم بـ 30 دقيقة.',
+      'es': 'Tomar 1/2 pastilla 30 minutos antes de acostarse.',
+      'vi': 'Uống 1/2 viên trước khi đi ngủ 30 phút.',
+      'zh_Hant': '睡前 30 分鐘服用 1/2 粒。',
+    },
+    'f2inu5gl': {
+      'en': 'Ibuprofen (Motrin) 800 mg',
+      'ar': 'Ibuprofen (Motrin) 800 mg',
+      'es': 'Ibuprofen (Motrin) 800 mg',
+      'vi': 'Ibuprofen (Motrin) 800 mg',
+      'zh_Hant': 'Ibuprofen (Motrin) 800 mg',
+    },
+    'f51e1c3v': {
+      'en': 'Take 1 pill 45 mins before bed.',
+      'ar': 'تناول حبة واحدة قبل النوم بـ 45 دقيقة.',
+      'es': 'Tomar 1 pastilla 45 minutos antes de acostarse.',
+      'vi': 'Uống 1 viên trước khi đi ngủ 45 phút.',
+      'zh_Hant': '睡前 45 分鐘服用 1 片。',
+    },
+    '3o7ftp7r': {
+      'en': 'Amlodipine (Norvasc) 5 mg',
+      'ar': 'Amlodipine (Norvasc) 5 mg',
+      'es': 'Amlodipine (Norvasc) 5 mg',
+      'vi': 'Amlodipine (Norvasc) 5 mg',
+      'zh_Hant': 'Amlodipine (Norvasc) 5 mg',
+    },
+    '089zfnq3': {
+      'en': 'Take 2 pills with food.',
+      'ar': 'تناول حبتين مع الطعام.',
+      'es': 'Tome 2 pastillas con la comida.',
+      'vi': 'Uống 2 viên với thức ăn.',
+      'zh_Hant': '隨餐服用 2 粒。',
+    },
+    '509l8v96': {
+      'en': 'View Medication Tracker',
+      'ar': 'عرض تعقب الدواء',
+      'es': 'Ver rastreador de medicamentos',
+      'vi': 'Xem theo dõi thuốc',
+      'zh_Hant': '查看藥物追蹤器',
+    },
+    'hf6dmpzz': {
+      'en': 'Medication Management',
+      'ar': 'إدارة الأدوية',
+      'es': 'Manejo de medicamentos',
+      'vi': 'Quản lý dược phẩm',
+      'zh_Hant': '藥物管理',
+    },
+    'jhnq6ewk': {
+      'en': 'Close',
+      'ar': 'يغلق',
+      'es': 'Cerca',
+      'vi': 'Đóng',
+      'zh_Hant': '關閉',
+    },
+    '9ywvntml': {
       'en': 'Home',
       'ar': 'بيت',
       'es': 'Hogar',
