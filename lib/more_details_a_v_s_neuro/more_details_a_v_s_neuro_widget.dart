@@ -1,5 +1,4 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_pdf_viewer.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -143,11 +142,14 @@ class _MoreDetailsAVSNeuroWidgetState extends State<MoreDetailsAVSNeuroWidget> {
         body: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            FlutterFlowPdfViewer(
-              assetPath: 'assets/pdfs/AVS_Neuro.pdf',
-              width: double.infinity,
-              height: MediaQuery.sizeOf(context).height * 0.9,
-              horizontalScroll: false,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8.0),
+              child: Image.asset(
+                'assets/images/Neuro.PNG',
+                width: double.infinity,
+                height: 900.0,
+                fit: BoxFit.contain,
+              ),
             ),
           ],
         ),

@@ -2,7 +2,6 @@ import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_credit_card_form.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_pdf_viewer.dart';
 import '/flutter_flow/flutter_flow_radio_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -207,13 +206,13 @@ class _BillWidgetState extends State<BillWidget> {
               ),
             ),
             if (_model.choiceChipsValue == 'Billing Statements')
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-                child: FlutterFlowPdfViewer(
-                  assetPath: 'assets/pdfs/Bill_(1).pdf',
-                  width: double.infinity,
-                  height: MediaQuery.sizeOf(context).height * 0.591,
-                  horizontalScroll: false,
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/images/Bill.png',
+                  width: 620.0,
+                  height: 593.0,
+                  fit: BoxFit.cover,
                 ),
               ),
             if (_model.choiceChipsValue == 'Billing Statements')
@@ -253,19 +252,22 @@ class _BillWidgetState extends State<BillWidget> {
               ),
             if ((_model.radioButtonValue == 'Pay Now') &&
                 (_model.choiceChipsValue == 'Billing Statements'))
-              Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(5.0, 20.0, 5.0, 0.0),
-                child: Text(
-                  FFLocalizations.of(context).getText(
-                    '8b77zz8q' /* Please do not enter your actua... */,
+              Align(
+                alignment: const AlignmentDirectional(0.0, 0.0),
+                child: Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(5.0, 20.0, 5.0, 0.0),
+                  child: Text(
+                    FFLocalizations.of(context).getText(
+                      '8b77zz8q' /* Please do not enter your actua... */,
+                    ),
+                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                          fontFamily: 'Noto Serif',
+                          color: const Color(0xFFD60D19),
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold,
+                          decoration: TextDecoration.underline,
+                        ),
                   ),
-                  style: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Noto Serif',
-                        color: const Color(0xFFD60D19),
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold,
-                        decoration: TextDecoration.underline,
-                      ),
                 ),
               ),
             if ((_model.radioButtonValue == 'Pay Now') &&
