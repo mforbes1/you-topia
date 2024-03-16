@@ -327,6 +327,28 @@ class _HomeWidgetState extends State<HomeWidget> {
                     ),
                   ],
                 ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 5.0, 0.0),
+                      child: Text(
+                        FFLocalizations.of(context).getText(
+                          'spar7zf9' /* Tap the images below for addit... */,
+                        ),
+                        style: FlutterFlowTheme.of(context)
+                            .labelMedium
+                            .override(
+                              fontFamily: 'Noto Serif',
+                              color: FlutterFlowTheme.of(context).primaryText,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.w600,
+                            ),
+                      ),
+                    ),
+                  ],
+                ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -542,7 +564,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: Image.asset(
-                                                'assets/images/Bill.png',
+                                                'assets/images/Payment.png',
                                                 width: 190.0,
                                                 height: 180.0,
                                                 fit: BoxFit.cover,
@@ -742,6 +764,27 @@ class _HomeWidgetState extends State<HomeWidget> {
                   height: 8.0,
                   thickness: 1.0,
                   color: FlutterFlowTheme.of(context).alternate,
+                ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Flexible(
+                      child: Align(
+                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'hmvit2dh' /* Tap the image below for featur... */,
+                          ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Noto Serif',
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
                 Container(
                   width: 1025.0,

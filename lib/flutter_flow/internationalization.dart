@@ -159,6 +159,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Cảnh báo',
       'zh_Hant': '警報',
     },
+    'spar7zf9': {
+      'en': 'Tap the images below for additional information about the alert.',
+      'ar': 'التنبيهات',
+      'es': 'Alertas',
+      'vi': 'Cảnh báo',
+      'zh_Hant': '警報',
+    },
     'zwsfiqhf': {
       'en': 'You have an upcoming appointment!',
       'ar': 'لديك موعد قادم!',
@@ -249,6 +256,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Recepcionista de programación',
       'vi': 'Sắp xếp lịch lễ tân',
       'zh_Hant': '調度接待員',
+    },
+    'hmvit2dh': {
+      'en': 'Tap the image below for features in each area listed above.',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     '9ia1jf06': {
       'en': 'Home',

@@ -520,7 +520,7 @@ class _ActivityNotificationsWidgetState
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(10.0),
                                   child: Image.asset(
-                                    'assets/images/Bill.png',
+                                    'assets/images/Payment.png',
                                     width: 44.0,
                                     height: 44.0,
                                     fit: BoxFit.cover,
