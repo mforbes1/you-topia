@@ -163,154 +163,149 @@ class _HomeWidgetState extends State<HomeWidget> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Flexible(
-                    child: Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                5.0, 0.0, 5.0, 0.0),
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                context.pushNamed('Home');
-                              },
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  '8z8v5hbp' /* Home */,
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('Home');
+                          },
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              '8z8v5hbp' /* Home */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.bold,
+                                  decoration: TextDecoration.underline,
                                 ),
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 25.0,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.underline,
-                                    ),
-                              ),
-                            ),
                           ),
-                          SizedBox(
-                            height: 25.0,
-                            child: VerticalDivider(
-                              thickness: 5.0,
-                              color: FlutterFlowTheme.of(context).primary,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                5.0, 0.0, 5.0, 0.0),
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                context.pushNamed('AllMessages');
-                              },
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'qz7t691x' /* Messages */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 25.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 25.0,
-                            child: VerticalDivider(
-                              thickness: 5.0,
-                              color: FlutterFlowTheme.of(context).primary,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                5.0, 0.0, 5.0, 0.0),
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                context.pushNamed('ActivityNotifications');
-                              },
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  'sxfaqr1o' /* Notifications */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 25.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 25.0,
-                            child: VerticalDivider(
-                              thickness: 5.0,
-                              color: FlutterFlowTheme.of(context).primary,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                5.0, 0.0, 5.0, 0.0),
-                            child: InkWell(
-                              splashColor: Colors.transparent,
-                              focusColor: Colors.transparent,
-                              hoverColor: Colors.transparent,
-                              highlightColor: Colors.transparent,
-                              onTap: () async {
-                                context.pushNamed(
-                                  'Account',
-                                  queryParameters: {
-                                    'userName': serializeParam(
-                                      '',
-                                      ParamType.String,
-                                    ),
-                                  }.withoutNulls,
-                                );
-                              },
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  '3061jd0x' /* Account */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 25.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                              ),
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
-                    ),
+                      SizedBox(
+                        height: 25.0,
+                        child: VerticalDivider(
+                          thickness: 5.0,
+                          color: FlutterFlowTheme.of(context).primary,
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('AllMessages');
+                          },
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'qz7t691x' /* Messages */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 25.0,
+                        child: VerticalDivider(
+                          thickness: 5.0,
+                          color: FlutterFlowTheme.of(context).primary,
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('ActivityNotifications');
+                          },
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'sxfaqr1o' /* Notifications */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 25.0,
+                        child: VerticalDivider(
+                          thickness: 5.0,
+                          color: FlutterFlowTheme.of(context).primary,
+                        ),
+                      ),
+                      Padding(
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 5.0, 0.0),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed(
+                              'Account',
+                              queryParameters: {
+                                'userName': serializeParam(
+                                  '',
+                                  ParamType.String,
+                                ),
+                              }.withoutNulls,
+                            );
+                          },
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              '3061jd0x' /* Account */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .labelMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryText,
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                   Divider(
                     thickness: 2.0,
@@ -797,7 +792,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'hmvit2dh' /* Tap the image below for featur... */,
+                              'xsur4zkz' /* Tap the image below for featur... */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium

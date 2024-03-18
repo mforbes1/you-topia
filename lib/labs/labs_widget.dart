@@ -141,7 +141,7 @@ class _LabsWidgetState extends State<LabsWidget> {
           top: true,
           child: SingleChildScrollView(
             child: Column(
-              mainAxisSize: MainAxisSize.max,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Row(
                   mainAxisSize: MainAxisSize.max,

@@ -473,11 +473,11 @@ best car... */
                       ],
                     ),
                   ),
-                if ((_model.typeofVisitValue == 'Sick (New Problem)') ||
-                    ((_model.typeofVisitValue == 'Enfermo (nuevo problema)') ||
-                        ((_model.typeofVisitValue == '生病了（新問題）') ||
-                            (_model.typeofVisitValue == 'Ốm (Vấn đề mới)') ||
-                            (_model.typeofVisitValue == 'مريض (مشكلة جديدة)'))))
+                if ((_model.typeofVisitValue == 'New Patient') ||
+                    ((_model.typeofVisitValue == 'Paciente nuevo') ||
+                        ((_model.typeofVisitValue == '新病人') ||
+                            (_model.typeofVisitValue == 'Bệnh nhân mới') ||
+                            (_model.typeofVisitValue == 'مريض جديد'))))
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),

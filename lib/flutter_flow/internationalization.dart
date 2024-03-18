@@ -258,12 +258,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Sắp xếp lịch lễ tân',
       'zh_Hant': '調度接待員',
     },
-    'hmvit2dh': {
+    'xsur4zkz': {
       'en': 'Tap the image below for features in each area listed above.',
-      'ar': '',
-      'es': '',
-      'vi': '',
-      'zh_Hant': '',
+      'ar':
+          'اضغط على الصورة أدناه للحصول على الميزات في كل منطقة المذكورة أعلاه.',
+      'es':
+          'Toque la imagen a continuación para ver las características de cada área enumerada anteriormente.',
+      'vi':
+          'Nhấn vào hình ảnh bên dưới để biết các tính năng trong từng khu vực được liệt kê ở trên.',
+      'zh_Hant': '點擊下圖了解上面列出的每個區域的功能。',
     },
     '9ia1jf06': {
       'en': 'Home',
@@ -532,10 +535,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'j0k9g6bb': {
       'en': 'New Patient',
-      'ar': 'مريض (مشكلة جديدة)',
-      'es': 'Enfermo (nuevo problema)',
-      'vi': 'Ốm (Vấn đề mới)',
-      'zh_Hant': '生病了（新問題）',
+      'ar': 'مريض جديد',
+      'es': 'Paciente nuevo',
+      'vi': 'Bệnh nhân mới',
+      'zh_Hant': '新病人',
     },
     'mbn1q109': {
       'en': 'Routine Follow Up',
@@ -2342,8 +2345,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '訊息',
     },
     'pujh3110': {
-      'en':
-          'Allows you to stay updated with the latest news such as health, science, art, and many more topics.',
+      'en': 'Allows you to stay updated with the latest health news.',
       'ar':
           'يتيح لك البقاء على اطلاع بأحدث الأخبار مثل الصحة والعلوم والفن والعديد من المواضيع الأخرى.',
       'es':
