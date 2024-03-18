@@ -431,7 +431,7 @@ best car... */
                                 FormFieldController<String>(null),
                             options: [
                               FFLocalizations.of(context).getText(
-                                'j0k9g6bb' /* Sick (New Problem) */,
+                                'j0k9g6bb' /* New Patient */,
                               ),
                               FFLocalizations.of(context).getText(
                                 'mbn1q109' /* Routine Follow Up */,
@@ -1238,7 +1238,8 @@ best car... */
                                                                 ((_model.listofSymptomsValue ==
                                                                         'التهاب المسالك البولية') ||
                                                                     ((_model.listofSymptomsValue == 'Dolor de garganta') ||
-                                                                        ((_model.listofSymptomsValue == '喉嚨痛') || ((_model.listofSymptomsValue == 'Đau họng') || (_model.listofSymptomsValue == 'إلتهاب الحلق')))))))))))))))))
+                                                                        ((_model.listofSymptomsValue == '喉嚨痛') || ((_model.listofSymptomsValue == 'Đau họng') || (_model.listofSymptomsValue == 'إلتهاب الحلق')))))))))))))))) ||
+                    (_model.listofSymptomsValue == 'Small cut - may require stitching'))
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),

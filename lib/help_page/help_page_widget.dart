@@ -146,15 +146,20 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                     Flexible(
                       child: Align(
                         alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'vihqfpcs' /* Note sure where to go? Tap eac... */,
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 0.0, 0.0),
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'vihqfpcs' /* Not sure where to go? Tap each... */,
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 25.0,
+                                ),
                           ),
-                          style:
-                              FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Noto Serif',
-                                    fontSize: 25.0,
-                                  ),
                         ),
                       ),
                     ),
@@ -232,7 +237,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Noto Serif',
-                                    fontSize: 20.0,
+                                    fontSize: 18.5,
                                     letterSpacing: 1.0,
                                   ),
                             ),

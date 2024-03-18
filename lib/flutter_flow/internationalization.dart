@@ -160,7 +160,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '警報',
     },
     'spar7zf9': {
-      'en': 'Tap the images below for additional information about the alert.',
+      'en':
+          'Scroll through & tap the images below for additional information about the alert.',
       'ar': 'التنبيهات',
       'es': 'Alertas',
       'vi': 'Cảnh báo',
@@ -195,7 +196,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '帳單明細可用！',
     },
     'g559sz9p': {
-      'en': 'What brings you in today?',
+      'en': 'Need help? Tap the help icon here.',
       'ar': 'ما الذي أتى بك اليوم؟',
       'es': '¿Qué te trae hoy?',
       'vi': 'Những gì mang bạn vào hôm nay?',
@@ -530,7 +531,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '您安排哪種類型的訪問？',
     },
     'j0k9g6bb': {
-      'en': 'Sick (New Problem)',
+      'en': 'New Patient',
       'ar': 'مريض (مشكلة جديدة)',
       'es': 'Enfermo (nuevo problema)',
       'vi': 'Ốm (Vấn đề mới)',
@@ -1470,7 +1471,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'p71l5ybt': {
       'en':
-          'mesaures overall health and find a wide range of conditions, including anemia, infection and leukemia.',
+          'measures overall health and find a wide range of conditions, including anemia, infection and leukemia.',
       'ar':
           'يقيس الصحة العامة ويكتشف مجموعة واسعة من الحالات، بما في ذلك فقر الدم والعدوى وسرطان الدم.',
       'es':
@@ -1485,21 +1486,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Tus resultados son los siguientes:',
       'vi': 'Kết quả của bạn như sau:',
       'zh_Hant': '您的結果如下：',
-    },
-    'tzaqr6t3': {
-      'en': '\nRed blood cell count: Normal range 4.75 trillion cells/L \n',
-      'ar': 'عدد خلايا الدم الحمراء: المعدل الطبيعي 4.75 تريليون خلية/لتر',
-      'es':
-          'Recuento de glóbulos rojos: rango normal 4,75 billones de células/l',
-      'vi': 'Số lượng hồng cầu: Bình thường 4,75 nghìn tỷ tế bào/L',
-      'zh_Hant': '紅血球數：正常範圍 4.75 兆細胞/L',
-    },
-    '5xyvlwdy': {
-      'en': '\nHemoglobin: Normal range 12.3 grams/dL\n',
-      'ar': 'الهيموجلوبين: المعدل الطبيعي 12.3 جرام/ديسيلتر',
-      'es': 'Hemoglobina: rango normal 12,3 gramos/dL',
-      'vi': 'Huyết sắc tố: Phạm vi bình thường 12,3 gram/dL',
-      'zh_Hant': '血紅素：正常範圍 12.3 克/分升',
     },
     'gg1hpklg': {
       'en': '\nHematocrit: Low range 25%\n',
@@ -1560,7 +1546,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'lxh7azp3': {
       'en':
-          '\n\nYour results are within the normal range: 10.2 milligrams/deciliter',
+          '\nYour results are within the normal range: 10.2 milligrams/deciliter',
       'ar': 'نتائجك ضمن المعدل الطبيعي: 10.2 مليجرام/ديسيلتر',
       'es':
           'Sus resultados están dentro del rango normal: 10,2 miligramos/decilitro',
@@ -2229,8 +2215,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '關閉',
     },
     'vihqfpcs': {
-      'en':
-          'Note sure where to go? Tap each room to learn more about its details.',
+      'en': 'Not sure where to go? Tap each room to learn more details.',
       'ar':
           'لاحظ متأكدا إلى أين تذهب؟ اضغط على كل غرفة لمعرفة المزيد عن تفاصيلها.',
       'es':
