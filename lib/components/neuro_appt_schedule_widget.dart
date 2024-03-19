@@ -160,12 +160,6 @@ class _NeuroApptScheduleWidgetState extends State<NeuroApptScheduleWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'ics8t7pu' /* Monday, March 18th - 1:00PM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  'xg2gnuxm' /* Monday, March 18th - 3:00PM */,
-                ),
-                FFLocalizations.of(context).getText(
                   'e2m21f3q' /* Wednesday, March 20th - 10:00A... */,
                 ),
                 FFLocalizations.of(context).getText(
@@ -173,13 +167,16 @@ class _NeuroApptScheduleWidgetState extends State<NeuroApptScheduleWidget> {
                 ),
                 FFLocalizations.of(context).getText(
                   '9twatbr1' /* Friday, March 22nd - 1:00PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '1lpxr0y5' /* Friday, March 22nd - 2:00PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'qowjors9' /* Monday, March 18th - 1:00PM */,
+                'qowjors9' /* Wednesday, March 20th - 10:00A... */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,

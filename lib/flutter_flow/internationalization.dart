@@ -160,8 +160,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '警報',
     },
     'spar7zf9': {
-      'en':
-          'Scroll through & tap the images below for additional information about the alert.',
+      'en': 'Scroll through alerts. Tap the image below for more information.',
       'ar': 'التنبيهات',
       'es': 'Alertas',
       'vi': 'Cảnh báo',
@@ -195,12 +194,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Báo cáo thanh toán có sẵn!',
       'zh_Hant': '帳單明細可用！',
     },
-    'g559sz9p': {
-      'en': 'Need help? Tap the help icon here.',
-      'ar': 'ما الذي أتى بك اليوم؟',
-      'es': '¿Qué te trae hoy?',
-      'vi': 'Những gì mang bạn vào hôm nay?',
-      'zh_Hant': '今天是什麼讓你進來的？',
+    'xsur4zkz': {
+      'en': 'Select an option below',
+      'ar':
+          'اضغط على الصورة أدناه للحصول على الميزات في كل منطقة المذكورة أعلاه.',
+      'es':
+          'Toque la imagen a continuación para ver las características de cada área enumerada anteriormente.',
+      'vi':
+          'Nhấn vào hình ảnh bên dưới để biết các tính năng trong từng khu vực được liệt kê ở trên.',
+      'zh_Hant': '點擊下圖了解上面列出的每個區域的功能。',
     },
     '8rqb9wma': {
       'en': 'Scheduling Receptionist',
@@ -258,8 +260,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Sắp xếp lịch lễ tân',
       'zh_Hant': '調度接待員',
     },
-    'xsur4zkz': {
-      'en': 'Tap the image below for features in each area listed above.',
+    'u3gjjocv': {
+      'en': 'Tap image below.',
       'ar':
           'اضغط على الصورة أدناه للحصول على الميزات في كل منطقة المذكورة أعلاه.',
       'es':
@@ -267,6 +269,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi':
           'Nhấn vào hình ảnh bên dưới để biết các tính năng trong từng khu vực được liệt kê ở trên.',
       'zh_Hant': '點擊下圖了解上面列出的每個區域的功能。',
+    },
+    '4kjxoqob': {
+      'en': 'Help? ',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     '9ia1jf06': {
       'en': 'Home',
@@ -2922,25 +2931,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '皮膚科',
     },
     'ttagsuw7': {
-      'en': 'Monday, March 18th - 1:00PM',
+      'en': 'Wednesday, March 20th - 10:00AM',
       'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
       'es': 'Lunes 18 de marzo - 1:00 p.m.',
       'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    '593hoskt': {
-      'en': 'Monday, March 18th - 1:00PM',
-      'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
-      'es': 'Lunes 18 de marzo - 1:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'vbqzkbco': {
-      'en': 'Monday, March 18th - 3:00PM',
-      'ar': 'الاثنين 18 مارس - 3:00 مساءً',
-      'es': 'Lunes 18 de marzo - 3:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 3 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 3:00',
     },
     'kkcnv2px': {
       'en': 'Wednesday, March 20th - 10:00AM',
@@ -2962,6 +2957,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Viernes 22 de marzo - 1:00 p.m.',
       'vi': 'Thứ Sáu, ngày 22 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 22 日星期五 - 下午 1:00',
+    },
+    '2qfrg8m8': {
+      'en': 'Friday, March 22nd - 2:00PM',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'z425xe9a': {
       'en': 'Select',
@@ -3800,8 +3802,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Sức khỏe',
       'zh_Hant': '健康',
     },
+    'wxoy6v93': {
+      'en': 'Healthy Eating',
+      'ar': 'صحة',
+      'es': 'Salud',
+      'vi': 'Sức khỏe',
+      'zh_Hant': '健康',
+    },
     'zbf25j8z': {
-      'en': 'Centers for Disease Control',
+      'en': 'Cancer Health',
       'ar': 'صحة',
       'es': 'Salud',
       'vi': 'Sức khỏe',
@@ -4018,25 +4027,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '神經病學',
     },
     'qowjors9': {
-      'en': 'Monday, March 18th - 1:00PM',
+      'en': 'Wednesday, March 20th - 10:00AM',
       'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
       'es': 'Lunes 18 de marzo - 1:00 p.m.',
       'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'ics8t7pu': {
-      'en': 'Monday, March 18th - 1:00PM',
-      'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
-      'es': 'Lunes 18 de marzo - 1:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'xg2gnuxm': {
-      'en': 'Monday, March 18th - 3:00PM',
-      'ar': 'الاثنين 18 مارس - 3:00 مساءً',
-      'es': 'Lunes 18 de marzo - 3:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 3 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 3:00',
     },
     'e2m21f3q': {
       'en': 'Wednesday, March 20th - 10:00AM',
@@ -4058,6 +4053,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Viernes 22 de marzo - 1:00 p.m.',
       'vi': 'Thứ Sáu, ngày 22 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 22 日星期五 - 下午 1:00',
+    },
+    '1lpxr0y5': {
+      'en': 'Friday, March 22nd - 2:00PM',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'jqd4p2jh': {
       'en': 'Select',
@@ -4157,25 +4159,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '耳鼻喉科 (ENT)',
     },
     '5wth1raz': {
-      'en': 'Monday, March 18th - 1:00PM',
+      'en': 'Wednesday, March 20th - 10:00AM',
       'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
       'es': 'Lunes 18 de marzo - 1:00 p.m.',
       'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'vb16amiw': {
-      'en': 'Monday, March 18th - 1:00PM',
-      'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
-      'es': 'Lunes 18 de marzo - 1:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'hyv2uz31': {
-      'en': 'Monday, March 18th - 3:00PM',
-      'ar': 'الاثنين 18 مارس - 3:00 مساءً',
-      'es': 'Lunes 18 de marzo - 3:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 3 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 3:00',
     },
     '41p9h9k3': {
       'en': 'Wednesday, March 20th - 10:00AM',
@@ -4197,6 +4185,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Viernes 22 de marzo - 1:00 p.m.',
       'vi': 'Thứ Sáu, ngày 22 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 22 日星期五 - 下午 1:00',
+    },
+    '126rxm4a': {
+      'en': 'Friday, March 22nd - 1:00PM',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'm1r3qcyx': {
       'en': 'Select',
@@ -4296,25 +4291,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '肺科',
     },
     'sjpyqns9': {
-      'en': 'Monday, March 18th - 1:00PM',
+      'en': 'Wednesday, March 20th - 10:00AM',
       'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
       'es': 'Lunes 18 de marzo - 1:00 p.m.',
       'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'v5hzeelp': {
-      'en': 'Monday, March 18th - 1:00PM',
-      'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
-      'es': 'Lunes 18 de marzo - 1:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'lllfvugu': {
-      'en': 'Monday, March 18th - 3:00PM',
-      'ar': 'الاثنين 18 مارس - 3:00 مساءً',
-      'es': 'Lunes 18 de marzo - 3:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 3 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 3:00',
     },
     'xo7z0yax': {
       'en': 'Wednesday, March 20th - 10:00AM',
@@ -4336,6 +4317,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Viernes 22 de marzo - 1:00 p.m.',
       'vi': 'Thứ Sáu, ngày 22 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 22 日星期五 - 下午 1:00',
+    },
+    'z19ij0n5': {
+      'en': 'Friday, March 22nd - 2:00PM',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'o2jzttgj': {
       'en': 'Select',
@@ -4435,25 +4423,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '骨科',
     },
     'xngox3c1': {
-      'en': 'Monday, March 18th - 1:00PM',
+      'en': 'Wednesday, March 20th - 10:00AM',
       'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
       'es': 'Lunes 18 de marzo - 1:00 p.m.',
       'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'yuszffp0': {
-      'en': 'Monday, March 18th - 1:00PM',
-      'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
-      'es': 'Lunes 18 de marzo - 1:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'rim745mo': {
-      'en': 'Monday, March 18th - 3:00PM',
-      'ar': 'الاثنين 18 مارس - 3:00 مساءً',
-      'es': 'Lunes 18 de marzo - 3:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 3 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 3:00',
     },
     'eqlx5jq9': {
       'en': 'Wednesday, March 20th - 10:00AM',
@@ -4475,6 +4449,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Viernes 22 de marzo - 1:00 p.m.',
       'vi': 'Thứ Sáu, ngày 22 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 22 日星期五 - 下午 1:00',
+    },
+    'bd8l19mt': {
+      'en': 'Friday, March 22nd - 2:00PM',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'f82q7kib': {
       'en': 'Select',
@@ -4574,25 +4555,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '心臟病學',
     },
     'g2inr668': {
-      'en': 'Monday, March 18th - 1:00PM',
+      'en': 'Wednesday, March 20th - 10:00AM',
       'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
       'es': 'Lunes 18 de marzo - 1:00 p.m.',
       'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'dxpetame': {
-      'en': 'Monday, March 18th - 1:00PM',
-      'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
-      'es': 'Lunes 18 de marzo - 1:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'yl0yrwno': {
-      'en': 'Monday, March 18th - 3:00PM',
-      'ar': 'الاثنين 18 مارس - 3:00 مساءً',
-      'es': 'Lunes 18 de marzo - 3:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 3 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 3:00',
     },
     'h2nllrln': {
       'en': 'Wednesday, March 20th - 10:00AM',
@@ -4614,6 +4581,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Viernes 22 de marzo - 1:00 p.m.',
       'vi': 'Thứ Sáu, ngày 22 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 22 日星期五 - 下午 1:00',
+    },
+    'xc5u9ll6': {
+      'en': 'Friday, March 22nd - 2:00PM',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     '568r7ud7': {
       'en': 'Select',
@@ -4852,25 +4826,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '眼科醫生',
     },
     'djsuwq11': {
-      'en': 'Monday, March 18th - 1:00PM',
+      'en': 'Wednesday, March 20th - 10:00AM',
       'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
       'es': 'Lunes 18 de marzo - 1:00 p.m.',
       'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    '791jlhnk': {
-      'en': 'Monday, March 18th - 1:00PM',
-      'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
-      'es': 'Lunes 18 de marzo - 1:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    'k1z6afek': {
-      'en': 'Monday, March 18th - 3:00PM',
-      'ar': 'الاثنين 18 مارس - 3:00 مساءً',
-      'es': 'Lunes 18 de marzo - 3:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 3 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 3:00',
     },
     '1izad1jv': {
       'en': 'Wednesday, March 20th - 10:00AM',
@@ -4892,6 +4852,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Viernes 22 de marzo - 1:00 p.m.',
       'vi': 'Thứ Sáu, ngày 22 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 22 日星期五 - 下午 1:00',
+    },
+    'lvkasu2c': {
+      'en': 'Friday, March 22nd - 2:00PM',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'h1zonyzp': {
       'en': 'Select',
@@ -4991,25 +4958,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '胃腸病學',
     },
     'oeiatotv': {
-      'en': 'Monday, March 18th - 1:00PM',
+      'en': 'Wednesday, March 20th - 10:00AM',
       'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
       'es': 'Lunes 18 de marzo - 1:00 p.m.',
       'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    '5acjosk1': {
-      'en': 'Monday, March 18th - 1:00PM',
-      'ar': 'الاثنين 18 مارس - الساعة 1 ظهرًا',
-      'es': 'Lunes 18 de marzo - 1:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 1 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 1:00',
-    },
-    '4jmd8zjt': {
-      'en': 'Monday, March 18th - 3:00PM',
-      'ar': 'الاثنين 18 مارس - 3:00 مساءً',
-      'es': 'Lunes 18 de marzo - 3:00 p.m.',
-      'vi': 'Thứ Hai, ngày 18 tháng 3 - 3 giờ chiều',
-      'zh_Hant': '3 月 18 日星期一 - 下午 3:00',
     },
     'mioanif9': {
       'en': 'Wednesday, March 20th - 10:00AM',
@@ -5031,6 +4984,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Viernes 22 de marzo - 1:00 p.m.',
       'vi': 'Thứ Sáu, ngày 22 tháng 3 - 1 giờ chiều',
       'zh_Hant': '3 月 22 日星期五 - 下午 1:00',
+    },
+    'uzvido3x': {
+      'en': 'Friday, March 22nd - 2:00PM',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'ehcol4k7': {
       'en': 'Select',

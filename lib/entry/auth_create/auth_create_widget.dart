@@ -490,7 +490,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                               16.0, 12.0, 16.0, 24.0),
                           child: FFButtonWidget(
                             onPressed: () async {
-                              context.pushNamed('auth_home');
+                              context.pushNamed('Home');
                             },
                             text: FFLocalizations.of(context).getText(
                               'z3i7xce9' /* Create Account */,

@@ -213,8 +213,8 @@ class _BillWidgetState extends State<BillWidget> {
                 ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
                   child: Image.asset(
-                    'assets/images/Bill.png',
-                    width: 620.0,
+                    'assets/images/Screenshot_2024-03-19_at_11.16.08_AM.png',
+                    width: 766.0,
                     height: 593.0,
                     fit: BoxFit.cover,
                   ),
@@ -350,7 +350,8 @@ class _BillWidgetState extends State<BillWidget> {
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
-              if (_model.radioButtonValue == 'Pay Later')
+              if ((_model.radioButtonValue == 'Pay Later') &&
+                  (_model.choiceChipsValue == 'Billing Statements'))
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 5.0),
                   child: Text(
@@ -364,7 +365,8 @@ class _BillWidgetState extends State<BillWidget> {
                         ),
                   ),
                 ),
-              if (_model.radioButtonValue == 'Pay Later')
+              if ((_model.radioButtonValue == 'Pay Later') &&
+                  (_model.choiceChipsValue == 'Billing Statements'))
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 5.0),
                   child: FlutterFlowDropDown<String>(
@@ -404,7 +406,8 @@ class _BillWidgetState extends State<BillWidget> {
                     isMultiSelect: false,
                   ),
                 ),
-              if (_model.radioButtonValue == 'Pay Later')
+              if ((_model.radioButtonValue == 'Pay Later') &&
+                  (_model.choiceChipsValue == 'Billing Statements'))
                 Align(
                   alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(

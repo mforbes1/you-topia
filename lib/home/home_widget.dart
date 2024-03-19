@@ -342,7 +342,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                               16.0, 8.0, 5.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'spar7zf9' /* Scroll through & tap the image... */,
+                              'spar7zf9' /* Scroll through alerts. Tap the... */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .labelMedium
@@ -642,45 +642,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                   Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
-                        child: InkWell(
-                          splashColor: Colors.transparent,
-                          focusColor: Colors.transparent,
-                          hoverColor: Colors.transparent,
-                          highlightColor: Colors.transparent,
-                          onTap: () async {
-                            context.pushNamed('HelpPage');
-                          },
+                      Flexible(
+                        child: Align(
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'g559sz9p' /* Need help? Tap the help icon h... */,
+                              'xsur4zkz' /* Select an option below */,
                             ),
                             style: FlutterFlowTheme.of(context)
-                                .labelMedium
+                                .bodyMedium
                                 .override(
                                   fontFamily: 'Noto Serif',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  fontSize: 25.0,
-                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.w600,
                                 ),
                           ),
-                        ),
-                      ),
-                      InkWell(
-                        splashColor: Colors.transparent,
-                        focusColor: Colors.transparent,
-                        hoverColor: Colors.transparent,
-                        highlightColor: Colors.transparent,
-                        onTap: () async {
-                          context.pushNamed('HelpPage');
-                        },
-                        child: Icon(
-                          Icons.live_help_outlined,
-                          color: FlutterFlowTheme.of(context).primary,
-                          size: 40.0,
                         ),
                       ),
                     ],
@@ -691,7 +667,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Expanded(
+                        Flexible(
                           child: Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 8.0, 0.0, 8.0),
@@ -792,7 +768,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'xsur4zkz' /* Tap the image below for featur... */,
+                              'u3gjjocv' /* Tap image below. */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -1153,6 +1129,52 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ),
                             ),
                           ),
+                      ],
+                    ),
+                  ),
+                  Divider(
+                    height: 8.0,
+                    thickness: 1.0,
+                    color: FlutterFlowTheme.of(context).alternate,
+                  ),
+                  Align(
+                    alignment: const AlignmentDirectional(0.0, -1.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Expanded(
+                          child: Align(
+                            alignment: const AlignmentDirectional(1.0, 0.0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                '4kjxoqob' /* Help?  */,
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Noto Serif',
+                                    fontSize: 30.0,
+                                  ),
+                            ),
+                          ),
+                        ),
+                        Flexible(
+                          child: Align(
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
+                            child: FlutterFlowIconButton(
+                              buttonSize: 40.0,
+                              icon: Icon(
+                                Icons.help_center,
+                                color: FlutterFlowTheme.of(context).primaryText,
+                                size: 40.0,
+                              ),
+                              onPressed: () async {
+                                context.pushNamed('HelpPage');
+                              },
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
