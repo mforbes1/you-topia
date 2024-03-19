@@ -301,7 +301,7 @@ best car... */
                           alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'grtfyrj7' /* Is this an emergency? */,
+                              'grtfyrj7' /* Is this urgent or an emergency... */,
                             ),
                             style:
                                 FlutterFlowTheme.of(context).bodyLarge.override(
@@ -328,10 +328,13 @@ best car... */
                                 FormFieldController<String>(null),
                             options: [
                               FFLocalizations.of(context).getText(
-                                'si6z34hp' /* Yes */,
+                                'wngpouhj' /* No */,
                               ),
                               FFLocalizations.of(context).getText(
-                                'wngpouhj' /* No */,
+                                '09pziu3v' /* Urgent */,
+                              ),
+                              FFLocalizations.of(context).getText(
+                                'w8zy9sgc' /* Emergency */,
                               )
                             ],
                             onChanged: (val) async {
@@ -395,10 +398,15 @@ best car... */
                     ),
                   ],
                 ),
-                if ((_model.emergencyValue == 'No') ||
-                    ((_model.emergencyValue == '不') ||
-                        ((_model.emergencyValue == 'KHÔNG') ||
-                            (_model.emergencyValue == 'لا'))))
+                if (((_model.emergencyValue == 'No') ||
+                        (_model.emergencyValue == 'Urgent') ||
+                        (_model.emergencyValue == 'Urgente')) ||
+                    (((_model.emergencyValue == '不') ||
+                            (_model.emergencyValue == '緊迫的')) ||
+                        (((_model.emergencyValue == 'KHÔNG') ||
+                                (_model.emergencyValue == 'Cấp bách')) ||
+                            ((_model.emergencyValue == 'لا') ||
+                                (_model.emergencyValue == 'عاجل')))))
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
@@ -568,6 +576,9 @@ best car... */
                               ),
                               FFLocalizations.of(context).getText(
                                 'abxxcjnw' /* Vomiting */,
+                              ),
+                              FFLocalizations.of(context).getText(
+                                'nxs6f6h6' /* Joint pain */,
                               )
                             ],
                             onChanged: (val) => setState(
@@ -1211,11 +1222,9 @@ best car... */
                         ((_model.listofSymptomsValue == '腹瀉') ||
                             ((_model.listofSymptomsValue == 'Bệnh tiêu chảy') ||
                                 ((_model.listofSymptomsValue == 'إسهال') ||
-                                    ((_model.listofSymptomsValue ==
-                                            'Dolor de oidos') ||
+                                    ((_model.listofSymptomsValue == 'Dolor de oidos') ||
                                         ((_model.listofSymptomsValue == '耳痛') ||
-                                            ((_model.listofSymptomsValue ==
-                                                    'Đau tai') ||
+                                            ((_model.listofSymptomsValue == 'Đau tai') ||
                                                 (_model.listofSymptomsValue ==
                                                     'ألم الأذن'))))))) ||
                         ((_model.listofSymptomsValue == 'Fiebre') ||
@@ -1223,23 +1232,26 @@ best car... */
                                 ((_model.listofSymptomsValue == 'Sốt') ||
                                     ((_model.listofSymptomsValue == 'حمى') ||
                                         ((_model.listofSymptomsValue == 'Gripe') ||
-                                            ((_model.listofSymptomsValue ==
-                                                    '流感') ||
-                                                ((_model.listofSymptomsValue ==
-                                                        'Cúm') ||
+                                            ((_model.listofSymptomsValue == '流感') ||
+                                                ((_model.listofSymptomsValue == 'Cúm') ||
                                                     (_model.listofSymptomsValue ==
                                                         'أنفلونزا') ||
-                                                    ((_model.listofSymptomsValue ==
-                                                            'Infección del tracto urinario') ||
-                                                        ((_model.listofSymptomsValue ==
-                                                                '泌尿道感染') ||
-                                                            ((_model.listofSymptomsValue ==
-                                                                    'Nhiễm trùng đường tiết niệu') ||
-                                                                ((_model.listofSymptomsValue ==
-                                                                        'التهاب المسالك البولية') ||
+                                                    ((_model.listofSymptomsValue == 'Infección del tracto urinario') ||
+                                                        ((_model.listofSymptomsValue == '泌尿道感染') ||
+                                                            ((_model.listofSymptomsValue == 'Nhiễm trùng đường tiết niệu') ||
+                                                                ((_model.listofSymptomsValue == 'التهاب المسالك البولية') ||
                                                                     ((_model.listofSymptomsValue == 'Dolor de garganta') ||
-                                                                        ((_model.listofSymptomsValue == '喉嚨痛') || ((_model.listofSymptomsValue == 'Đau họng') || (_model.listofSymptomsValue == 'إلتهاب الحلق')))))))))))))))) ||
-                    (_model.listofSymptomsValue == 'Small cut - may require stitching'))
+                                                                        ((_model.listofSymptomsValue == '喉嚨痛') ||
+                                                                            ((_model.listofSymptomsValue == 'Đau họng') ||
+                                                                                (_model.listofSymptomsValue ==
+                                                                                    'إلتهاب الحلق')))))))))))))))) ||
+                    (_model.listofSymptomsValue ==
+                        'Small cut - may require stitching') ||
+                    ((_model.listofSymptomsValue == 'Joint pain') ||
+                        ((_model.listofSymptomsValue == 'Dolor en las articulaciones') ||
+                            ((_model.listofSymptomsValue == '關節疼痛') ||
+                                ((_model.listofSymptomsValue == 'Đau khớp') ||
+                                    (_model.listofSymptomsValue == 'الم المفاصل'))))))
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),

@@ -1148,7 +1148,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                             alignment: const AlignmentDirectional(1.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '4kjxoqob' /* Help?  */,
+                                'kbovzet4' /* Help?  */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium

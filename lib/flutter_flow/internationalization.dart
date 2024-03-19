@@ -161,10 +161,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'spar7zf9': {
       'en': 'Scroll through alerts. Tap the image below for more information.',
-      'ar': 'التنبيهات',
-      'es': 'Alertas',
-      'vi': 'Cảnh báo',
-      'zh_Hant': '警報',
+      'ar':
+          'قم بالتمرير خلال التنبيهات. اضغط على الصورة أدناه لمزيد من المعلومات.',
+      'es':
+          'Desplácese por las alertas. Toque la imagen a continuación para obtener más información.',
+      'vi':
+          'Cuộn qua các cảnh báo. Nhấn vào hình ảnh bên dưới để biết thêm thông tin.',
+      'zh_Hant': '滾動瀏覽警報。點擊下圖了解更多。',
     },
     'zwsfiqhf': {
       'en': 'You have an upcoming appointment!',
@@ -196,13 +199,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'xsur4zkz': {
       'en': 'Select an option below',
-      'ar':
-          'اضغط على الصورة أدناه للحصول على الميزات في كل منطقة المذكورة أعلاه.',
-      'es':
-          'Toque la imagen a continuación para ver las características de cada área enumerada anteriormente.',
-      'vi':
-          'Nhấn vào hình ảnh bên dưới để biết các tính năng trong từng khu vực được liệt kê ở trên.',
-      'zh_Hant': '點擊下圖了解上面列出的每個區域的功能。',
+      'ar': 'حدد خيارًا أدناه',
+      'es': 'Seleccione una opción a continuación',
+      'vi': 'Chọn một tùy chọn bên dưới',
+      'zh_Hant': '選擇下面的一個選項',
     },
     '8rqb9wma': {
       'en': 'Scheduling Receptionist',
@@ -262,20 +262,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'u3gjjocv': {
       'en': 'Tap image below.',
-      'ar':
-          'اضغط على الصورة أدناه للحصول على الميزات في كل منطقة المذكورة أعلاه.',
-      'es':
-          'Toque la imagen a continuación para ver las características de cada área enumerada anteriormente.',
-      'vi':
-          'Nhấn vào hình ảnh bên dưới để biết các tính năng trong từng khu vực được liệt kê ở trên.',
-      'zh_Hant': '點擊下圖了解上面列出的每個區域的功能。',
+      'ar': 'اضغط على الصورة أدناه.',
+      'es': 'Toca la imagen a continuación.',
+      'vi': 'Nhấn vào hình ảnh bên dưới.',
+      'zh_Hant': '點擊下圖。',
     },
-    '4kjxoqob': {
+    'kbovzet4': {
       'en': 'Help? ',
-      'ar': '',
-      'es': '',
-      'vi': '',
-      'zh_Hant': '',
+      'ar': 'يساعد؟',
+      'es': '¿Ayuda?',
+      'vi': 'Giúp đỡ?',
+      'zh_Hant': '幫助？',
     },
     '9ia1jf06': {
       'en': 'Home',
@@ -501,18 +498,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '預約安排',
     },
     'grtfyrj7': {
-      'en': 'Is this an emergency?',
-      'ar': 'هل هذه حالة طارئة؟',
-      'es': '¿Es esto una emergencia?',
-      'vi': 'Đây có phải là trường hợp khẩn cấp không?',
-      'zh_Hant': '這是緊急情況嗎？',
-    },
-    'si6z34hp': {
-      'en': 'Yes',
-      'ar': 'نعم',
-      'es': 'Sí',
-      'vi': 'Đúng',
-      'zh_Hant': '是的',
+      'en': 'Is this urgent or an emergency?',
+      'ar': 'هل هذا عاجل أم طارئ؟',
+      'es': '¿Es esto urgente o una emergencia?',
+      'vi': 'Đây là trường hợp khẩn cấp hay khẩn cấp?',
+      'zh_Hant': '這是緊急情況還是緊急情況？',
     },
     'wngpouhj': {
       'en': 'No',
@@ -520,6 +510,20 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'No',
       'vi': 'KHÔNG',
       'zh_Hant': '不',
+    },
+    '09pziu3v': {
+      'en': 'Urgent',
+      'ar': 'عاجل',
+      'es': 'Urgente',
+      'vi': 'Cấp bách',
+      'zh_Hant': '緊迫的',
+    },
+    'w8zy9sgc': {
+      'en': 'Emergency',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'h859ty99': {
       'en': 'Please select...',
@@ -716,6 +720,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Vómitos',
       'vi': 'Nôn mửa',
       'zh_Hant': '嘔吐',
+    },
+    'nxs6f6h6': {
+      'en': 'Joint pain',
+      'ar': 'الم المفاصل',
+      'es': 'Dolor en las articulaciones',
+      'vi': 'Đau khớp',
+      'zh_Hant': '關節疼痛',
     },
     'zajfzfsy': {
       'en': 'Please select...',
