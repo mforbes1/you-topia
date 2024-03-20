@@ -80,31 +80,6 @@ class _MedicalRecordsWidgetState extends State<MedicalRecordsWidget> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 4.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              '250kjv8f' /* Medical Records */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                  fontSize: 35.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -117,10 +92,7 @@ class _MedicalRecordsWidgetState extends State<MedicalRecordsWidget> {
                             children: [
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '6ruahcdy' /* Hello! How may I help you? 
-
-W... */
-                                  ,
+                                  '6ruahcdy' /* Would you like to request a  */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -134,7 +106,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'fja33vmo' /* copy of your medical records  */,
+                                  'fja33vmo' /* copy  */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -145,7 +117,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '11q3bc9f' /* or  */,
+                                  '11q3bc9f' /* of your records or  */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',

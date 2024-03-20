@@ -80,47 +80,19 @@ class _ReceptionistWidgetState extends State<ReceptionistWidget> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 4.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              '4aho78jc' /* Receptionist */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                  fontSize: 35.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Expanded(
+                      Flexible(
                         child: RichText(
                           textScaler: MediaQuery.of(context).textScaler,
                           text: TextSpan(
                             children: [
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'dayyhui5' /* Hello! How may I help you? 
-
-W... */
-                                  ,
+                                  'dayyhui5' /* Would you like to  */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -195,7 +167,7 @@ or  */
                           context.pushNamed('BookAppt');
                         },
                         text: FFLocalizations.of(context).getText(
-                          '7ct0efdd' /* Schedule New Appointment */,
+                          '7ct0efdd' /* Schedule */,
                         ),
                         options: FFButtonOptions(
                           width: 330.0,
@@ -227,7 +199,7 @@ or  */
                             context.pushNamed('AppointmentDetails');
                           },
                           text: FFLocalizations.of(context).getText(
-                            'w5mrs53r' /* View Appointment Details */,
+                            'w5mrs53r' /* View Details */,
                           ),
                           options: FFButtonOptions(
                             width: 330.0,

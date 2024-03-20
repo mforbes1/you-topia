@@ -647,7 +647,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                           alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
-                              'xsur4zkz' /* Select an option below */,
+                              'xsur4zkz' /* Select an option below. */,
                             ),
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
@@ -674,10 +674,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                             child: FlutterFlowChoiceChips(
                               options: [
                                 ChipData(FFLocalizations.of(context).getText(
-                                  '8rqb9wma' /* Scheduling Receptionist */,
+                                  '8rqb9wma' /* Scheduling */,
                                 )),
                                 ChipData(FFLocalizations.of(context).getText(
-                                  'u9lildw1' /* Provider/Patient Room */,
+                                  'u9lildw1' /* Provider - Patient */,
                                 )),
                                 ChipData(FFLocalizations.of(context).getText(
                                   'i4r1nh22' /* Pharmacy */,
@@ -689,7 +689,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   'zd4d41cj' /* Medical Records */,
                                 )),
                                 ChipData(FFLocalizations.of(context).getText(
-                                  'aj1qc5p0' /* Billing */,
+                                  'aj1qc5p0' /* Pay - View Bill */,
                                 )),
                                 ChipData(FFLocalizations.of(context).getText(
                                   '4gxos0s8' /* News */,
@@ -742,7 +742,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   FormFieldController<List<String>>(
                                 [
                                   FFLocalizations.of(context).getText(
-                                    '7wvlm2us' /* Scheduling Receptionist */,
+                                    '7wvlm2us' /* Scheduling */,
                                   )
                                 ],
                               ),
@@ -790,14 +790,11 @@ class _HomeWidgetState extends State<HomeWidget> {
                     ),
                     child: Stack(
                       children: [
-                        if ((_model.choiceChipsValue ==
-                                'Scheduling Receptionist') ||
-                            (_model.choiceChipsValue ==
-                                'Recepcionista de programación') ||
-                            (_model.choiceChipsValue == '調度接待員') ||
-                            (_model.choiceChipsValue ==
-                                'Sắp xếp lịch lễ tân') ||
-                            (_model.choiceChipsValue == 'موظف استقبال جدولة'))
+                        if ((_model.choiceChipsValue == 'Scheduling') ||
+                            (_model.choiceChipsValue == 'Planificación') ||
+                            (_model.choiceChipsValue == '調度') ||
+                            (_model.choiceChipsValue == 'Lên lịch') ||
+                            (_model.choiceChipsValue == 'الجدولة'))
                           Align(
                             alignment: const AlignmentDirectional(0.0, -0.95),
                             child: Builder(
@@ -845,15 +842,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ),
                             ),
                           ),
-                        if ((_model.choiceChipsValue ==
-                                'Provider/Patient Room') ||
+                        if ((_model.choiceChipsValue == 'Provider - Patient') ||
                             (_model.choiceChipsValue ==
-                                'Habitación de proveedor/paciente') ||
-                            (_model.choiceChipsValue == '提供者/患者室') ||
+                                'Proveedor - Paciente') ||
+                            (_model.choiceChipsValue == '提供者 - 患者') ||
                             (_model.choiceChipsValue ==
-                                'Phòng Nhà cung cấp/Bệnh nhân') ||
-                            (_model.choiceChipsValue ==
-                                'غرفة مقدم الخدمة/المريض'))
+                                'Nhà cung cấp - Bệnh nhân') ||
+                            (_model.choiceChipsValue == 'مقدم – مريض'))
                           Align(
                             alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Builder(
@@ -1057,11 +1052,13 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ),
                             ),
                           ),
-                        if ((_model.choiceChipsValue == 'Billing') ||
-                            (_model.choiceChipsValue == 'Facturación') ||
-                            (_model.choiceChipsValue == '計費') ||
-                            (_model.choiceChipsValue == 'Thanh toán') ||
-                            (_model.choiceChipsValue == 'الفواتير'))
+                        if ((_model.choiceChipsValue == 'Pay - View Bill') ||
+                            (_model.choiceChipsValue ==
+                                'Pagar - Ver facture') ||
+                            (_model.choiceChipsValue == '付款 - 查看帳單') ||
+                            (_model.choiceChipsValue ==
+                                'Thanh toán - Xem hóa đơn') ||
+                            (_model.choiceChipsValue == 'الدفع - عرض الفاتورة'))
                           Align(
                             alignment: const AlignmentDirectional(0.0, 1.82),
                             child: InkWell(
@@ -1129,6 +1126,55 @@ class _HomeWidgetState extends State<HomeWidget> {
                               ),
                             ),
                           ),
+                        if ((_model.choiceChipsValue == 'Provider - Patient') ||
+                            (_model.choiceChipsValue ==
+                                'Proveedor - Paciente') ||
+                            (_model.choiceChipsValue == '提供者 - 患者') ||
+                            (_model.choiceChipsValue ==
+                                'Nhà cung cấp - Bệnh nhân') ||
+                            (_model.choiceChipsValue == 'مقدم – مريض'))
+                          Align(
+                            alignment: const AlignmentDirectional(0.96, 0.72),
+                            child: InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                await showDialog(
+                                  context: context,
+                                  builder: (alertDialogContext) {
+                                    return AlertDialog(
+                                      title: const Text('Telemedicine Appointment'),
+                                      content: const Text(
+                                          'No telemedicine appointment scheduled today. If you have a telemedicine appointment scheduled, you will be able to click here to join.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () =>
+                                              Navigator.pop(alertDialogContext),
+                                          child: const Text('Ok'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                              },
+                              child: Container(
+                                width: 170.0,
+                                height: 170.0,
+                                decoration: BoxDecoration(
+                                  color: FlutterFlowTheme.of(context).alternate,
+                                  image: DecorationImage(
+                                    fit: BoxFit.cover,
+                                    image: Image.asset(
+                                      'assets/images/Telemed_appt.png',
+                                    ).image,
+                                  ),
+                                  shape: BoxShape.circle,
+                                ),
+                              ),
+                            ),
+                          ),
                       ],
                     ),
                   ),
@@ -1137,46 +1183,36 @@ class _HomeWidgetState extends State<HomeWidget> {
                     thickness: 1.0,
                     color: FlutterFlowTheme.of(context).alternate,
                   ),
-                  Align(
-                    alignment: const AlignmentDirectional(0.0, -1.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Expanded(
-                          child: Align(
-                            alignment: const AlignmentDirectional(1.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'kbovzet4' /* Help?  */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: 'Noto Serif',
-                                    fontSize: 30.0,
-                                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Align(
+                        alignment: const AlignmentDirectional(1.0, 0.0),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            context.pushNamed('HelpPage');
+                          },
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'kbovzet4' /* Help? */,
                             ),
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 30.0,
+                                  fontWeight: FontWeight.w800,
+                                  decoration: TextDecoration.underline,
+                                ),
                           ),
                         ),
-                        Flexible(
-                          child: Align(
-                            alignment: const AlignmentDirectional(-1.0, 0.0),
-                            child: FlutterFlowIconButton(
-                              buttonSize: 40.0,
-                              icon: Icon(
-                                Icons.help_center,
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                size: 40.0,
-                              ),
-                              onPressed: () async {
-                                context.pushNamed('HelpPage');
-                              },
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ],
               ),

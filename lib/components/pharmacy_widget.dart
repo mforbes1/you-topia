@@ -81,31 +81,6 @@ class _PharmacyWidgetState extends State<PharmacyWidget> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 4.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              '6hnpjjq4' /* Pharmacy */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                  fontSize: 35.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -118,10 +93,7 @@ class _PharmacyWidgetState extends State<PharmacyWidget> {
                             children: [
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '2ixf9otj' /* Hello! How may I help you? 
-
-W... */
-                                  ,
+                                  '2ixf9otj' /* Would you like to  */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -135,7 +107,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '5bxd11jr' /* refill  */,
+                                  '5bxd11jr' /* request refill  */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -146,7 +118,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '1npb5dal' /* or review  */,
+                                  '1npb5dal' /* or  */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -157,7 +129,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'seoglumt' /* medication management */,
+                                  'seoglumt' /* track  */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -168,7 +140,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '0bjnit8u' /* ? */,
+                                  '0bjnit8u' /* your medication? */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -241,7 +213,7 @@ W... */
                             context.pushNamed('MedicationManagement');
                           },
                           text: FFLocalizations.of(context).getText(
-                            'o8kfrl4s' /* Medication Management */,
+                            'o8kfrl4s' /* Track Medications */,
                           ),
                           options: FFButtonOptions(
                             width: 330.0,

@@ -210,13 +210,16 @@ class _BillWidgetState extends State<BillWidget> {
                 ),
               ),
               if (_model.choiceChipsValue == 'Billing Statements')
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.0),
-                  child: Image.asset(
-                    'assets/images/Screenshot_2024-03-19_at_11.16.08_AM.png',
-                    width: 766.0,
-                    height: 593.0,
-                    fit: BoxFit.cover,
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(8.0),
+                    child: Image.asset(
+                      'assets/images/Screenshot_2024-03-19_at_11.16.08_AM.png',
+                      width: 766.0,
+                      height: 593.0,
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 ),
               if (_model.choiceChipsValue == 'Billing Statements')
@@ -265,6 +268,7 @@ class _BillWidgetState extends State<BillWidget> {
                       FFLocalizations.of(context).getText(
                         '8b77zz8q' /* Please do not enter your actua... */,
                       ),
+                      textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Noto Serif',
                             color: const Color(0xFFD60D19),
@@ -503,6 +507,24 @@ class _BillWidgetState extends State<BillWidget> {
                     ],
                   ),
                 ),
+              Padding(
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text(
+                      FFLocalizations.of(context).getText(
+                        '8nfa764q' /* Questions about your bill? Con... */,
+                      ),
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily: 'Noto Serif',
+                            fontSize: 20.0,
+                          ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),

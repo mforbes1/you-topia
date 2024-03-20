@@ -248,7 +248,8 @@ class _NewsPromptWidgetState extends State<NewsPromptWidget> {
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,
                             onTap: () async {
-                              await launchURL('https://www.nih.gov/');
+                              await launchURL(
+                                  'https://www.cdc.gov/healthyweight/healthy_eating/index.html');
                             },
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -309,7 +310,7 @@ class _NewsPromptWidgetState extends State<NewsPromptWidget> {
                                           ),
                                           onPressed: () async {
                                             await launchURL(
-                                                'https://www.nih.gov/');
+                                                'https://www.cdc.gov/healthyweight/healthy_eating/index.html');
                                           },
                                         ),
                                       ],

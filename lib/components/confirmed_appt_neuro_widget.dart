@@ -222,7 +222,7 @@ class _ConfirmedApptNeuroWidgetState extends State<ConfirmedApptNeuroWidget> {
                                         TextSpan(
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            'ksuojkzt' /* . To confirm  this date and ti... */,
+                                            'ksuojkzt' /* . Click  */,
                                           ),
                                           style: GoogleFonts.getFont(
                                             'Noto Serif',
@@ -245,9 +245,7 @@ class _ConfirmedApptNeuroWidgetState extends State<ConfirmedApptNeuroWidget> {
                                         TextSpan(
                                           text: FFLocalizations.of(context)
                                               .getText(
-                                            '8iard22m' /* 
-To cancel and view other avai... */
-                                            ,
+                                            '8iard22m' /* to confirm. To cancel and view... */,
                                           ),
                                           style: const TextStyle(
                                             fontSize: 25.0,

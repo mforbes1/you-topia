@@ -155,7 +155,7 @@ class _MedicationManagementWidgetState
                 weekFormat: false,
                 weekStartsMonday: false,
                 initialDate: getCurrentTimestamp,
-                rowHeight: 55.0,
+                rowHeight: 45.0,
                 onChange: (DateTimeRange? newSelectedDate) {
                   setState(() => _model.calendarSelectedDay = newSelectedDate);
                 },
@@ -421,7 +421,7 @@ class _MedicationManagementWidgetState
                         alignment: const AlignmentDirectional(-0.98, -0.97),
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              10.0, 0.0, 0.0, 0.0),
+                              10.0, 0.0, 0.0, 15.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
                               '4alxsupp' /* Have you taken your medication... */,

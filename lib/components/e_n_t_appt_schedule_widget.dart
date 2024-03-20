@@ -159,23 +159,23 @@ class _ENTApptScheduleWidgetState extends State<ENTApptScheduleWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  '41p9h9k3' /* Wednesday, March 20th - 10:00A... */,
+                  '41p9h9k3' /* Wednesday, March 20 - 10 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'dsiow6hx' /* Wednesday, March 20th - 11:00A... */,
+                  'dsiow6hx' /* Wednesday, March 20 - 11 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'vh80tgix' /* Friday, March 22nd - 1:00PM */,
+                  'vh80tgix' /* Friday, March 22 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  '126rxm4a' /* Friday, March 22nd - 1:00PM */,
+                  '2r8t42w0' /* Friday, March 22 - 1 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                '5wth1raz' /* Wednesday, March 20th - 10:00A... */,
+                '5wth1raz' /* Wednesday, March 20 - 10 AM */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,

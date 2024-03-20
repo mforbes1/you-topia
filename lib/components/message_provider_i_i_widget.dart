@@ -117,37 +117,7 @@ class _MessageProviderIIWidgetState extends State<MessageProviderIIWidget> {
                       children: [
                         TextSpan(
                           text: FFLocalizations.of(context).getText(
-                            'akigq584' /* Displayed below are the provid... */,
-                          ),
-                          style: GoogleFonts.getFont(
-                            'Noto Serif',
-                            fontSize: 25.0,
-                          ),
-                        ),
-                        TextSpan(
-                          text: FFLocalizations.of(context).getText(
-                            'xan4089u' /* Completed  */,
-                          ),
-                          style: GoogleFonts.getFont(
-                            'Noto Serif',
-                            color: FlutterFlowTheme.of(context).primary,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 25.0,
-                            decoration: TextDecoration.underline,
-                          ),
-                        ),
-                        TextSpan(
-                          text: FFLocalizations.of(context).getText(
-                            '4c6r7tyn' /* appointments with. */,
-                          ),
-                          style: GoogleFonts.getFont(
-                            'Noto Serif',
-                            fontSize: 25.0,
-                          ),
-                        ),
-                        TextSpan(
-                          text: FFLocalizations.of(context).getText(
-                            '3p4c4rbv' /*  Please select which provider ... */,
+                            'akigq584' /* Select the provider to send a ... */,
                           ),
                           style: GoogleFonts.getFont(
                             'Noto Serif',
@@ -243,7 +213,7 @@ class _MessageProviderIIWidgetState extends State<MessageProviderIIWidget> {
                               }
                             },
                             text: FFLocalizations.of(context).getText(
-                              'mx7zid6g' /* Submit */,
+                              'mx7zid6g' /* Next */,
                             ),
                             options: FFButtonOptions(
                               width: 330.0,

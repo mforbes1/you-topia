@@ -159,12 +159,12 @@ class _ProviderMessageNeuroWidgetState
                   obscureText: false,
                   decoration: InputDecoration(
                     hintText: FFLocalizations.of(context).getText(
-                      'zuafvbi0' /* Enter your message here... */,
+                      'zuafvbi0' /* Tap here to enter your message... */,
                     ),
                     hintStyle:
                         FlutterFlowTheme.of(context).labelMedium.override(
-                              fontFamily: 'Mukta',
-                              fontSize: 16.0,
+                              fontFamily: 'Noto Serif',
+                              fontSize: 25.0,
                             ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
@@ -224,7 +224,7 @@ class _ProviderMessageNeuroWidgetState
                             return AlertDialog(
                               title: const Text('Success!'),
                               content: const Text(
-                                  'Your messages has been sent to the provider. You should receive a response within 24-28 hours.'),
+                                  'Your messages has been sent to the provider. You should receive a response within 12-24 hours.'),
                               actions: [
                                 TextButton(
                                   onPressed: () =>
@@ -238,7 +238,7 @@ class _ProviderMessageNeuroWidgetState
                         Navigator.pop(context);
                       },
                       text: FFLocalizations.of(context).getText(
-                        'lqphu4ip' /* Send Message */,
+                        'lqphu4ip' /* Send */,
                       ),
                       options: FFButtonOptions(
                         width: 330.0,

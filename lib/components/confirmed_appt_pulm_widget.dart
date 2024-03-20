@@ -219,7 +219,7 @@ class _ConfirmedApptPulmWidgetState extends State<ConfirmedApptPulmWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'h2lfn7uo' /* . To confirm  this date and ti... */,
+                                          'h2lfn7uo' /* . Click  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -229,7 +229,7 @@ class _ConfirmedApptPulmWidgetState extends State<ConfirmedApptPulmWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'pxy7zcv1' /* Schedule.  */,
+                                          'pxy7zcv1' /* Schedule  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -242,9 +242,7 @@ class _ConfirmedApptPulmWidgetState extends State<ConfirmedApptPulmWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'itbg4eln' /* 
-To cancel and view other avai... */
-                                          ,
+                                          'itbg4eln' /* to confirm. To cancel and view... */,
                                         ),
                                         style: const TextStyle(
                                           fontSize: 25.0,

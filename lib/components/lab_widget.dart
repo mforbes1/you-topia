@@ -80,102 +80,78 @@ class _LabWidgetState extends State<LabWidget> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 4.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              'qywnwx8u' /* Lab */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                  fontSize: 35.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Expanded(
-                        child: RichText(
-                          textScaler: MediaQuery.of(context).textScaler,
-                          text: TextSpan(
-                            children: [
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'fef9r9wg' /* Hello! How may I help you? 
-
-W... */
-                                  ,
+                      Flexible(
+                        child: Align(
+                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          child: RichText(
+                            textScaler: MediaQuery.of(context).textScaler,
+                            text: TextSpan(
+                              children: [
+                                TextSpan(
+                                  text: FFLocalizations.of(context).getText(
+                                    'fef9r9wg' /* Would you like to  */,
+                                  ),
+                                  style: FlutterFlowTheme.of(context)
+                                      .bodyMedium
+                                      .override(
+                                        fontFamily: 'Noto Serif',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontSize: 25.0,
+                                        fontWeight: FontWeight.normal,
+                                      ),
                                 ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 25.0,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'sidjou9q' /* lab results  */,
+                                TextSpan(
+                                  text: FFLocalizations.of(context).getText(
+                                    'sidjou9q' /* view  */,
+                                  ),
+                                  style: GoogleFonts.getFont(
+                                    'Noto Serif',
+                                    color: const Color(0xFF6082B6),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 27.0,
+                                  ),
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  color: const Color(0xFF6082B6),
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 27.0,
+                                TextSpan(
+                                  text: FFLocalizations.of(context).getText(
+                                    'ydtuwshc' /* lab results or find a  */,
+                                  ),
+                                  style: GoogleFonts.getFont(
+                                    'Noto Serif',
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                    fontSize: 25.0,
+                                  ),
                                 ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'ydtuwshc' /* or find a  */,
+                                TextSpan(
+                                  text: FFLocalizations.of(context).getText(
+                                    'cn4qn98n' /* testing facility  */,
+                                  ),
+                                  style: GoogleFonts.getFont(
+                                    'Noto Serif',
+                                    color: const Color(0xFF6082B6),
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 27.0,
+                                  ),
                                 ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  fontSize: 25.0,
-                                ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'cn4qn98n' /* testing facillity */,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  color: const Color(0xFF6082B6),
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 27.0,
-                                ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'bzjjxv14' /* ? */,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  fontSize: 25.0,
-                                ),
-                              )
-                            ],
-                            style: FlutterFlowTheme.of(context).bodyMedium,
+                                TextSpan(
+                                  text: FFLocalizations.of(context).getText(
+                                    'bzjjxv14' /* ? */,
+                                  ),
+                                  style: GoogleFonts.getFont(
+                                    'Noto Serif',
+                                    fontSize: 25.0,
+                                  ),
+                                )
+                              ],
+                              style: FlutterFlowTheme.of(context).bodyMedium,
+                            ),
+                            textAlign: TextAlign.center,
                           ),
                         ),
                       ),
@@ -193,7 +169,7 @@ W... */
                           context.pushNamed('Labs');
                         },
                         text: FFLocalizations.of(context).getText(
-                          'ecdlh1v8' /* Lab Results */,
+                          'ecdlh1v8' /* View Results */,
                         ),
                         options: FFButtonOptions(
                           width: 330.0,

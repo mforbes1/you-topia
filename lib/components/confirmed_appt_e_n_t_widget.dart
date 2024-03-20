@@ -219,7 +219,7 @@ class _ConfirmedApptENTWidgetState extends State<ConfirmedApptENTWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'j97ba34h' /* . To confirm  this date and ti... */,
+                                          'j97ba34h' /* . Click  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -229,7 +229,7 @@ class _ConfirmedApptENTWidgetState extends State<ConfirmedApptENTWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '6c4r8k8l' /* Schedule.  */,
+                                          '6c4r8k8l' /* Schedule  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -242,9 +242,7 @@ class _ConfirmedApptENTWidgetState extends State<ConfirmedApptENTWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'xjrv77dr' /* 
-To cancel and view other avai... */
-                                          ,
+                                          'xjrv77dr' /* to confirm. To cancel and view... */,
                                         ),
                                         style: const TextStyle(
                                           fontSize: 25.0,

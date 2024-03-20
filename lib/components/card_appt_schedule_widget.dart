@@ -159,23 +159,23 @@ class _CardApptScheduleWidgetState extends State<CardApptScheduleWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'h2nllrln' /* Wednesday, March 20th - 10:00A... */,
+                  'h2nllrln' /* Wednesday, March 20 - 10 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'nokiwvjt' /* Wednesday, March 20th - 11:00A... */,
+                  'nokiwvjt' /* Wednesday, March 20 - 11 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'fh7an51x' /* Friday, March 22nd - 1:00PM */,
+                  'fh7an51x' /* Friday, March 22 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'xc5u9ll6' /* Friday, March 22nd - 2:00PM */,
+                  'bfijdhpd' /* Friday, March 22 - 2 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'g2inr668' /* Wednesday, March 20th - 10:00A... */,
+                'g2inr668' /* Wednesday, March 20 - 10 AM */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,

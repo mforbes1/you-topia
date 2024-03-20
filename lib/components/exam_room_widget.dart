@@ -1,4 +1,5 @@
 import '/components/message_provider_i_i_widget.dart';
+import '/components/provider_call_back_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -81,31 +82,6 @@ class _ExamRoomWidgetState extends State<ExamRoomWidget> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 4.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Expanded(
-                        child: Align(
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              '50dmjdyp' /* Exam Room */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .titleLarge
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                  fontSize: 35.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -118,10 +94,7 @@ class _ExamRoomWidgetState extends State<ExamRoomWidget> {
                             children: [
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'o6h99zs7' /* Hello! How may I help you? 
-
-W... */
-                                  ,
+                                  'o6h99zs7' /* Would you like to  */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -135,7 +108,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '4ej12tsc' /* leave a messge  */,
+                                  '4ej12tsc' /* send a messge  */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -146,7 +119,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'ajmv6zg1' /* with a provider on your care t... */,
+                                  'ajmv6zg1' /* to your provider or request a  */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -157,7 +130,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  'f680t3k9' /* join  */,
+                                  'f680t3k9' /* call back */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -168,7 +141,7 @@ W... */
                               ),
                               TextSpan(
                                 text: FFLocalizations.of(context).getText(
-                                  '5qfziyd6' /* a telemedicine appointment? */,
+                                  '5qfziyd6' /* ? */,
                                 ),
                                 style: GoogleFonts.getFont(
                                   'Noto Serif',
@@ -208,7 +181,7 @@ W... */
                             ).then((value) => setState(() {}));
                           },
                           text: FFLocalizations.of(context).getText(
-                            'icbvmx2j' /* Leave Message */,
+                            'icbvmx2j' /* Send Message */,
                           ),
                           options: FFButtonOptions(
                             width: 330.0,
@@ -233,36 +206,52 @@ W... */
                           ),
                         ),
                       ),
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
-                        child: FFButtonWidget(
-                          onPressed: () async {
-                            await launchURL('https://zoom.us/test');
-                          },
-                          text: FFLocalizations.of(context).getText(
-                            '06w40ouo' /* Join Appointment */,
-                          ),
-                          options: FFButtonOptions(
-                            width: 330.0,
-                            height: 60.0,
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: const Color(0xFF6082B6),
-                            textStyle:
-                                FlutterFlowTheme.of(context).bodyLarge.override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context).info,
-                                      fontSize: 25.0,
-                                    ),
-                            elevation: 0.0,
-                            borderSide: const BorderSide(
-                              color: Colors.transparent,
-                              width: 1.0,
+                      Builder(
+                        builder: (context) => Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              8.0, 0.0, 0.0, 0.0),
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              Navigator.pop(context);
+                              await showDialog(
+                                context: context,
+                                builder: (dialogContext) {
+                                  return Dialog(
+                                    elevation: 0,
+                                    insetPadding: EdgeInsets.zero,
+                                    backgroundColor: Colors.transparent,
+                                    alignment: const AlignmentDirectional(0.0, 0.0)
+                                        .resolve(Directionality.of(context)),
+                                    child: const ProviderCallBackWidget(),
+                                  );
+                                },
+                              ).then((value) => setState(() {}));
+                            },
+                            text: FFLocalizations.of(context).getText(
+                              '06w40ouo' /* Call Back */,
                             ),
-                            borderRadius: BorderRadius.circular(8.0),
+                            options: FFButtonOptions(
+                              width: 330.0,
+                              height: 60.0,
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: const Color(0xFF6082B6),
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .bodyLarge
+                                  .override(
+                                    fontFamily: 'Noto Serif',
+                                    color: FlutterFlowTheme.of(context).info,
+                                    fontSize: 25.0,
+                                  ),
+                              elevation: 0.0,
+                              borderSide: const BorderSide(
+                                color: Colors.transparent,
+                                width: 1.0,
+                              ),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
                           ),
                         ),
                       ),

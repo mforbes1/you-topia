@@ -158,7 +158,7 @@ class _ProviderMessageEntWidgetState extends State<ProviderMessageEntWidget> {
                   obscureText: false,
                   decoration: InputDecoration(
                     hintText: FFLocalizations.of(context).getText(
-                      'ig0bz5ci' /* Enter your message here... */,
+                      'ig0bz5ci' /* Tap here to enter your message... */,
                     ),
                     hintStyle:
                         FlutterFlowTheme.of(context).labelMedium.override(
@@ -222,7 +222,7 @@ class _ProviderMessageEntWidgetState extends State<ProviderMessageEntWidget> {
                             return AlertDialog(
                               title: const Text('Success!'),
                               content: const Text(
-                                  'Your messages has been sent to the provider. You should receive a response within 24-28 hours. You can view your messages on the My Messages page.'),
+                                  'Your messages has been sent to the provider. You should receive a response within 12-24 hours.'),
                               actions: [
                                 TextButton(
                                   onPressed: () =>
@@ -234,19 +234,9 @@ class _ProviderMessageEntWidgetState extends State<ProviderMessageEntWidget> {
                           },
                         );
                         Navigator.pop(context);
-
-                        context.pushNamed(
-                          'AllMessages',
-                          queryParameters: {
-                            'messageENT': serializeParam(
-                              _model.messageFieldController.text,
-                              ParamType.String,
-                            ),
-                          }.withoutNulls,
-                        );
                       },
                       text: FFLocalizations.of(context).getText(
-                        'ehrnbncc' /* Send Message */,
+                        'ehrnbncc' /* Send */,
                       ),
                       options: FFButtonOptions(
                         width: 330.0,

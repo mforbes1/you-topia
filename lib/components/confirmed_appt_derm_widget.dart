@@ -219,7 +219,7 @@ class _ConfirmedApptDermWidgetState extends State<ConfirmedApptDermWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '1kbngu2q' /* . To confirm  this date and ti... */,
+                                          '1kbngu2q' /* . Click  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -229,7 +229,7 @@ class _ConfirmedApptDermWidgetState extends State<ConfirmedApptDermWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'pbtp2eb8' /* Schedule.  */,
+                                          'pbtp2eb8' /* Schedule  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -242,9 +242,7 @@ class _ConfirmedApptDermWidgetState extends State<ConfirmedApptDermWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'xfbc30k6' /* 
-To cancel and view other avai... */
-                                          ,
+                                          'xfbc30k6' /* to confirm. To cancel and view... */,
                                         ),
                                         style: const TextStyle(
                                           fontSize: 25.0,

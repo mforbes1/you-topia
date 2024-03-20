@@ -282,9 +282,11 @@ class _CopyMedicalRecordsWidgetState extends State<CopyMedicalRecordsWidget> {
                                 ),
                               ),
                               Text(
-                                valueOrDefault<String>(
-                                  _model.datePicked1?.toString(),
-                                  '[Select From Date]',
+                                dateTimeFormat(
+                                  'yMd',
+                                  _model.datePicked1,
+                                  locale:
+                                      FFLocalizations.of(context).languageCode,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -339,7 +341,12 @@ class _CopyMedicalRecordsWidgetState extends State<CopyMedicalRecordsWidget> {
                               ),
                               Text(
                                 valueOrDefault<String>(
-                                  _model.datePicked2?.toString(),
+                                  dateTimeFormat(
+                                    'yMd',
+                                    _model.datePicked2,
+                                    locale: FFLocalizations.of(context)
+                                        .languageCode,
+                                  ),
                                   '[Select To Date]',
                                 ),
                                 style: FlutterFlowTheme.of(context)

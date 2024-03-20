@@ -235,7 +235,7 @@ class _SendMedicalRecordsWidgetState extends State<SendMedicalRecordsWidget> {
                                 0.0, 8.0, 0.0, 8.0),
                             child: Container(
                               width: double.infinity,
-                              height: 40.0,
+                              height: 50.0,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .primaryBackground,
@@ -1074,9 +1074,11 @@ class _SendMedicalRecordsWidgetState extends State<SendMedicalRecordsWidget> {
                                 ),
                               ),
                               Text(
-                                valueOrDefault<String>(
-                                  _model.datePicked1?.toString(),
-                                  '[Select From Date]',
+                                dateTimeFormat(
+                                  'yMd',
+                                  _model.datePicked1,
+                                  locale:
+                                      FFLocalizations.of(context).languageCode,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -1130,9 +1132,11 @@ class _SendMedicalRecordsWidgetState extends State<SendMedicalRecordsWidget> {
                                 ),
                               ),
                               Text(
-                                valueOrDefault<String>(
-                                  _model.datePicked2?.toString(),
-                                  '[Select To Date]',
+                                dateTimeFormat(
+                                  'yMd',
+                                  _model.datePicked2,
+                                  locale:
+                                      FFLocalizations.of(context).languageCode,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium

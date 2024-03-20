@@ -218,7 +218,7 @@ class _ConfirmedApptFMWidgetState extends State<ConfirmedApptFMWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'yksfzynz' /* . To confirm  this date and ti... */,
+                                          'yksfzynz' /* . Click  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -228,7 +228,7 @@ class _ConfirmedApptFMWidgetState extends State<ConfirmedApptFMWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'd4eqawlv' /* Schedule.  */,
+                                          'd4eqawlv' /* Schedule  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -241,9 +241,7 @@ class _ConfirmedApptFMWidgetState extends State<ConfirmedApptFMWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'dvjhrcr2' /* 
-To cancel and view other avai... */
-                                          ,
+                                          'dvjhrcr2' /* to confirm. To cancel and view... */,
                                         ),
                                         style: const TextStyle(
                                           fontSize: 25.0,

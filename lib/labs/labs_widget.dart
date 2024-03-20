@@ -230,7 +230,7 @@ class _LabsWidgetState extends State<LabsWidget> {
                         alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           FFLocalizations.of(context).getText(
-                            'dez8kekd' /* Tap each lab name for more det... */,
+                            'dez8kekd' /* Tap the lab test for more deta... */,
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
@@ -295,7 +295,7 @@ class _LabsWidgetState extends State<LabsWidget> {
                           ),
                           back: Container(
                             width: 300.0,
-                            height: 300.0,
+                            height: 236.0,
                             decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(12.0),
@@ -310,7 +310,7 @@ class _LabsWidgetState extends State<LabsWidget> {
                                 children: [
                                   TextSpan(
                                     text: FFLocalizations.of(context).getText(
-                                      '4171tfl3' /* Your doctor requested you take... */,
+                                      '4171tfl3' /* Blood glucose testing measures... */,
                                     ),
                                     style: GoogleFonts.getFont(
                                       'Noto Serif',
@@ -403,7 +403,7 @@ Your results are within the ... */
                           ),
                           back: Container(
                             width: 300.0,
-                            height: 300.0,
+                            height: 246.0,
                             decoration: const BoxDecoration(
                               borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(12.0),
@@ -418,7 +418,7 @@ Your results are within the ... */
                                 children: [
                                   TextSpan(
                                     text: FFLocalizations.of(context).getText(
-                                      'tcsl8pcg' /* Your doctor requested you take... */,
+                                      'tcsl8pcg' /* Lipid Panel testing measures y... */,
                                     ),
                                     style: GoogleFonts.getFont(
                                       'Noto Serif',
@@ -522,7 +522,7 @@ Your results are borderline ... */
                             ),
                             back: Container(
                               width: 300.0,
-                              height: 520.0,
+                              height: 319.0,
                               decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(12.0),
@@ -537,16 +537,7 @@ Your results are borderline ... */
                                   children: [
                                     TextSpan(
                                       text: FFLocalizations.of(context).getText(
-                                        's2x258o4' /* Your doctor requested you take... */,
-                                      ),
-                                      style: GoogleFonts.getFont(
-                                        'Noto Serif',
-                                        fontSize: 16.0,
-                                      ),
-                                    ),
-                                    TextSpan(
-                                      text: FFLocalizations.of(context).getText(
-                                        'ouwlbdnt' /* CBC:  */,
+                                        'ouwlbdnt' /* CBC  */,
                                       ),
                                       style: GoogleFonts.getFont(
                                         'Noto Serif',
@@ -610,9 +601,7 @@ White blood cell count: Low r... */
                                     ),
                                     TextSpan(
                                       text: FFLocalizations.of(context).getText(
-                                        '5hdjx3vp' /* 
-Platelet count: Borderline 41... */
-                                        ,
+                                        '5hdjx3vp' /* Platelet count: Borderline 415... */,
                                       ),
                                       style: GoogleFonts.getFont(
                                         'Noto Serif',
@@ -691,7 +680,7 @@ Platelet count: Borderline 41... */
                               ),
                               back: Container(
                                 width: 300.0,
-                                height: 320.0,
+                                height: 245.0,
                                 decoration: const BoxDecoration(
                                   borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(12.0),
@@ -707,17 +696,7 @@ Platelet count: Borderline 41... */
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'op7mbj8l' /* Your doctor requested you take... */,
-                                        ),
-                                        style: GoogleFonts.getFont(
-                                          'Noto Serif',
-                                          fontSize: 16.0,
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          'hchru7ib' /* Total calcium:  */,
+                                          'hchru7ib' /* Total calcium  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -730,7 +709,7 @@ Platelet count: Borderline 41... */
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'z3hgomb7' /* check to make sure you have ap... */,
+                                          'z3hgomb7' /* checks to make sure you have a... */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -814,7 +793,7 @@ Your results are within the n... */
                               ),
                               back: Container(
                                 width: 300.0,
-                                height: 300.0,
+                                height: 192.0,
                                 decoration: const BoxDecoration(
                                   borderRadius: BorderRadius.only(
                                     bottomLeft: Radius.circular(12.0),
@@ -830,17 +809,7 @@ Your results are within the n... */
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'j0xykspv' /* Your doctor requested you take... */,
-                                        ),
-                                        style: GoogleFonts.getFont(
-                                          'Noto Serif',
-                                          fontSize: 16.0,
-                                        ),
-                                      ),
-                                      TextSpan(
-                                        text:
-                                            FFLocalizations.of(context).getText(
-                                          'v1byaelq' /* Urinalysis:  */,
+                                          'v1byaelq' /* Urinalysis  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -994,7 +963,7 @@ Your results are within the ... */
                                     ),
                                     TextSpan(
                                       text: FFLocalizations.of(context).getText(
-                                        'nuetkxfo' /* CA 125:  */,
+                                        'nuetkxfo' /* CA 125  */,
                                       ),
                                       style: GoogleFonts.getFont(
                                         'Noto Serif',
@@ -1006,7 +975,7 @@ Your results are within the ... */
                                     ),
                                     TextSpan(
                                       text: FFLocalizations.of(context).getText(
-                                        '3mzv3w5c' /* CA 125 is mainly used to monit... */,
+                                        '3mzv3w5c' /* is mainly used to monitor the ... */,
                                       ),
                                       style: GoogleFonts.getFont(
                                         'Noto Serif',
@@ -1107,7 +1076,7 @@ Your results are pending. */
                                     ),
                                     TextSpan(
                                       text: FFLocalizations.of(context).getText(
-                                        'ux4v68ty' /* Creatinine:  */,
+                                        'ux4v68ty' /* Creatinine  */,
                                       ),
                                       style: GoogleFonts.getFont(
                                         'Noto Serif',

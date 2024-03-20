@@ -194,9 +194,7 @@ class _ConfirmedApptOrthoWidgetState extends State<ConfirmedApptOrthoWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'u7qrwvej' /*  on 
- */
-                                          ,
+                                          'u7qrwvej' /*  on  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -219,7 +217,7 @@ class _ConfirmedApptOrthoWidgetState extends State<ConfirmedApptOrthoWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '8pv4aj39' /* . To confirm  this date and ti... */,
+                                          '8pv4aj39' /* . Click  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -229,7 +227,7 @@ class _ConfirmedApptOrthoWidgetState extends State<ConfirmedApptOrthoWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'ucye7m43' /* Schedule.  */,
+                                          'ucye7m43' /* Schedule  */,
                                         ),
                                         style: GoogleFonts.getFont(
                                           'Noto Serif',
@@ -242,9 +240,7 @@ class _ConfirmedApptOrthoWidgetState extends State<ConfirmedApptOrthoWidget> {
                                       TextSpan(
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          '1p5i8vhu' /* 
-To cancel and view other avai... */
-                                          ,
+                                          '1p5i8vhu' /* to confirm. To cancel and view... */,
                                         ),
                                         style: const TextStyle(
                                           fontSize: 25.0,

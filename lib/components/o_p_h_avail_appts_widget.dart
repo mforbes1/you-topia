@@ -185,23 +185,23 @@ class _OPHAvailApptsWidgetState extends State<OPHAvailApptsWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  '1izad1jv' /* Wednesday, March 20th - 10:00A... */,
+                  '1izad1jv' /* Wednesday, March 20 - 10 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'oe27a070' /* Wednesday, March 20th - 11:00A... */,
+                  'oe27a070' /* Wednesday, March 20 - 11 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'zxwzlyoq' /* Friday, March 22nd - 1:00PM */,
+                  'zxwzlyoq' /* Friday, March 22 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'lvkasu2c' /* Friday, March 22nd - 2:00PM */,
+                  'cyx95ir6' /* Friday, March 22 - 2 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'djsuwq11' /* Wednesday, March 20th - 10:00A... */,
+                'djsuwq11' /* Wednesday, March 20 - 10 AM */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,
