@@ -1,3 +1,8 @@
+import '/components/introvideo_arabic_widget.dart';
+import '/components/introvideo_chinese_widget.dart';
+import '/components/introvideo_e_s_p_widget.dart';
+import '/components/introvideo_vietnamese_widget.dart';
+import '/components/introvideo_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -485,38 +490,239 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                     Flexible(
                       child: Align(
                         alignment: const AlignmentDirectional(0.0, -1.0),
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 12.0, 16.0, 24.0),
-                          child: FFButtonWidget(
-                            onPressed: () async {
-                              context.pushNamed('Home');
-                            },
-                            text: FFLocalizations.of(context).getText(
-                              'z3i7xce9' /* Create Account */,
-                            ),
-                            options: FFButtonOptions(
-                              width: double.infinity,
-                              height: 60.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).primary,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .titleMedium
-                                  .override(
-                                    fontFamily: 'Noto Serif',
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    fontSize: 25.0,
-                                  ),
-                              elevation: 4.0,
-                              borderSide: const BorderSide(
-                                color: Colors.transparent,
-                                width: 1.0,
+                        child: Builder(
+                          builder: (context) => Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                16.0, 12.0, 16.0, 24.0),
+                            child: FFButtonWidget(
+                              onPressed: () async {
+                                var confirmDialogResponse =
+                                    await showDialog<bool>(
+                                          context: context,
+                                          builder: (alertDialogContext) {
+                                            return AlertDialog(
+                                              title: const Text('Welcome!'),
+                                              content: const Text(
+                                                  'Would you like to watch an introduction video?'),
+                                              actions: [
+                                                TextButton(
+                                                  onPressed: () =>
+                                                      Navigator.pop(
+                                                          alertDialogContext,
+                                                          false),
+                                                  child: const Text('No, thank you.'),
+                                                ),
+                                                TextButton(
+                                                  onPressed: () =>
+                                                      Navigator.pop(
+                                                          alertDialogContext,
+                                                          true),
+                                                  child: const Text('Yes'),
+                                                ),
+                                              ],
+                                            );
+                                          },
+                                        ) ??
+                                        false;
+                                if (confirmDialogResponse) {
+                                  if (FFLocalizations.of(context)
+                                          .getVariableText(
+                                        enText: 'English',
+                                        esText: 'Spanish',
+                                        zh_HantText: 'Chinese',
+                                        viText: 'Vietnamese',
+                                        arText: 'Arabic',
+                                      ) ==
+                                      'English') {
+                                    await showDialog(
+                                      context: context,
+                                      builder: (dialogContext) {
+                                        return Dialog(
+                                          elevation: 0,
+                                          insetPadding: EdgeInsets.zero,
+                                          backgroundColor: Colors.transparent,
+                                          alignment: const AlignmentDirectional(
+                                                  0.0, 0.0)
+                                              .resolve(
+                                                  Directionality.of(context)),
+                                          child: GestureDetector(
+                                            onTap: () => _model
+                                                    .unfocusNode.canRequestFocus
+                                                ? FocusScope.of(context)
+                                                    .requestFocus(
+                                                        _model.unfocusNode)
+                                                : FocusScope.of(context)
+                                                    .unfocus(),
+                                            child: const IntrovideoWidget(),
+                                          ),
+                                        );
+                                      },
+                                    ).then((value) => setState(() {}));
+
+                                    context.pushNamed('Home');
+                                  } else if (FFLocalizations.of(context)
+                                          .getVariableText(
+                                        enText: '',
+                                        esText: 'Spanish',
+                                        zh_HantText: '',
+                                        viText: '',
+                                        arText: '',
+                                      ) ==
+                                      'Spanish') {
+                                    await showDialog(
+                                      context: context,
+                                      builder: (dialogContext) {
+                                        return Dialog(
+                                          elevation: 0,
+                                          insetPadding: EdgeInsets.zero,
+                                          backgroundColor: Colors.transparent,
+                                          alignment: const AlignmentDirectional(
+                                                  0.0, 0.0)
+                                              .resolve(
+                                                  Directionality.of(context)),
+                                          child: GestureDetector(
+                                            onTap: () => _model
+                                                    .unfocusNode.canRequestFocus
+                                                ? FocusScope.of(context)
+                                                    .requestFocus(
+                                                        _model.unfocusNode)
+                                                : FocusScope.of(context)
+                                                    .unfocus(),
+                                            child: const IntrovideoESPWidget(),
+                                          ),
+                                        );
+                                      },
+                                    ).then((value) => setState(() {}));
+
+                                    context.pushNamed('Home');
+                                  } else if (FFLocalizations.of(context)
+                                          .getVariableText(
+                                        enText: '',
+                                        esText: '',
+                                        zh_HantText: 'Chinese (Traditional)',
+                                        viText: '',
+                                        arText: '',
+                                      ) ==
+                                      'Chinese (Traditional)') {
+                                    await showDialog(
+                                      context: context,
+                                      builder: (dialogContext) {
+                                        return Dialog(
+                                          elevation: 0,
+                                          insetPadding: EdgeInsets.zero,
+                                          backgroundColor: Colors.transparent,
+                                          alignment: const AlignmentDirectional(
+                                                  0.0, 0.0)
+                                              .resolve(
+                                                  Directionality.of(context)),
+                                          child: GestureDetector(
+                                            onTap: () => _model
+                                                    .unfocusNode.canRequestFocus
+                                                ? FocusScope.of(context)
+                                                    .requestFocus(
+                                                        _model.unfocusNode)
+                                                : FocusScope.of(context)
+                                                    .unfocus(),
+                                            child: const IntrovideoChineseWidget(),
+                                          ),
+                                        );
+                                      },
+                                    ).then((value) => setState(() {}));
+
+                                    context.pushNamed('Home');
+                                  } else if (FFLocalizations.of(context)
+                                          .getVariableText(
+                                        enText: '',
+                                        esText: '',
+                                        zh_HantText: '',
+                                        viText: 'Vietnamese',
+                                        arText: '',
+                                      ) ==
+                                      'Vietnamese') {
+                                    await showDialog(
+                                      context: context,
+                                      builder: (dialogContext) {
+                                        return Dialog(
+                                          elevation: 0,
+                                          insetPadding: EdgeInsets.zero,
+                                          backgroundColor: Colors.transparent,
+                                          alignment: const AlignmentDirectional(
+                                                  0.0, 0.0)
+                                              .resolve(
+                                                  Directionality.of(context)),
+                                          child: GestureDetector(
+                                            onTap: () => _model
+                                                    .unfocusNode.canRequestFocus
+                                                ? FocusScope.of(context)
+                                                    .requestFocus(
+                                                        _model.unfocusNode)
+                                                : FocusScope.of(context)
+                                                    .unfocus(),
+                                            child: const IntrovideoVietnameseWidget(),
+                                          ),
+                                        );
+                                      },
+                                    ).then((value) => setState(() {}));
+
+                                    context.pushNamed('Home');
+                                  } else {
+                                    await showDialog(
+                                      context: context,
+                                      builder: (dialogContext) {
+                                        return Dialog(
+                                          elevation: 0,
+                                          insetPadding: EdgeInsets.zero,
+                                          backgroundColor: Colors.transparent,
+                                          alignment: const AlignmentDirectional(
+                                                  0.0, 0.0)
+                                              .resolve(
+                                                  Directionality.of(context)),
+                                          child: GestureDetector(
+                                            onTap: () => _model
+                                                    .unfocusNode.canRequestFocus
+                                                ? FocusScope.of(context)
+                                                    .requestFocus(
+                                                        _model.unfocusNode)
+                                                : FocusScope.of(context)
+                                                    .unfocus(),
+                                            child: const IntrovideoArabicWidget(),
+                                          ),
+                                        );
+                                      },
+                                    ).then((value) => setState(() {}));
+
+                                    context.pushNamed('Home');
+                                  }
+                                } else {
+                                  context.pushNamed('Home');
+                                }
+                              },
+                              text: FFLocalizations.of(context).getText(
+                                'z3i7xce9' /* Create Account */,
                               ),
-                              borderRadius: BorderRadius.circular(50.0),
+                              options: FFButtonOptions(
+                                width: double.infinity,
+                                height: 60.0,
+                                padding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                color: FlutterFlowTheme.of(context).primary,
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .titleMedium
+                                    .override(
+                                      fontFamily: 'Noto Serif',
+                                      color: FlutterFlowTheme.of(context)
+                                          .secondaryBackground,
+                                      fontSize: 25.0,
+                                    ),
+                                elevation: 4.0,
+                                borderSide: const BorderSide(
+                                  color: Colors.transparent,
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(50.0),
+                              ),
                             ),
                           ),
                         ),

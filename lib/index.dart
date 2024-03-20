@@ -3,7 +3,6 @@ export '/home/home_widget.dart' show HomeWidget;
 export '/appointment_details/appointment_details_widget.dart'
     show AppointmentDetailsWidget;
 export '/book_appt/book_appt_widget.dart' show BookApptWidget;
-export '/entry/auth_home/auth_home_widget.dart' show AuthHomeWidget;
 export '/entry/welcome_screen/welcome_screen_widget.dart'
     show WelcomeScreenWidget;
 export '/entry/auth_create/auth_create_widget.dart' show AuthCreateWidget;

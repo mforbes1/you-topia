@@ -42,7 +42,7 @@ class _NewsPromptWidgetState extends State<NewsPromptWidget> {
       child: Padding(
         padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 12.0),
         child: Container(
-          height: 710.0,
+          height: 790.0,
           constraints: const BoxConstraints(
             maxWidth: 530.0,
           ),
@@ -210,6 +210,107 @@ class _NewsPromptWidgetState extends State<NewsPromptWidget> {
                                           onPressed: () async {
                                             await launchURL(
                                                 'https://www.nih.gov/');
+                                          },
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 1.0),
+                      child: Container(
+                        width: 100.0,
+                        decoration: BoxDecoration(
+                          color:
+                              FlutterFlowTheme.of(context).secondaryBackground,
+                          boxShadow: [
+                            BoxShadow(
+                              blurRadius: 0.0,
+                              color: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
+                              offset: const Offset(0.0, 1.0),
+                            )
+                          ],
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              0.0, 12.0, 8.0, 12.0),
+                          child: InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              await launchURL(
+                                  'https://www.usnews.com/topics/subjects/bone_joint_health');
+                            },
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Container(
+                                  width: 80.0,
+                                  height: 80.0,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                  ),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/bone.png',
+                                      width: 300.0,
+                                      height: 200.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        12.0, 0.0, 12.0, 0.0),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          FFLocalizations.of(context).getText(
+                                            'tycgaiu4' /* Bone and Joint Health */,
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyLarge
+                                              .override(
+                                                fontFamily: 'Noto Serif',
+                                                fontSize: 20.0,
+                                                fontWeight: FontWeight.w600,
+                                              ),
+                                        ),
+                                        FlutterFlowIconButton(
+                                          borderColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .primary,
+                                          borderRadius: 20.0,
+                                          borderWidth: 1.0,
+                                          buttonSize: 40.0,
+                                          fillColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .secondary,
+                                          icon: Icon(
+                                            Icons.navigate_next,
+                                            color: FlutterFlowTheme.of(context)
+                                                .primaryText,
+                                            size: 24.0,
+                                          ),
+                                          onPressed: () async {
+                                            await launchURL(
+                                                'https://www.usnews.com/topics/subjects/bone_joint_health');
                                           },
                                         ),
                                       ],

@@ -29,12 +29,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => const WelcomeScreenWidget(),
+      errorBuilder: (context, state) => const AuthCreateWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => const WelcomeScreenWidget(),
+          builder: (context, _) => const AuthCreateWidget(),
         ),
         FFRoute(
           name: 'Home',
@@ -52,11 +52,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'BookAppt',
           path: '/bookAppt',
           builder: (context, params) => const BookApptWidget(),
-        ),
-        FFRoute(
-          name: 'auth_home',
-          path: '/authHome',
-          builder: (context, params) => const AuthHomeWidget(),
         ),
         FFRoute(
           name: 'WelcomeScreen',

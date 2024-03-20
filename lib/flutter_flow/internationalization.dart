@@ -1003,16 +1003,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '家',
     },
   },
-  // auth_home
-  {
-    'lgzjriyf': {
-      'en': 'Home',
-      'ar': 'بيت',
-      'es': 'Hogar',
-      'vi': 'Trang chủ',
-      'zh_Hant': '家',
-    },
-  },
   // WelcomeScreen
   {
     'tlkuyq20': {
@@ -3761,6 +3751,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'hal1z1ya': {
       'en': 'National Health',
+      'ar': 'الصحة الوطنية',
+      'es': 'Salud Nacional',
+      'vi': 'Y tế quốc gia',
+      'zh_Hant': '國民健康',
+    },
+    'tycgaiu4': {
+      'en': 'Bone and Joint Health',
       'ar': 'الصحة الوطنية',
       'es': 'Salud Nacional',
       'vi': 'Y tế quốc gia',
