@@ -152,51 +152,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Tài khoản',
       'zh_Hant': '帳戶',
     },
-    'zn9o8rcu': {
-      'en': 'Alerts',
-      'ar': 'التنبيهات',
-      'es': 'Alertas',
-      'vi': 'Cảnh báo',
-      'zh_Hant': '警報',
-    },
-    'spar7zf9': {
-      'en': 'Scroll through alerts. Tap the image below for more information.',
-      'ar':
-          'قم بالتمرير خلال التنبيهات. اضغط على الصورة أدناه لمزيد من المعلومات.',
-      'es':
-          'Desplácese por las alertas. Toque la imagen a continuación para obtener más información.',
-      'vi':
-          'Cuộn qua các cảnh báo. Nhấn vào hình ảnh bên dưới để biết thêm thông tin.',
-      'zh_Hant': '滾動瀏覽警報。點擊下圖了解更多。',
-    },
-    'zwsfiqhf': {
-      'en': 'You have an upcoming appointment!',
-      'ar': 'لديك موعد قادم!',
-      'es': '¡Tienes una próxima cita!',
-      'vi': 'Bạn có một cuộc hẹn sắp tới!',
-      'zh_Hant': '您有一個即將到來的約會！',
-    },
-    'e4akro55': {
-      'en': 'Prescription ready for pick up!',
-      'ar': 'وصفة طبية جاهزة للاستلام!',
-      'es': '¡Receta lista para recoger!',
-      'vi': 'Đơn thuốc đã sẵn sàng để nhận!',
-      'zh_Hant': '處方已準備好，可領取！',
-    },
-    'vjsrkyvg': {
-      'en': 'Unread message!',
-      'ar': 'رسالة غير مقروءة!',
-      'es': '¡Mensaje no leído!',
-      'vi': 'Tin nhắn chưa đọc!',
-      'zh_Hant': '未讀訊息！',
-    },
-    'icfbzlep': {
-      'en': 'Billing statement available!',
-      'ar': 'بيان الفواتير متاح!',
-      'es': '¡Estado de cuenta disponible!',
-      'vi': 'Báo cáo thanh toán có sẵn!',
-      'zh_Hant': '帳單明細可用！',
-    },
     'xsur4zkz': {
       'en': 'Select an option below.',
       'ar': 'حدد خيارًا أدناه.',
@@ -266,6 +221,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Toca la imagen a continuación.',
       'vi': 'Nhấn vào hình ảnh bên dưới.',
       'zh_Hant': '點擊下圖。',
+    },
+    'tdvhljl9': {
+      'en': 'Telemedine Appt? Click icon.',
+      'ar': 'تطبيق التطبيب عن بعد؟ انقر على أيقونة.',
+      'es': '¿Cita de telemedina? Haga clic en el icono.',
+      'vi': 'Ứng dụng Telemedine? Nhấp vào biểu tượng.',
+      'zh_Hant': '遠距醫療申請？單擊圖示。',
     },
     'kbovzet4': {
       'en': 'Help?',
@@ -1107,6 +1069,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Tên',
       'zh_Hant': '姓名',
     },
+    'lkb0bex1': {
+      'en': 'Tap here and enter first and last name',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
+    },
     '4zfve8ix': {
       'en': 'Birthdate',
       'ar': 'تاريخ الميلاد',
@@ -1114,12 +1083,26 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Ngày sinh',
       'zh_Hant': '出生日期',
     },
+    'gl2ii1ub': {
+      'en': 'Tap here and enter numbers only',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
+    },
     'w9wdzjcm': {
       'en': 'Room or Apt/Cluster #',
       'ar': 'رقم الغرفة أو الشقة/المجموعة',
       'es': 'Número de habitación o apartamento/grupo',
       'vi': 'Phòng hoặc Căn hộ/Cụm #',
       'zh_Hant': '房間或公寓/集群#',
+    },
+    'yugnikkz': {
+      'en': 'Tap here and enter letters/numbers only',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'qmtu59zs': {
       'en': 'Create a 4-digit pin code',
@@ -1165,6 +1148,13 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Nombre',
       'vi': 'Tên',
       'zh_Hant': '姓名',
+    },
+    '8v9pk9f6': {
+      'en': 'Tap here and enter first and last name',
+      'ar': '',
+      'es': '',
+      'vi': '',
+      'zh_Hant': '',
     },
     'vaogj1w8': {
       'en': 'Enter 4-digit pin code',
@@ -1490,16 +1480,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'vi': 'Hematocrit: Tầm thấp 25%',
       'zh_Hant': '血球比容：低範圍 25%',
     },
-    'x0ej18w8': {
-      'en': '\nWhite blood cell count: Low range 2.1 billion cells/L\n',
-      'ar': 'عدد خلايا الدم البيضاء: نطاق منخفض 2.1 مليار خلية/لتر',
-      'es':
-          'Recuento de glóbulos blancos: rango bajo 2,1 mil millones de células/l',
-      'vi': 'Số lượng bạch cầu: Mức thấp 2,1 tỷ tế bào/L',
-      'zh_Hant': '白血球計數：低範圍 21 億細胞/L',
-    },
     '5hdjx3vp': {
-      'en': 'Platelet count: Borderline 415 billion/L',
+      'en': '\nPlatelet count: Borderline 415 billion/L',
       'ar': 'عدد الصفائح الدموية: الحد 415 مليار/لتر',
       'es': 'Recuento de plaquetas: límite de 415 mil millones/L',
       'vi': 'Số lượng tiểu cầu: Giới hạn 415 tỷ/L',
@@ -1633,7 +1615,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     't97y48k2': {
       'en':
-          'Your doctor requested you take the following blood tests to confirm your creatinine levels:.\n\n',
+          'Your doctor requested you take the following blood tests to confirm your creatinine levels.\n\n',
       'ar':
           'طلب منك طبيبك إجراء اختبارات الدم التالية للتأكد من مستويات الكرياتينين لديك:',
       'es':
@@ -1693,7 +1675,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '填寫以下表格以提交記錄副本請求。檢查所有適用。',
     },
     '1f9qpe68': {
-      'en': 'Date Range',
+      'en': 'Choose Date Range',
       'ar': 'نطاق الموعد',
       'es': 'Rango de fechas',
       'vi': 'Phạm vi ngày',
@@ -1714,7 +1696,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '到：',
     },
     'ptg3vu9t': {
-      'en': 'Type of Records',
+      'en': 'Select Type of Records to Send',
       'ar': 'نوع السجلات',
       'es': 'Tipo de registros',
       'vi': 'Loại hồ sơ',
@@ -1756,7 +1738,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '圖表回顧',
     },
     'yq5bnevh': {
-      'en': 'Encounter/Visit',
+      'en': 'Select which Encounter to Send Records From',
       'ar': 'لقاء/زيارة',
       'es': 'Encuentro/Visita',
       'vi': 'Gặp gỡ/Thăm viếng',
@@ -2078,7 +2060,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '到：',
     },
     'xi8ahrct': {
-      'en': 'Type of Records',
+      'en': 'Select Type of Records to Send',
       'ar': 'نوع السجلات',
       'es': 'Tipo de registros',
       'vi': 'Loại hồ sơ',
@@ -2120,7 +2102,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '圖表回顧',
     },
     'gndnxajj': {
-      'en': 'Encounter/Visit',
+      'en': 'Select which Encounter to Send Records From',
       'ar': 'لقاء/زيارة',
       'es': 'Encuentro/Visita',
       'vi': 'Gặp gỡ/Thăm viếng',
@@ -2203,11 +2185,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '不知道該去哪裡？點擊每個房間以了解更多詳細資訊。',
     },
     'zwref1fo': {
-      'en': 'Scheduling Receptionist',
-      'ar': 'موظف استقبال جدولة',
-      'es': 'Recepcionista de programación',
-      'vi': 'Sắp xếp lịch lễ tân',
-      'zh_Hant': '調度接待員',
+      'en': 'Scheduling',
+      'ar': 'الجدولة',
+      'es': 'Planificación',
+      'vi': 'Lên lịch',
+      'zh_Hant': '調度',
     },
     'qcd5ryaw': {
       'en':
@@ -2222,11 +2204,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           '允許您安排新的約會。您還可以查看預約詳細信息，例如已安排、已完成和已取消/未出現的約會。對於已完成的預約，您可以查看您的就診後摘要 (AVS)，其中詳細介紹了就診資訊。',
     },
     't609a8a0': {
-      'en': 'Provider/Patient Room',
-      'ar': 'غرفة مقدم الخدمة/المريض',
-      'es': 'Habitación de proveedor/paciente',
-      'vi': 'Phòng Nhà cung cấp/Bệnh nhân',
-      'zh_Hant': '提供者/患者室',
+      'en': 'Provider - Patient',
+      'ar': 'مقدم - مريض',
+      'es': 'Proveedor - Paciente',
+      'vi': 'Nhà cung cấp - Bệnh nhân',
+      'zh_Hant': '提供者 - 患者',
     },
     'qim0kdrl': {
       'en':
@@ -2295,15 +2277,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hant': '允許您要求並將您存檔的醫療記錄副本發送給外部醫生或醫療機構。您也可以為自己索取醫療記錄副本。',
     },
     'p9qapwyd': {
-      'en': 'Billing',
-      'ar': 'الفواتير',
-      'es': 'Facturación',
-      'vi': 'Thanh toán',
-      'zh_Hant': '計費',
+      'en': 'Pay - View Bill',
+      'ar': 'الدفع - عرض الفاتورة',
+      'es': 'Pagar - Ver factura',
+      'vi': 'Thanh toán - Xem hóa đơn',
+      'zh_Hant': '付款 - 查看帳單',
     },
     '0fflyq1f': {
       'en':
-          'Allows you to review billing estimates for upcoming scheduled appointments. You can also pay any outstanding billings charges posted to your guarantor account. ',
+          'You can pay any outstanding charges posted to your guarantor account. ',
       'ar':
           'يسمح لك بمراجعة تقديرات الفواتير للمواعيد المجدولة القادمة. يمكنك أيضًا دفع أي رسوم فواتير مستحقة تم ترحيلها إلى حساب الضامن الخاص بك.',
       'es':

@@ -522,7 +522,7 @@ Your results are borderline ... */
                             ),
                             back: Container(
                               width: 300.0,
-                              height: 319.0,
+                              height: 259.0,
                               decoration: const BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   bottomLeft: Radius.circular(12.0),
@@ -588,20 +588,9 @@ Hematocrit: Low range 25%
                                     ),
                                     TextSpan(
                                       text: FFLocalizations.of(context).getText(
-                                        'x0ej18w8' /* 
-White blood cell count: Low r... */
+                                        '5hdjx3vp' /* 
+Platelet count: Borderline 41... */
                                         ,
-                                      ),
-                                      style: GoogleFonts.getFont(
-                                        'Noto Serif',
-                                        color: const Color(0xFFDC333D),
-                                        fontWeight: FontWeight.w600,
-                                        fontSize: 18.0,
-                                      ),
-                                    ),
-                                    TextSpan(
-                                      text: FFLocalizations.of(context).getText(
-                                        '5hdjx3vp' /* Platelet count: Borderline 415... */,
                                       ),
                                       style: GoogleFonts.getFont(
                                         'Noto Serif',

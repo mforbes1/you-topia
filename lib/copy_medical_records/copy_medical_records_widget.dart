@@ -222,7 +222,7 @@ class _CopyMedicalRecordsWidgetState extends State<CopyMedicalRecordsWidget> {
                               alignment: const AlignmentDirectional(-0.9, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  '1f9qpe68' /* Date Range */,
+                                  '1f9qpe68' /* Choose Date Range */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
@@ -372,7 +372,7 @@ class _CopyMedicalRecordsWidgetState extends State<CopyMedicalRecordsWidget> {
                               alignment: const AlignmentDirectional(-0.9, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'ptg3vu9t' /* Type of Records */,
+                                  'ptg3vu9t' /* Select Type of Records to Send */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
@@ -436,7 +436,7 @@ class _CopyMedicalRecordsWidgetState extends State<CopyMedicalRecordsWidget> {
                               alignment: const AlignmentDirectional(-0.9, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'yq5bnevh' /* Encounter/Visit */,
+                                  'yq5bnevh' /* Select which Encounter to Send... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium

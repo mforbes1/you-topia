@@ -156,6 +156,19 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                                           .primaryText,
                                       fontSize: 30.0,
                                     ),
+                                hintText: FFLocalizations.of(context).getText(
+                                  'lkb0bex1' /* Tap here and enter first and l... */,
+                                ),
+                                hintStyle: FlutterFlowTheme.of(context)
+                                    .headlineMedium
+                                    .override(
+                                      fontFamily: 'Noto Serif',
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
+                                      fontSize: 20.0,
+                                      fontStyle: FontStyle.italic,
+                                      lineHeight: 1.5,
+                                    ),
                                 errorStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
@@ -249,6 +262,19 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                                           .primaryText,
                                       fontSize: 30.0,
                                     ),
+                                hintText: FFLocalizations.of(context).getText(
+                                  'gl2ii1ub' /* Tap here and enter numbers onl... */,
+                                ),
+                                hintStyle: FlutterFlowTheme.of(context)
+                                    .headlineMedium
+                                    .override(
+                                      fontFamily: 'Noto Serif',
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
+                                      fontSize: 20.0,
+                                      fontStyle: FontStyle.italic,
+                                      lineHeight: 1.5,
+                                    ),
                                 errorStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
@@ -316,6 +342,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                                     fontSize: 40.0,
                                     lineHeight: 1.5,
                                   ),
+                              keyboardType: TextInputType.number,
                               cursorColor: FlutterFlowTheme.of(context).primary,
                               validator: _model.emailAddressControllerValidator
                                   .asValidator(context),
@@ -341,6 +368,19 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
                                       fontSize: 30.0,
+                                    ),
+                                hintText: FFLocalizations.of(context).getText(
+                                  'yugnikkz' /* Tap here and enter letters/num... */,
+                                ),
+                                hintStyle: FlutterFlowTheme.of(context)
+                                    .headlineMedium
+                                    .override(
+                                      fontFamily: 'Noto Serif',
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
+                                      fontSize: 20.0,
+                                      fontStyle: FontStyle.italic,
+                                      lineHeight: 1.5,
                                     ),
                                 errorStyle: FlutterFlowTheme.of(context)
                                     .labelMedium

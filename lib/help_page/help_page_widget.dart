@@ -203,7 +203,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                               alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'zwref1fo' /* Scheduling Receptionist */,
+                                  'zwref1fo' /* Scheduling */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -275,7 +275,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                               alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  't609a8a0' /* Provider/Patient Room */,
+                                  't609a8a0' /* Provider - Patient */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -571,7 +571,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                               alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'p9qapwyd' /* Billing */,
+                                  'p9qapwyd' /* Pay - View Bill */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
@@ -598,7 +598,7 @@ class _HelpPageWidgetState extends State<HelpPageWidget> {
                             ),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '0fflyq1f' /* Allows you to review billing e... */,
+                                '0fflyq1f' /* You can pay any outstanding ch... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium

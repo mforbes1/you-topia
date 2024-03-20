@@ -4,13 +4,15 @@ import '/components/medical_records_widget.dart';
 import '/components/news_prompt_widget.dart';
 import '/components/pharmacy_widget.dart';
 import '/components/receptionist_widget.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_calendar.dart';
 import '/flutter_flow/flutter_flow_choice_chips.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'home_model.dart';
 export 'home_model.dart';
@@ -22,10 +24,26 @@ class HomeWidget extends StatefulWidget {
   State<HomeWidget> createState() => _HomeWidgetState();
 }
 
-class _HomeWidgetState extends State<HomeWidget> {
+class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
   late HomeModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = {
+    'iconOnPageLoadAnimation': AnimationInfo(
+      trigger: AnimationTrigger.onPageLoad,
+      effects: [
+        ShakeEffect(
+          curve: Curves.easeInOut,
+          delay: 0.ms,
+          duration: 1000.ms,
+          hz: 10,
+          offset: const Offset(0.0, 0.0),
+          rotation: 0.087,
+        ),
+      ],
+    ),
+  };
 
   @override
   void initState() {
@@ -195,6 +213,20 @@ class _HomeWidgetState extends State<HomeWidget> {
                           ),
                         ),
                       ),
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('Home');
+                        },
+                        child: FaIcon(
+                          FontAwesomeIcons.home,
+                          color: FlutterFlowTheme.of(context).primary,
+                          size: 24.0,
+                        ),
+                      ),
                       SizedBox(
                         height: 25.0,
                         child: VerticalDivider(
@@ -227,6 +259,20 @@ class _HomeWidgetState extends State<HomeWidget> {
                                   fontWeight: FontWeight.bold,
                                 ),
                           ),
+                        ),
+                      ),
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('AllMessages');
+                        },
+                        child: Icon(
+                          Icons.message_rounded,
+                          color: FlutterFlowTheme.of(context).primary,
+                          size: 24.0,
                         ),
                       ),
                       SizedBox(
@@ -263,6 +309,21 @@ class _HomeWidgetState extends State<HomeWidget> {
                           ),
                         ),
                       ),
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed('ActivityNotifications');
+                        },
+                        child: Icon(
+                          Icons.notifications_active_sharp,
+                          color: FlutterFlowTheme.of(context).primary,
+                          size: 24.0,
+                        ),
+                      ).animateOnPageLoad(
+                          animationsMap['iconOnPageLoadAnimation']!),
                       SizedBox(
                         height: 25.0,
                         child: VerticalDivider(
@@ -305,339 +366,89 @@ class _HomeWidgetState extends State<HomeWidget> {
                           ),
                         ),
                       ),
+                      InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          context.pushNamed(
+                            'Account',
+                            queryParameters: {
+                              'userName': serializeParam(
+                                '',
+                                ParamType.String,
+                              ),
+                            }.withoutNulls,
+                          );
+                        },
+                        child: Icon(
+                          Icons.account_box,
+                          color: FlutterFlowTheme.of(context).primary,
+                          size: 24.0,
+                        ),
+                      ),
                     ],
                   ),
                   Divider(
                     thickness: 2.0,
                     color: FlutterFlowTheme.of(context).alternate,
-                  ),
-                  Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 5.0, 0.0),
-                        child: Text(
-                          FFLocalizations.of(context).getText(
-                            'zn9o8rcu' /* Alerts */,
-                          ),
-                          style: FlutterFlowTheme.of(context)
-                              .labelMedium
-                              .override(
-                                fontFamily: 'Noto Serif',
-                                color: FlutterFlowTheme.of(context).primaryText,
-                                fontSize: 25.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Flexible(
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              16.0, 8.0, 5.0, 0.0),
-                          child: Text(
-                            FFLocalizations.of(context).getText(
-                              'spar7zf9' /* Scroll through alerts. Tap the... */,
-                            ),
-                            style: FlutterFlowTheme.of(context)
-                                .labelMedium
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                        ),
-                      ),
-                    ],
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Container(
-                        width: double.infinity,
-                        height: 250.0,
-                        decoration: BoxDecoration(
-                          color:
-                              FlutterFlowTheme.of(context).secondaryBackground,
-                        ),
-                        child: Stack(
-                          children: [
-                            Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
-                              child: Stack(
-                                children: [
-                                  Align(
-                                    alignment: const AlignmentDirectional(-1.0, 0.0),
-                                    child: Icon(
-                                      Icons.arrow_back_ios,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      size: 44.0,
-                                    ),
-                                  ),
-                                  Align(
-                                    alignment: const AlignmentDirectional(1.0, 0.0),
-                                    child: Icon(
-                                      Icons.arrow_forward_ios,
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      size: 44.0,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Align(
-                              alignment: const AlignmentDirectional(0.0, 0.0),
-                              child: SizedBox(
-                                width: MediaQuery.sizeOf(context).width * 0.9,
-                                height: 200.0,
-                                child: CarouselSlider(
-                                  items: [
-                                    SizedBox(
-                                      height: 230.0,
-                                      child: Stack(
-                                        children: [
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.03, -0.5),
-                                            child: InkWell(
-                                              splashColor: Colors.transparent,
-                                              focusColor: Colors.transparent,
-                                              hoverColor: Colors.transparent,
-                                              highlightColor:
-                                                  Colors.transparent,
-                                              onTap: () async {
-                                                context.pushNamed(
-                                                    'AppointmentDetails');
-                                              },
-                                              child: ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/Appointment_Reminder.png',
-                                                  width: 388.0,
-                                                  height: 255.0,
-                                                  fit: BoxFit.contain,
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                -0.94, -0.98),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'zwsfiqhf' /* You have an upcoming appointme... */,
-                                              ),
-                                              style: FlutterFlowTheme.of(
-                                                      context)
-                                                  .bodyMedium
-                                                  .override(
-                                                    fontFamily: 'Noto Serif',
-                                                    fontSize: 18.0,
-                                                    fontWeight: FontWeight.w500,
-                                                  ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Stack(
-                                      children: [
-                                        Align(
-                                          alignment:
-                                              const AlignmentDirectional(0.15, -1.35),
-                                          child: InkWell(
-                                            splashColor: Colors.transparent,
-                                            focusColor: Colors.transparent,
-                                            hoverColor: Colors.transparent,
-                                            highlightColor: Colors.transparent,
-                                            onTap: () async {
-                                              await showDialog(
-                                                context: context,
-                                                builder: (alertDialogContext) {
-                                                  return AlertDialog(
-                                                    title: const Text(
-                                                        'Prescription Ready'),
-                                                    content: const Text(
-                                                        'Your prescription for Acetaminophen (Tylenol) 325mg is ready for pick up at Broadmead.'),
-                                                    actions: [
-                                                      TextButton(
-                                                        onPressed: () =>
-                                                            Navigator.pop(
-                                                                alertDialogContext),
-                                                        child: const Text('Ok'),
-                                                      ),
-                                                    ],
-                                                  );
-                                                },
-                                              );
-                                            },
-                                            child: ClipRRect(
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                              child: Image.asset(
-                                                'assets/images/Rx.png',
-                                                width: 380.0,
-                                                height: 250.0,
-                                                fit: BoxFit.contain,
-                                                alignment: const Alignment(0.0, -1.0),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                        Align(
-                                          alignment: const AlignmentDirectional(
-                                              -0.07, -0.98),
-                                          child: Text(
-                                            FFLocalizations.of(context).getText(
-                                              'e4akro55' /* Prescription ready for pick up... */,
-                                            ),
-                                            style: FlutterFlowTheme.of(context)
-                                                .bodyMedium
-                                                .override(
-                                                  fontFamily: 'Noto Serif',
-                                                  fontSize: 18.0,
-                                                ),
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                    SizedBox(
-                                      height: 200.0,
-                                      child: Stack(
-                                        children: [
-                                          Align(
-                                            alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
-                                            child: InkWell(
-                                              splashColor: Colors.transparent,
-                                              focusColor: Colors.transparent,
-                                              hoverColor: Colors.transparent,
-                                              highlightColor:
-                                                  Colors.transparent,
-                                              onTap: () async {
-                                                context
-                                                    .pushNamed('AllMessages');
-                                              },
-                                              child: ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/Message.png',
-                                                  width: 300.0,
-                                                  height: 200.0,
-                                                  fit: BoxFit.cover,
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          Align(
-                                            alignment: const AlignmentDirectional(
-                                                0.0, -1.04),
-                                            child: Text(
-                                              FFLocalizations.of(context)
-                                                  .getText(
-                                                'vjsrkyvg' /* Unread message! */,
-                                              ),
-                                              style:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily:
-                                                            'Noto Serif',
-                                                        fontSize: 18.0,
-                                                      ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.pushNamed('Bill');
-                                      },
-                                      child: SizedBox(
-                                        height: 200.0,
-                                        child: Stack(
-                                          children: [
-                                            Align(
-                                              alignment: const AlignmentDirectional(
-                                                  -0.38, 0.0),
-                                              child: ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.0),
-                                                child: Image.asset(
-                                                  'assets/images/Payment.png',
-                                                  width: 190.0,
-                                                  height: 180.0,
-                                                  fit: BoxFit.cover,
-                                                ),
-                                              ),
-                                            ),
-                                            Align(
-                                              alignment: const AlignmentDirectional(
-                                                  -0.19, -0.94),
-                                              child: Text(
-                                                FFLocalizations.of(context)
-                                                    .getText(
-                                                  'icfbzlep' /* Billing statement available! */,
-                                                ),
-                                                style:
-                                                    FlutterFlowTheme.of(context)
-                                                        .bodyMedium
-                                                        .override(
-                                                          fontFamily:
-                                                              'Noto Serif',
-                                                          fontSize: 18.0,
-                                                        ),
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                  carouselController:
-                                      _model.carouselController ??=
-                                          CarouselController(),
-                                  options: CarouselOptions(
-                                    initialPage: 1,
-                                    viewportFraction: 0.5,
-                                    disableCenter: true,
-                                    enlargeCenterPage: true,
-                                    enlargeFactor: 0.25,
-                                    enableInfiniteScroll: true,
-                                    scrollDirection: Axis.horizontal,
-                                    autoPlay: false,
-                                    onPageChanged: (index, _) =>
-                                        _model.carouselCurrentIndex = index,
-                                  ),
+                      FlutterFlowCalendar(
+                        color: FlutterFlowTheme.of(context).primary,
+                        iconColor: FlutterFlowTheme.of(context).secondaryText,
+                        weekFormat: true,
+                        weekStartsMonday: false,
+                        initialDate: getCurrentTimestamp,
+                        rowHeight: 64.0,
+                        onChange: (DateTimeRange? newSelectedDate) {
+                          setState(() =>
+                              _model.calendarSelectedDay = newSelectedDate);
+                        },
+                        titleStyle:
+                            FlutterFlowTheme.of(context).headlineSmall.override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 40.0,
                                 ),
-                              ),
-                            ),
-                          ],
-                        ),
+                        dayOfWeekStyle:
+                            FlutterFlowTheme.of(context).labelLarge.override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 14.0,
+                                ),
+                        dateStyle:
+                            FlutterFlowTheme.of(context).bodyMedium.override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 15.0,
+                                ),
+                        selectedDateStyle:
+                            FlutterFlowTheme.of(context).titleSmall.override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 15.0,
+                                ),
+                        inactiveDateStyle:
+                            FlutterFlowTheme.of(context).labelMedium,
+                        locale: FFLocalizations.of(context).languageCode,
                       ),
                     ],
                   ),
                   Divider(
                     thickness: 2.0,
                     color: FlutterFlowTheme.of(context).alternate,
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      SizedBox(
+                        height: 90.0,
+                        child: VerticalDivider(
+                          thickness: 1.0,
+                          color: FlutterFlowTheme.of(context).accent4,
+                        ),
+                      ),
+                    ],
                   ),
                   Row(
                     mainAxisSize: MainAxisSize.max,
@@ -1134,7 +945,7 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 'Nhà cung cấp - Bệnh nhân') ||
                             (_model.choiceChipsValue == 'مقدم – مريض'))
                           Align(
-                            alignment: const AlignmentDirectional(0.96, 0.72),
+                            alignment: const AlignmentDirectional(0.93, 0.76),
                             child: InkWell(
                               splashColor: Colors.transparent,
                               focusColor: Colors.transparent,
@@ -1163,16 +974,44 @@ class _HomeWidgetState extends State<HomeWidget> {
                                 width: 170.0,
                                 height: 170.0,
                                 decoration: BoxDecoration(
-                                  color: FlutterFlowTheme.of(context).alternate,
+                                  color: FlutterFlowTheme.of(context)
+                                      .secondaryBackground,
                                   image: DecorationImage(
                                     fit: BoxFit.cover,
                                     image: Image.asset(
-                                      'assets/images/Telemed_appt.png',
+                                      'assets/images/tele.png',
                                     ).image,
                                   ),
                                   shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: FlutterFlowTheme.of(context)
+                                        .primaryText,
+                                    width: 4.0,
+                                  ),
                                 ),
                               ),
+                            ),
+                          ),
+                        if ((_model.choiceChipsValue == 'Provider - Patient') ||
+                            (_model.choiceChipsValue ==
+                                'Proveedor - Paciente') ||
+                            (_model.choiceChipsValue == '提供者 - 患者') ||
+                            (_model.choiceChipsValue ==
+                                'Nhà cung cấp - Bệnh nhân') ||
+                            (_model.choiceChipsValue == 'مقدم – مريض'))
+                          Align(
+                            alignment: const AlignmentDirectional(0.99, 0.92),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                'tdvhljl9' /* Telemedine Appt? Click icon. */,
+                              ),
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .override(
+                                    fontFamily: 'Noto Serif',
+                                    fontSize: 16.0,
+                                    fontWeight: FontWeight.w800,
+                                  ),
                             ),
                           ),
                       ],

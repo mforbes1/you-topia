@@ -145,6 +145,19 @@ class _AuthLoginWidgetState extends State<AuthLoginWidget> {
                                           .primaryText,
                                       fontSize: 30.0,
                                     ),
+                                hintText: FFLocalizations.of(context).getText(
+                                  '8v9pk9f6' /* Tap here and enter first and l... */,
+                                ),
+                                hintStyle: FlutterFlowTheme.of(context)
+                                    .headlineMedium
+                                    .override(
+                                      fontFamily: 'Noto Serif',
+                                      color:
+                                          FlutterFlowTheme.of(context).tertiary,
+                                      fontSize: 20.0,
+                                      fontStyle: FontStyle.italic,
+                                      lineHeight: 1.5,
+                                    ),
                                 errorStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(

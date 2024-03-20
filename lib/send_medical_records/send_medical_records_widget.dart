@@ -1161,7 +1161,7 @@ class _SendMedicalRecordsWidgetState extends State<SendMedicalRecordsWidget> {
                               alignment: const AlignmentDirectional(-0.9, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'xi8ahrct' /* Type of Records */,
+                                  'xi8ahrct' /* Select Type of Records to Send */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
@@ -1225,7 +1225,7 @@ class _SendMedicalRecordsWidgetState extends State<SendMedicalRecordsWidget> {
                               alignment: const AlignmentDirectional(-0.9, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
-                                  'gndnxajj' /* Encounter/Visit */,
+                                  'gndnxajj' /* Select which Encounter to Send... */,
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
