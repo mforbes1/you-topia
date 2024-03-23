@@ -157,7 +157,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                                       fontSize: 30.0,
                                     ),
                                 hintText: FFLocalizations.of(context).getText(
-                                  'lkb0bex1' /* Tap here and enter first and l... */,
+                                  'thfxf5aj' /* Tap here and enter first and l... */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .headlineMedium
@@ -263,7 +263,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                                       fontSize: 30.0,
                                     ),
                                 hintText: FFLocalizations.of(context).getText(
-                                  'gl2ii1ub' /* Tap here and enter numbers onl... */,
+                                  '6u32bkps' /* Tap here and enter numbers onl... */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .headlineMedium
@@ -370,7 +370,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                                       fontSize: 30.0,
                                     ),
                                 hintText: FFLocalizations.of(context).getText(
-                                  'yugnikkz' /* Tap here and enter letters/num... */,
+                                  'ucxifdc8' /* Tap here and enter letters/num... */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .headlineMedium

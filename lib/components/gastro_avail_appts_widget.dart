@@ -159,23 +159,23 @@ class _GastroAvailApptsWidgetState extends State<GastroAvailApptsWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'mioanif9' /* Wednesday, March 20 - 10 AM */,
+                  'mioanif9' /* Monday, March 25 - 10 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'debw1sm2' /* Wednesday, March 20 - 11 AM */,
+                  'debw1sm2' /* Monday, March 25 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'jcei0h5b' /* Friday, March 22 - 1 PM */,
+                  'jcei0h5b' /* Wednesday, March 27 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  '5z5vldjl' /* Friday, March 22 - 2 PM */,
+                  '5z5vldjl' /* Friday, March 29 - 2 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'oeiatotv' /* Wednesday, March 20 - 10 AM */,
+                'oeiatotv' /* Monday, March 25 - 10 AM */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,

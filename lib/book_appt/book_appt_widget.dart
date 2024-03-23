@@ -581,8 +581,35 @@ best car... */
                                 'nxs6f6h6' /* Joint pain */,
                               )
                             ],
-                            onChanged: (val) => setState(
-                                () => _model.listofSymptomsValue = val),
+                            onChanged: (val) async {
+                              setState(() => _model.listofSymptomsValue = val);
+                              if ((_model.emergencyValue ==
+                                      'Chest pain or pressure') ||
+                                  ((_model.emergencyValue == 'Dolor o presión en el pecho') ||
+                                      ((_model.emergencyValue == '胸痛或有壓迫感') ||
+                                          (_model.emergencyValue ==
+                                              'Đau ngực hoặc áp lực') ||
+                                          (_model.emergencyValue ==
+                                              'ألم في الصدر أو ضغط')))) {
+                                await showDialog(
+                                  context: context,
+                                  builder: (alertDialogContext) {
+                                    return AlertDialog(
+                                      content: const Text(
+                                          'Do not proceed with scheduling. Please seek immediate attention via ER or Urgent Care.'),
+                                      actions: [
+                                        TextButton(
+                                          onPressed: () =>
+                                              Navigator.pop(alertDialogContext),
+                                          child: const Text('Ok'),
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
+                                return;
+                              }
+                            },
                             width: 300.0,
                             height: 60.0,
                             textStyle: FlutterFlowTheme.of(context)

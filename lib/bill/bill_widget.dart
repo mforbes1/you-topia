@@ -330,6 +330,8 @@ class _BillWidgetState extends State<BillWidget> {
                         );
                       },
                     );
+
+                    context.pushNamed('Home');
                   },
                   text: FFLocalizations.of(context).getText(
                     '9e4n3am8' /* Submit */,
@@ -436,6 +438,8 @@ class _BillWidgetState extends State<BillWidget> {
                             );
                           },
                         );
+
+                        context.pushNamed('Home');
                       },
                       text: FFLocalizations.of(context).getText(
                         'czcw7p4u' /* Send */,

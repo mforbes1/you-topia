@@ -184,23 +184,23 @@ class _FMAvailApptsWidgetState extends State<FMAvailApptsWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  's1py79og' /* Wednesday, March 20 - 10 AM */,
+                  's1py79og' /* Monday, March 25 - 10 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  '0xwed17i' /* Wednesday, March 20 - 11 AM */,
+                  '0xwed17i' /* Monday, March 25 - 1  PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'v6z0weus' /* Friday, March 22 - 1 PM */,
+                  'v6z0weus' /* Wednesday, March 27 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'gi4spwd7' /* Friday, March 22 - 3 PM */,
+                  'gi4spwd7' /* Friday, March 29 - 3 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'mhdno60f' /* Wednesday, March 20 - 10 AM */,
+                'mhdno60f' /* Monday, March 25 - 10 AM */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,

@@ -159,23 +159,23 @@ class _PulmAvailApptsWidgetState extends State<PulmAvailApptsWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'xo7z0yax' /* Wednesday, March 20 - 10 AM */,
+                  'xo7z0yax' /* Monday, March 25 - 10 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'w449wu1i' /* Wednesday, March 20 - 11 AM */,
+                  'w449wu1i' /* Monday, March 25 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  't3ddpqlj' /* Friday, March 22 - 1 PM */,
+                  't3ddpqlj' /* Wednesday, March 27 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'xhbq5faq' /* Friday, March 22 - 2 PM */,
+                  'xhbq5faq' /* Friday, March 29 - 2 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'sjpyqns9' /* Wednesday, March 20 - 10 AM */,
+                'sjpyqns9' /* Monday, March 25 - 10 AM */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,

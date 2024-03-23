@@ -160,23 +160,23 @@ class _OrthoApptScheduleWidgetState extends State<OrthoApptScheduleWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'eqlx5jq9' /* Wednesday, March 20 - 10 AM */,
+                  'eqlx5jq9' /* Monday, March 25 - 10 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'lpemlp73' /* Wednesday, March 20 - 11 AM */,
+                  'lpemlp73' /* Monday, March 25 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'dldo4f0n' /* Friday, March 22 - 1 PM */,
+                  'dldo4f0n' /* Wednesday, March 27 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'igsh2pz1' /* Friday, March 22 - 2 PM */,
+                  'igsh2pz1' /* Friday, March 29 - 2 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'xngox3c1' /* Wednesday, March 20 - 10 AM */,
+                'xngox3c1' /* Monday, March 25 - 10 AM */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,

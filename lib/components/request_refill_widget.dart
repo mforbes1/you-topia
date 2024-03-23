@@ -230,6 +230,8 @@ class _RequestRefillWidgetState extends State<RequestRefillWidget> {
                                               focusNode:
                                                   _model.textFieldFocusNode1,
                                               autofocus: true,
+                                              textCapitalization:
+                                                  TextCapitalization.words,
                                               obscureText: false,
                                               decoration: InputDecoration(
                                                 labelText:
@@ -307,6 +309,7 @@ class _RequestRefillWidgetState extends State<RequestRefillWidget> {
                                                         fontFamily:
                                                             'Noto Serif',
                                                       ),
+                                              keyboardType: TextInputType.name,
                                               validator: _model
                                                   .textController1Validator
                                                   .asValidator(context),

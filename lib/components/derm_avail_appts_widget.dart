@@ -159,23 +159,23 @@ class _DermAvailApptsWidgetState extends State<DermAvailApptsWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'kkcnv2px' /* Wednesday, March 20 - 10 AM */,
+                  'kkcnv2px' /* Monday, March 25 - 10 AM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'ikl15rts' /* Wednesday, March 20 - 11 AM */,
+                  'ikl15rts' /* Monday, March 25 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'cm2lzqxi' /* Friday, March 22 - 1 PM */,
+                  'cm2lzqxi' /* Wednesday, March 27 - 1 PM */,
                 ),
                 FFLocalizations.of(context).getText(
-                  'ovinjimw' /* Friday, March 22 - 2 PM */,
+                  'ovinjimw' /* Friday, March 29 - 2 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'ttagsuw7' /* Wednesday, March 20 - 10 AM */,
+                'ttagsuw7' /* Monday, March 25 - 10 AM */,
               )),
               optionHeight: 35.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,
