@@ -96,6 +96,7 @@ class _CardApptScheduleWidgetState extends State<CardApptScheduleWidget> {
                           FlutterFlowTheme.of(context).headlineSmall.override(
                                 fontFamily: 'Noto Serif',
                                 color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 30.0,
                                 letterSpacing: 1.0,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -140,6 +141,7 @@ class _CardApptScheduleWidgetState extends State<CardApptScheduleWidget> {
                                   .bodyLarge
                                   .override(
                                     fontFamily: 'Noto Serif',
+                                    fontSize: 30.0,
                                     fontWeight: FontWeight.w600,
                                   ),
                             ),
@@ -159,30 +161,32 @@ class _CardApptScheduleWidgetState extends State<CardApptScheduleWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'h2nllrln' /* Monday, March 25 - 10 AM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  'nokiwvjt' /* Monday, March 25 - 1 PM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  'fh7an51x' /* Wednesday, March 27 - 1 PM */,
-                ),
-                FFLocalizations.of(context).getText(
                   'bfijdhpd' /* Friday, March 29 - 2 PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '149051k4' /* Monday, April 1 - 2 PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'bk34sk4f' /* Wednesday, April 3 - 10 AM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '19dfwkvv' /* Friday, April 5 - 8 AM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '09vdaucr' /* Monday, April 8 - 12 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'g2inr668' /* Monday, March 25 - 10 AM */,
+                'g2inr668' /* Friday, March 29 - 2 PM */,
               )),
-              optionHeight: 35.0,
+              optionHeight: 40.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,
               selectedTextStyle:
-                  FlutterFlowTheme.of(context).headlineSmall.override(
+                  FlutterFlowTheme.of(context).headlineLarge.override(
                         fontFamily: 'Noto Serif',
-                        color: FlutterFlowTheme.of(context).primary,
                       ),
               buttonPosition: RadioButtonPosition.left,
               direction: Axis.vertical,
@@ -216,7 +220,7 @@ class _CardApptScheduleWidgetState extends State<CardApptScheduleWidget> {
                   '568r7ud7' /* Select */,
                 ),
                 options: FFButtonOptions(
-                  height: 40.0,
+                  height: 50.0,
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                   iconPadding:
                       const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
@@ -224,6 +228,7 @@ class _CardApptScheduleWidgetState extends State<CardApptScheduleWidget> {
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Noto Serif',
                         color: Colors.white,
+                        fontSize: 20.0,
                       ),
                   elevation: 3.0,
                   borderSide: const BorderSide(

@@ -1404,38 +1404,8 @@ class _RequestRefillWidgetState extends State<RequestRefillWidget> {
                         const EdgeInsetsDirectional.fromSTEB(24.0, 24.0, 24.0, 12.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 12.0, 0.0),
-                          child: FFButtonWidget(
-                            onPressed: () async {
-                              Navigator.pop(context);
-                            },
-                            text: FFLocalizations.of(context).getText(
-                              'yqm0s98i' /* Cancel */,
-                            ),
-                            options: FFButtonOptions(
-                              height: 40.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  20.0, 0.0, 20.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: FlutterFlowTheme.of(context).primary,
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .bodyLarge
-                                  .override(
-                                    fontFamily: 'Noto Serif',
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryBackground,
-                                    fontSize: 20.0,
-                                  ),
-                              elevation: 0.0,
-                              borderRadius: BorderRadius.circular(0.0),
-                            ),
-                          ),
-                        ),
                         FFButtonWidget(
                           onPressed: () async {
                             await showDialog(
@@ -1478,6 +1448,36 @@ class _RequestRefillWidgetState extends State<RequestRefillWidget> {
                               color: Colors.transparent,
                             ),
                             borderRadius: BorderRadius.circular(0.0),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 12.0, 0.0),
+                          child: FFButtonWidget(
+                            onPressed: () async {
+                              Navigator.pop(context);
+                            },
+                            text: FFLocalizations.of(context).getText(
+                              'yqm0s98i' /* Cancel */,
+                            ),
+                            options: FFButtonOptions(
+                              height: 40.0,
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  20.0, 0.0, 20.0, 0.0),
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              color: FlutterFlowTheme.of(context).primary,
+                              textStyle: FlutterFlowTheme.of(context)
+                                  .bodyLarge
+                                  .override(
+                                    fontFamily: 'Noto Serif',
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryBackground,
+                                    fontSize: 20.0,
+                                  ),
+                              elevation: 0.0,
+                              borderRadius: BorderRadius.circular(0.0),
+                            ),
                           ),
                         ),
                       ],

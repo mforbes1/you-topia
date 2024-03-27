@@ -161,11 +161,11 @@ class _BookApptWidgetState extends State<BookApptWidget> {
               children: [
                 Container(
                   width: double.infinity,
-                  height: 356.0,
+                  height: 200.0,
                   decoration: const BoxDecoration(),
                   child: Container(
                     width: 100.0,
-                    height: 344.0,
+                    height: 0.0,
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         fit: BoxFit.contain,
@@ -174,120 +174,11 @@ class _BookApptWidgetState extends State<BookApptWidget> {
                         ).image,
                       ),
                     ),
-                    child: Padding(
-                      padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                      child: SingleChildScrollView(
-                        primary: false,
-                        child: Column(
-                          mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              FFLocalizations.of(context).getText(
-                                'ww6wcuyb' /* Not feeling 
-so well? */
-                                ,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .displaySmall
-                                  .override(
-                                    fontFamily: 'Noto Serif',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                    fontSize: 33.0,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                            ),
-                            Align(
-                              alignment: const AlignmentDirectional(1.0, 0.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  '0ke6ip8w' /* Need a
- routine
- visit? */
-                                  ,
-                                ),
-                                maxLines: 3,
-                                style: FlutterFlowTheme.of(context)
-                                    .displaySmall
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 34.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                              ),
-                            ),
-                            Align(
-                              alignment: const AlignmentDirectional(-1.0, 0.0),
-                              child: Text(
-                                FFLocalizations.of(context).getText(
-                                  '5tlyhgcp' /* Let's get you to the 
-best car... */
-                                  ,
-                                ),
-                                maxLines: 2,
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 18.0,
-                                    ),
-                              ),
-                            ),
-                            Align(
-                              alignment: const AlignmentDirectional(1.0, 1.0),
-                              child: Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 0.0, 10.0),
-                                child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'g94lhaea' /* Let's get you to the 
-best car... */
-                                    ,
-                                  ),
-                                  maxLines: 2,
-                                  style: FlutterFlowTheme.of(context)
-                                      .labelMedium
-                                      .override(
-                                        fontFamily: 'Noto Serif',
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryText,
-                                        fontSize: 18.0,
-                                      ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
                   ),
                 ),
                 Divider(
                   thickness: 3.0,
                   color: FlutterFlowTheme.of(context).alternate,
-                ),
-                Align(
-                  alignment: const AlignmentDirectional(0.0, -1.0),
-                  child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
-                    child: Text(
-                      FFLocalizations.of(context).getText(
-                        'dl6la0w0' /* Appointment Scheduling */,
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Noto Serif',
-                            fontSize: 50.0,
-                          ),
-                    ),
-                  ),
                 ),
                 Align(
                   alignment: const AlignmentDirectional(0.0, 0.0),

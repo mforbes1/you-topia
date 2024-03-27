@@ -1,23 +1,22 @@
+import '/components/exam_room_widget.dart';
 import '/components/message_provider_i_i_widget.dart';
-import '/components/provider_call_back_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'exam_room_model.dart';
-export 'exam_room_model.dart';
+import 'patient_provider_model.dart';
+export 'patient_provider_model.dart';
 
-class ExamRoomWidget extends StatefulWidget {
-  const ExamRoomWidget({super.key});
+class PatientProviderWidget extends StatefulWidget {
+  const PatientProviderWidget({super.key});
 
   @override
-  State<ExamRoomWidget> createState() => _ExamRoomWidgetState();
+  State<PatientProviderWidget> createState() => _PatientProviderWidgetState();
 }
 
-class _ExamRoomWidgetState extends State<ExamRoomWidget> {
-  late ExamRoomModel _model;
+class _PatientProviderWidgetState extends State<PatientProviderWidget> {
+  late PatientProviderModel _model;
 
   @override
   void setState(VoidCallback callback) {
@@ -28,7 +27,7 @@ class _ExamRoomWidgetState extends State<ExamRoomWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ExamRoomModel());
+    _model = createModel(context, () => PatientProviderModel());
   }
 
   @override
@@ -100,7 +99,7 @@ class _ExamRoomWidgetState extends State<ExamRoomWidget> {
                             },
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '93yr19y7' /* Close */,
+                                'il3stq34' /* Close */,
                               ),
                               textAlign: TextAlign.start,
                               style: FlutterFlowTheme.of(context)
@@ -141,70 +140,16 @@ class _ExamRoomWidgetState extends State<ExamRoomWidget> {
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Expanded(
-                        child: RichText(
-                          textScaler: MediaQuery.of(context).textScaler,
-                          text: TextSpan(
-                            children: [
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'o6h99zs7' /* Would you like to  */,
-                                ),
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Noto Serif',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 25.0,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  '4ej12tsc' /* send a messge  */,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  color: const Color(0xFF6082B6),
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 27.0,
-                                ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'ajmv6zg1' /* to your provider or request a  */,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  fontSize: 25.0,
-                                ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'f680t3k9' /* call back */,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  color: const Color(0xFF6082B6),
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 27.0,
-                                ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  '5qfziyd6' /* ? */,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  fontSize: 25.0,
-                                ),
-                              )
-                            ],
-                            style: FlutterFlowTheme.of(context).bodyMedium,
+                      Flexible(
+                        child: Text(
+                          FFLocalizations.of(context).getText(
+                            'rcg5ui32' /* Do you want to schedule an app... */,
                           ),
+                          style:
+                              FlutterFlowTheme.of(context).bodyMedium.override(
+                                    fontFamily: 'Noto Serif',
+                                    fontSize: 30.0,
+                                  ),
                         ),
                       ),
                     ],
@@ -235,7 +180,7 @@ class _ExamRoomWidgetState extends State<ExamRoomWidget> {
                             ).then((value) => setState(() {}));
                           },
                           text: FFLocalizations.of(context).getText(
-                            'icbvmx2j' /* Send Message */,
+                            'g1i5sgtt' /* Yes */,
                           ),
                           options: FFButtonOptions(
                             width: 330.0,
@@ -276,13 +221,13 @@ class _ExamRoomWidgetState extends State<ExamRoomWidget> {
                                     backgroundColor: Colors.transparent,
                                     alignment: const AlignmentDirectional(0.0, 0.0)
                                         .resolve(Directionality.of(context)),
-                                    child: const ProviderCallBackWidget(),
+                                    child: const ExamRoomWidget(),
                                   );
                                 },
                               ).then((value) => setState(() {}));
                             },
                             text: FFLocalizations.of(context).getText(
-                              '06w40ouo' /* Call Back */,
+                              '5qnfpb8v' /* No */,
                             ),
                             options: FFButtonOptions(
                               width: 330.0,

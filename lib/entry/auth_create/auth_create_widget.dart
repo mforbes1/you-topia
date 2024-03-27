@@ -263,7 +263,7 @@ class _AuthCreateWidgetState extends State<AuthCreateWidget> {
                                       fontSize: 30.0,
                                     ),
                                 hintText: FFLocalizations.of(context).getText(
-                                  '6u32bkps' /* Tap here and enter numbers onl... */,
+                                  '6u32bkps' /* Tap here and enter #'s only (m... */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .headlineMedium

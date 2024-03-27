@@ -52,8 +52,8 @@ class _OPHAvailApptsWidgetState extends State<OPHAvailApptsWidget> {
         ),
       ),
       child: Container(
-        width: 830.0,
-        height: 500.0,
+        width: double.infinity,
+        height: MediaQuery.sizeOf(context).height * 0.9,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: const BorderRadius.only(
@@ -97,6 +97,7 @@ class _OPHAvailApptsWidgetState extends State<OPHAvailApptsWidget> {
                           FlutterFlowTheme.of(context).headlineSmall.override(
                                 fontFamily: 'Noto Serif',
                                 color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 30.0,
                                 letterSpacing: 1.0,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -164,6 +165,7 @@ class _OPHAvailApptsWidgetState extends State<OPHAvailApptsWidget> {
                                       .bodyLarge
                                       .override(
                                         fontFamily: 'Noto Serif',
+                                        fontSize: 30.0,
                                         fontWeight: FontWeight.w600,
                                       ),
                                 ),
@@ -185,30 +187,32 @@ class _OPHAvailApptsWidgetState extends State<OPHAvailApptsWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  '1izad1jv' /* Monday, March 25 - 10 AM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  'oe27a070' /* Monday, March 25 - 1 PM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  'zxwzlyoq' /* Wednesday, March 27 - 1 PM */,
-                ),
-                FFLocalizations.of(context).getText(
                   'cyx95ir6' /* Friday, March 29 - 2 PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'cyhv5rpo' /* Monday, April 1 - 2 PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '7qjxqg3b' /* Wednesday, April 3 - 10 AM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'riyg6fhn' /* Friday, April 5 - 8 AM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'n7zib2ag' /* Monday, April 8 - 12 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'djsuwq11' /* Monday, March 25 - 10 AM */,
+                'djsuwq11' /* Friday, March 29 - 2 PM */,
               )),
-              optionHeight: 35.0,
+              optionHeight: 40.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,
               selectedTextStyle:
-                  FlutterFlowTheme.of(context).headlineSmall.override(
+                  FlutterFlowTheme.of(context).headlineLarge.override(
                         fontFamily: 'Noto Serif',
-                        color: FlutterFlowTheme.of(context).primary,
                       ),
               buttonPosition: RadioButtonPosition.left,
               direction: Axis.vertical,
@@ -250,6 +254,7 @@ class _OPHAvailApptsWidgetState extends State<OPHAvailApptsWidget> {
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Noto Serif',
                         color: Colors.white,
+                        fontSize: 20.0,
                       ),
                   elevation: 3.0,
                   borderSide: const BorderSide(

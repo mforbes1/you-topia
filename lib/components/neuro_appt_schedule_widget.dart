@@ -52,8 +52,8 @@ class _NeuroApptScheduleWidgetState extends State<NeuroApptScheduleWidget> {
         ),
       ),
       child: Container(
-        width: 830.0,
-        height: 500.0,
+        width: double.infinity,
+        height: MediaQuery.sizeOf(context).height * 0.9,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: const BorderRadius.only(
@@ -97,6 +97,7 @@ class _NeuroApptScheduleWidgetState extends State<NeuroApptScheduleWidget> {
                           FlutterFlowTheme.of(context).headlineSmall.override(
                                 fontFamily: 'Noto Serif',
                                 color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 30.0,
                                 letterSpacing: 1.0,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -141,6 +142,7 @@ class _NeuroApptScheduleWidgetState extends State<NeuroApptScheduleWidget> {
                                   .bodyLarge
                                   .override(
                                     fontFamily: 'Noto Serif',
+                                    fontSize: 30.0,
                                     fontWeight: FontWeight.w600,
                                   ),
                             ),
@@ -160,30 +162,32 @@ class _NeuroApptScheduleWidgetState extends State<NeuroApptScheduleWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'e2m21f3q' /* Monday, March 25 - 10 AM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  'k9s0b394' /* Monday, March 25 - 12 PM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  '9twatbr1' /* Wednesday March 27 - 1 PM */,
-                ),
-                FFLocalizations.of(context).getText(
                   'a8ropxcq' /* Friday, March 29 - 2 PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'xnq0vaq6' /* Monday, April 1 - 2 PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  't9si8uly' /* Wednesday, April 3 - 10 AM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'lhk9rjrb' /* Friday, April 5 - 8 AM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'poc3vfds' /* Monday, April 8 - 12 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'qowjors9' /* Monday, March 25 - 10 AM */,
+                'qowjors9' /* Friday, March 29 - 2 PM */,
               )),
-              optionHeight: 35.0,
+              optionHeight: 40.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,
               selectedTextStyle:
-                  FlutterFlowTheme.of(context).headlineSmall.override(
+                  FlutterFlowTheme.of(context).headlineLarge.override(
                         fontFamily: 'Noto Serif',
-                        color: FlutterFlowTheme.of(context).primary,
                       ),
               buttonPosition: RadioButtonPosition.left,
               direction: Axis.vertical,
@@ -217,7 +221,7 @@ class _NeuroApptScheduleWidgetState extends State<NeuroApptScheduleWidget> {
                   'jqd4p2jh' /* Select */,
                 ),
                 options: FFButtonOptions(
-                  height: 40.0,
+                  height: 50.0,
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                   iconPadding:
                       const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
@@ -225,6 +229,7 @@ class _NeuroApptScheduleWidgetState extends State<NeuroApptScheduleWidget> {
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Noto Serif',
                         color: Colors.white,
+                        fontSize: 20.0,
                       ),
                   elevation: 3.0,
                   borderSide: const BorderSide(

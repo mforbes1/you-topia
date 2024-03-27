@@ -53,11 +53,8 @@ class _ENTFollowUpWidgetState extends State<ENTFollowUpWidget> {
           ),
         ),
         child: Container(
-          width: 830.0,
-          height: 519.0,
-          constraints: const BoxConstraints(
-            maxWidth: 800.0,
-          ),
+          width: double.infinity,
+          height: MediaQuery.sizeOf(context).height * 0.9,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
             boxShadow: const [
@@ -125,75 +122,136 @@ class _ENTFollowUpWidgetState extends State<ENTFollowUpWidget> {
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Padding(
-                        padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
-                        child: RichText(
-                          textScaler: MediaQuery.of(context).textScaler,
-                          text: TextSpan(
-                            children: [
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'dtjghsts' /* You were recently seen by */,
-                                ),
+                      Flexible(
+                        child: Align(
+                          alignment: const AlignmentDirectional(0.0, 0.0),
+                          child: Padding(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
+                                0.0, 10.0, 0.0, 0.0),
+                            child: RichText(
+                              textScaler: MediaQuery.of(context).textScaler,
+                              text: TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: FFLocalizations.of(context).getText(
+                                      'dtjghsts' /* You were recently seen by */,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily: 'Noto Serif',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          fontSize: 25.0,
+                                          fontWeight: FontWeight.normal,
+                                        ),
+                                  ),
+                                  TextSpan(
+                                    text: FFLocalizations.of(context).getText(
+                                      'l7me2gtt' /*  Dr. Lela Peterson */,
+                                    ),
+                                    style: GoogleFonts.getFont(
+                                      'Noto Serif',
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 25.0,
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: FFLocalizations.of(context).getText(
+                                      'lyen8n1d' /*  on 4/6/2023.
+Would you like t... */
+                                      ,
+                                    ),
+                                    style: GoogleFonts.getFont(
+                                      'Noto Serif',
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      fontSize: 25.0,
+                                    ),
+                                  )
+                                ],
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
                                       fontFamily: 'Noto Serif',
                                       color: FlutterFlowTheme.of(context)
                                           .primaryText,
-                                      fontSize: 25.0,
-                                      fontWeight: FontWeight.normal,
+                                      fontSize: 22.0,
                                     ),
                               ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'l7me2gtt' /*  Dr. Lela Peterson */,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  fontWeight: FontWeight.w600,
-                                  fontSize: 25.0,
-                                ),
-                              ),
-                              TextSpan(
-                                text: FFLocalizations.of(context).getText(
-                                  'lyen8n1d' /*  on 4/6/2023.
-Would you like t... */
-                                  ,
-                                ),
-                                style: GoogleFonts.getFont(
-                                  'Noto Serif',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  fontSize: 25.0,
-                                ),
-                              )
-                            ],
-                            style: FlutterFlowTheme.of(context)
-                                .bodyMedium
-                                .override(
-                                  fontFamily: 'Noto Serif',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryText,
-                                  fontSize: 22.0,
-                                ),
+                            ),
                           ),
                         ),
                       ),
                     ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 4.0),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
-                        child: Builder(
+                Flexible(
+                  child: Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 4.0),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Align(
+                          alignment: const AlignmentDirectional(0.0, 1.0),
+                          child: Builder(
+                            builder: (context) => Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 50.0, 0.0),
+                              child: FFButtonWidget(
+                                onPressed: () async {
+                                  await showDialog(
+                                    context: context,
+                                    builder: (dialogContext) {
+                                      return Dialog(
+                                        elevation: 0,
+                                        insetPadding: EdgeInsets.zero,
+                                        backgroundColor: Colors.transparent,
+                                        alignment:
+                                            const AlignmentDirectional(0.0, 0.0)
+                                                .resolve(
+                                                    Directionality.of(context)),
+                                        child: const ENTApptScheduleWidget(),
+                                      );
+                                    },
+                                  ).then((value) => setState(() {}));
+                                },
+                                text: FFLocalizations.of(context).getText(
+                                  'cnxl28yq' /* Schedule */,
+                                ),
+                                options: FFButtonOptions(
+                                  width: 330.0,
+                                  height: 60.0,
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: const Color(0xFF6082B6),
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .bodyLarge
+                                      .override(
+                                        fontFamily: 'Noto Serif',
+                                        color:
+                                            FlutterFlowTheme.of(context).info,
+                                        fontSize: 25.0,
+                                      ),
+                                  elevation: 0.0,
+                                  borderSide: const BorderSide(
+                                    color: Colors.transparent,
+                                    width: 1.0,
+                                  ),
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Builder(
                           builder: (context) => Padding(
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 50.0, 0.0),
@@ -208,13 +266,15 @@ Would you like t... */
                                       backgroundColor: Colors.transparent,
                                       alignment: const AlignmentDirectional(0.0, 0.0)
                                           .resolve(Directionality.of(context)),
-                                      child: const ENTApptScheduleWidget(),
+                                      child: const ProviderMessageEntWidget(
+                                        providerName: 'Dr. Lela Peterson',
+                                      ),
                                     );
                                   },
                                 ).then((value) => setState(() {}));
                               },
                               text: FFLocalizations.of(context).getText(
-                                'cnxl28yq' /* Schedule */,
+                                'r2rsze58' /* Message Provider */,
                               ),
                               options: FFButtonOptions(
                                 width: 330.0,
@@ -241,58 +301,8 @@ Would you like t... */
                             ),
                           ),
                         ),
-                      ),
-                      Builder(
-                        builder: (context) => Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
-                              0.0, 0.0, 50.0, 0.0),
-                          child: FFButtonWidget(
-                            onPressed: () async {
-                              await showDialog(
-                                context: context,
-                                builder: (dialogContext) {
-                                  return Dialog(
-                                    elevation: 0,
-                                    insetPadding: EdgeInsets.zero,
-                                    backgroundColor: Colors.transparent,
-                                    alignment: const AlignmentDirectional(0.0, 0.0)
-                                        .resolve(Directionality.of(context)),
-                                    child: const ProviderMessageEntWidget(
-                                      providerName: 'Dr. Lela Peterson',
-                                    ),
-                                  );
-                                },
-                              ).then((value) => setState(() {}));
-                            },
-                            text: FFLocalizations.of(context).getText(
-                              'r2rsze58' /* Message Provider */,
-                            ),
-                            options: FFButtonOptions(
-                              width: 330.0,
-                              height: 60.0,
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                                  0.0, 0.0, 0.0, 0.0),
-                              color: const Color(0xFF6082B6),
-                              textStyle: FlutterFlowTheme.of(context)
-                                  .bodyLarge
-                                  .override(
-                                    fontFamily: 'Noto Serif',
-                                    color: FlutterFlowTheme.of(context).info,
-                                    fontSize: 25.0,
-                                  ),
-                              elevation: 0.0,
-                              borderSide: const BorderSide(
-                                color: Colors.transparent,
-                                width: 1.0,
-                              ),
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ],

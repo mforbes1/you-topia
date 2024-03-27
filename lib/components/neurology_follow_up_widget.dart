@@ -54,8 +54,8 @@ class _NeurologyFollowUpWidgetState extends State<NeurologyFollowUpWidget> {
           ),
         ),
         child: Container(
-          width: 800.0,
-          height: 500.0,
+          width: double.infinity,
+          height: MediaQuery.sizeOf(context).height * 0.7,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
             boxShadow: const [

@@ -51,8 +51,8 @@ class _PulmAvailApptsWidgetState extends State<PulmAvailApptsWidget> {
         ),
       ),
       child: Container(
-        width: 830.0,
-        height: 500.0,
+        width: double.infinity,
+        height: MediaQuery.sizeOf(context).height * 0.9,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: const BorderRadius.only(
@@ -96,6 +96,7 @@ class _PulmAvailApptsWidgetState extends State<PulmAvailApptsWidget> {
                           FlutterFlowTheme.of(context).headlineSmall.override(
                                 fontFamily: 'Noto Serif',
                                 color: FlutterFlowTheme.of(context).primaryText,
+                                fontSize: 30.0,
                                 letterSpacing: 1.0,
                                 fontWeight: FontWeight.w600,
                               ),
@@ -140,6 +141,7 @@ class _PulmAvailApptsWidgetState extends State<PulmAvailApptsWidget> {
                                   .bodyLarge
                                   .override(
                                     fontFamily: 'Noto Serif',
+                                    fontSize: 30.0,
                                     fontWeight: FontWeight.w600,
                                   ),
                             ),
@@ -159,30 +161,32 @@ class _PulmAvailApptsWidgetState extends State<PulmAvailApptsWidget> {
             FlutterFlowRadioButton(
               options: [
                 FFLocalizations.of(context).getText(
-                  'xo7z0yax' /* Monday, March 25 - 10 AM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  'w449wu1i' /* Monday, March 25 - 1 PM */,
-                ),
-                FFLocalizations.of(context).getText(
-                  't3ddpqlj' /* Wednesday, March 27 - 1 PM */,
-                ),
-                FFLocalizations.of(context).getText(
                   'xhbq5faq' /* Friday, March 29 - 2 PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  's1w0st6r' /* Monday, April 1 - 2 PM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '0if1lbfe' /* Wednesday, April 3 - 10 AM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'o7zkgepg' /* Friday, April 5 - 8 AM */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '0hxn3ws6' /* Monday, April 8 - 12 PM */,
                 )
               ].toList(),
               onChanged: (val) => setState(() {}),
               controller: _model.radioButtonValueController ??=
                   FormFieldController<String>(
                       FFLocalizations.of(context).getText(
-                'sjpyqns9' /* Monday, March 25 - 10 AM */,
+                'sjpyqns9' /* Friday, March 29 - 2 PM */,
               )),
-              optionHeight: 35.0,
+              optionHeight: 40.0,
               textStyle: FlutterFlowTheme.of(context).labelMedium,
               selectedTextStyle:
-                  FlutterFlowTheme.of(context).headlineSmall.override(
+                  FlutterFlowTheme.of(context).headlineLarge.override(
                         fontFamily: 'Noto Serif',
-                        color: FlutterFlowTheme.of(context).primary,
                       ),
               buttonPosition: RadioButtonPosition.left,
               direction: Axis.vertical,
@@ -216,7 +220,7 @@ class _PulmAvailApptsWidgetState extends State<PulmAvailApptsWidget> {
                   'o2jzttgj' /* Select */,
                 ),
                 options: FFButtonOptions(
-                  height: 40.0,
+                  height: 50.0,
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                   iconPadding:
                       const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
@@ -224,6 +228,7 @@ class _PulmAvailApptsWidgetState extends State<PulmAvailApptsWidget> {
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Noto Serif',
                         color: Colors.white,
+                        fontSize: 30.0,
                       ),
                   elevation: 3.0,
                   borderSide: const BorderSide(

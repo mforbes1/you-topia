@@ -57,8 +57,8 @@ class _ProviderMessageEntWidgetState extends State<ProviderMessageEntWidget> {
         ),
       ),
       child: Container(
-        width: 920.0,
-        height: 500.0,
+        width: double.infinity,
+        height: MediaQuery.sizeOf(context).height * 0.9,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: const BorderRadius.only(
@@ -103,7 +103,7 @@ class _ProviderMessageEntWidgetState extends State<ProviderMessageEntWidget> {
                   ),
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
                         fontFamily: 'Noto Serif',
-                        fontSize: 30.0,
+                        fontSize: 35.0,
                       ),
                 ),
               ),
@@ -114,8 +114,9 @@ class _ProviderMessageEntWidgetState extends State<ProviderMessageEntWidget> {
                     '584ur9fj' /* Use the text field below to wr... */,
                   ),
                   style: FlutterFlowTheme.of(context).labelMedium.override(
-                        fontFamily: 'Mukta',
-                        fontSize: 23.0,
+                        fontFamily: 'Noto Serif',
+                        color: FlutterFlowTheme.of(context).primaryText,
+                        fontSize: 30.0,
                       ),
                 ),
               ),
@@ -208,7 +209,7 @@ class _ProviderMessageEntWidgetState extends State<ProviderMessageEntWidget> {
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Padding(
@@ -255,6 +256,38 @@ class _ProviderMessageEntWidgetState extends State<ProviderMessageEntWidget> {
                         elevation: 3.0,
                         borderSide: const BorderSide(
                           color: Colors.transparent,
+                          width: 1.0,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 44.0),
+                    child: FFButtonWidget(
+                      onPressed: () async {
+                        Navigator.pop(context);
+                      },
+                      text: FFLocalizations.of(context).getText(
+                        'lm8mhydw' /* Cancel */,
+                      ),
+                      options: FFButtonOptions(
+                        width: 330.0,
+                        height: 60.0,
+                        padding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        iconPadding:
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        color: const Color(0xFF6082B6),
+                        textStyle:
+                            FlutterFlowTheme.of(context).titleMedium.override(
+                                  fontFamily: 'Noto Serif',
+                                  color: Colors.white,
+                                  fontSize: 25.0,
+                                ),
+                        elevation: 3.0,
+                        borderSide: BorderSide(
+                          color: FlutterFlowTheme.of(context).accent4,
                           width: 1.0,
                         ),
                       ),

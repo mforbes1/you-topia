@@ -55,8 +55,8 @@ class _UrgentCareLocationsWidgetState extends State<UrgentCareLocationsWidget> {
             ),
           ),
           child: Container(
-            width: 730.0,
-            height: 672.0,
+            width: double.infinity,
+            height: MediaQuery.sizeOf(context).height * 0.9,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
               boxShadow: const [

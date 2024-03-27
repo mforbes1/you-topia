@@ -63,7 +63,7 @@ class _ConfirmedApptOrthoWidgetState extends State<ConfirmedApptOrthoWidget> {
           ),
           child: Container(
             width: double.infinity,
-            height: 700.0,
+            height: MediaQuery.sizeOf(context).height * 0.9,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
               boxShadow: const [

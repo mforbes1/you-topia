@@ -3,6 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'pharmacy_model.dart';
 export 'pharmacy_model.dart';
@@ -52,8 +53,8 @@ class _PharmacyWidgetState extends State<PharmacyWidget> {
           ),
         ),
         child: Container(
-          width: 750.0,
-          height: 450.0,
+          width: double.infinity,
+          height: MediaQuery.sizeOf(context).height * 0.7,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
             boxShadow: const [
@@ -80,6 +81,56 @@ class _PharmacyWidgetState extends State<PharmacyWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Expanded(
+                      child: Align(
+                        alignment: const AlignmentDirectional(1.0, 0.0),
+                        child: InkWell(
+                          splashColor: Colors.transparent,
+                          focusColor: Colors.transparent,
+                          hoverColor: Colors.transparent,
+                          highlightColor: Colors.transparent,
+                          onTap: () async {
+                            Navigator.pop(context);
+                          },
+                          child: Text(
+                            FFLocalizations.of(context).getText(
+                              'xo0w8mqq' /* Close */,
+                            ),
+                            textAlign: TextAlign.start,
+                            style: FlutterFlowTheme.of(context)
+                                .titleLarge
+                                .override(
+                                  fontFamily: 'Noto Serif',
+                                  fontSize: 35.0,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
+                      child: InkWell(
+                        splashColor: Colors.transparent,
+                        focusColor: Colors.transparent,
+                        hoverColor: Colors.transparent,
+                        highlightColor: Colors.transparent,
+                        onTap: () async {
+                          Navigator.pop(context);
+                        },
+                        child: FaIcon(
+                          FontAwesomeIcons.solidWindowClose,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          size: 44.0,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 8.0),
                   child: Row(
